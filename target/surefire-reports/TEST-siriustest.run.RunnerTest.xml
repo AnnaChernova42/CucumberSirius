@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="106" failures="4" name="siriustest.run.RunnerTest" time="4.947" errors="0" skipped="14">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @TOUCH --tags @ПН"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\OUT-Chernova1-AA\CucumberTest"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\OUT-Chernova1-AA\CucumberTest"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\OUT-CH~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\OUT-Chernova1-AA\opt\apache-maven-3.3.9\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Gradle\gradle-2.14.1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\apache-maven-3.2.5\bin;C:\Program Files\Java\jdk1.7.0_75\bin;C:\oracle\product\11g\client\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\CCM;C:\WINDOWS\CCM;C:\WINDOWS\CCM;C:\WINDOWS\CCM;C:\WINDOWS\CCM;C:\Program Files (x86)\SAPCryptoTool\SBT.SAP.Cryptotool.Setup\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\OUT-Chernova1-AA\opt\apache-maven-3.3.9\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\OUT-Chernova1-AA"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="out-chernova1-aa"/>
+    <property name="java.class.path" value="C:\Users\OUT-Chernova1-AA\opt\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -Dcucumber.options=--tags @TOUCH --tags @ПН"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp866"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\OUT-Chernova1-AA\opt\apache-maven-3.3.9\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp866"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Пусть страница &apos;Платежи наличными&apos; открыта(Сценарий: Авторизация в гостевом блоке (успешно))" name="Пусть страница &apos;Платежи наличными&apos; открыта(Сценарий: Авторизация в гостевом блоке " time="0.008"/>
+  <testcase classname="То шаблон &quot;atm_cash_menu&quot; отображен(Сценарий: Авторизация в гостевом блоке (успешно))" name="То шаблон &quot;atm_cash_menu&quot; отображен(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;PaymentSource = 0&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;PaymentSource = 0&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;cashout = 1&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;cashout = 1&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;FormFactor = ERROR_ON_GET_VALUE:err_code&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;FormFactor = ERROR_ON_GET_VALUE:err_code&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;cashin = 1&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;cashin = 1&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;nfcReader = 1&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;nfcReader = 1&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;PaymentAuthRes = 0&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;PaymentAuthRes = 0&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;PaymentStatus = 0&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;PaymentStatus = 0&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;printer = 1&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;printer = 1&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;system = cash_pay&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;system = cash_pay&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;terminal = 222212&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;terminal = 222212&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;PaymentCurrency = 0&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;PaymentCurrency = 0&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;PaymentProvidedAmount = 0&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;PaymentProvidedAmount = 0&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;NotesAccept = BNA&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;NotesAccept = BNA&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;DisplayType = touch&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;DisplayType = touch&quot;(Сценарий: Авторизация в гостевом блоке " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;ClientType = 2&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;ClientType = 2&quot;(Сценарий: Авторизация в гостевом блоке " time="0.016">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)
+	at ✽.И в логе ПН сервера присутствует строка &quot;ClientType = 2&quot;(Touch/Платежи наличными/Авторизация/1084. Авторизация в гостевом блоке (успешно).feature:28)
+</failure>
+  </testcase>
+  <testcase classname="успешно" name="Сценарий: Авторизация в гостевом блоке " time="0.016">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)
+	at ✽.И в логе ПН сервера присутствует строка &quot;ClientType = 2&quot;(Touch/Платежи наличными/Авторизация/1084. Авторизация в гостевом блоке (успешно).feature:28)
+</failure>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;cardreader = 1&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;cardreader = 1&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;scanner = 1&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;scanner = 1&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;PaymentRequestedAmount = 000000000000&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;PaymentRequestedAmount = 000000000000&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;Пропускаем проверку токена&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;Пропускаем проверку токена&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: GuestCSALogon&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: GuestCSALogon&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;/CSAATM/login.do&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;/CSAATM/login.do&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;POST параметры: []&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;POST параметры: []&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: NodeLogon&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: NodeLogon&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;postCSAGuestLogin.do&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;postCSAGuestLogin.do&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;POST параметры: [token = &apos;170323124206546938003371720400100011007865&apos; , codeATM = &apos;222212&apos; , atmRegionCode = &apos;17401&apos; , atmTB = &apos;42&apos; , atmOSB = &apos;8611&apos; ]&quot;(Сценарий: Авторизация в гостевом блоке (успешно))" name="И в логе ПН сервера присутствует строка &quot;POST параметры: [token = &apos;170323124206546938003371720400100011007865&apos; , codeATM = &apos;222212&apos; , atmRegionCode = &apos;17401&apos; , atmTB = &apos;42&apos; , atmOSB = &apos;8611&apos; ]&quot;(Сценарий: Авторизация в гостевом блоке " time="0.032">
+    <skipped/>
+  </testcase>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="Пусть страница &apos;Платежи наличными&apos; открыта" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="То шаблон &quot;atm_cash_menu&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="И элемент с текстом &quot;Платежи наличными&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="И элемент с текстом &quot;ЕИРЦ&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="И в логе ПН сервера присутствует строка &quot;REQUEST: chooseProvider&quot;" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="И в логе ПН сервера присутствует строка &quot;private/dictionary/servicesPayments.do&quot;" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="И в логе ПН сервера присутствует строка &quot;POST параметры: [regionGuid = &apos;45000&apos; ]&quot;" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="И в логе ПН сервера присутствует строка &quot;REQUEST: choosePopular&quot;" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="И в логе ПН сервера присутствует строка &quot;private/dictionary/popularPayments.do&quot;" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="И в логе ПН сервера присутствует строка &quot;POST параметры: [regionGuid = &apos;45000&apos; , paginationSize = &apos;6&apos; , type = &apos;provider&apos; ]&quot;" time="0"/>
+  <testcase classname="Сценарий: Форма платежи и переводы" name="Сценарий: Форма платежи и переводы" time="1.014"/>
+  <testcase classname="Сценарий: Выбор категории" name="Пусть страница &apos;Платежи наличными&apos; открыта" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="Если пользователь нажимает кнопку &quot;Платежи наличными&quot;" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="То шаблон &quot;atm_menu_inner&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="И элемент &quot;title&quot; с текстом &quot;Платежи наличными&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="И элемент &quot;caption&quot; с текстом &quot;Выберите поставщика&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="И элемент с текстом &quot;Завершить обслуживание&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: chooseProvider&quot;" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="И в логе ПН сервера присутствует строка &quot;private/dictionary/servicesPayments.do&quot;" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="И в логе ПН сервера присутствует строка &quot;POST параметры: [id = &apos;CASHPAY&apos; , regionGuid = &apos;45000&apos; , paginationSize = &apos;200&apos; ]&quot;" time="0"/>
+  <testcase classname="Сценарий: Выбор категории" name="Сценарий: Выбор категории" time="0.951"/>
+  <testcase classname="Пусть страница &apos;Платежи наличными&apos; открыта(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="Пусть страница &apos;Платежи наличными&apos; открыта(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="Если пользователь нажимает кнопку &quot;Платежи наличными&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="Если пользователь нажимает кнопку &quot;Платежи наличными&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="Если пользователь нажимает кнопку &quot;1 одноименная услуга&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="Если пользователь нажимает кнопку &quot;1 одноименная услуга&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="То шаблон &quot;atm_total&quot; отображен(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="То шаблон &quot;atm_total&quot; отображен(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: initCashPayment&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: initCashPayment&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="Если пользователь нажимает кнопку &quot;Назад&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="Если пользователь нажимает кнопку &quot;Назад&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0.001"/>
+  <testcase classname="Если пользователь нажимает кнопку &quot;Платежи наличными&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="Если пользователь нажимает кнопку &quot;Платежи наличными&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="Если пользователь нажимает кнопку &quot;1 одноименная услуга безнал&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="Если пользователь нажимает кнопку &quot;1 одноименная услуга безнал&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="То шаблон &quot;atm_attention&quot; отображен(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="То шаблон &quot;atm_attention&quot; отображен(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="Если пользователь нажимает кнопку &quot;Далее&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="Если пользователь нажимает кнопку &quot;Далее&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="То шаблон &quot;atm_total&quot; отображен(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="То шаблон &quot;atm_total&quot; отображен(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: initCashPayment&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга (Наличный расчет))" name="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: initCashPayment&quot;(Сценарий: Выбран ПУ, у ПУ 1 услуга " time="0"/>
+  <testcase classname="Наличный расчет" name="Сценарий: Выбран ПУ, у ПУ 1 услуга " time="1.388"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Пусть страница &apos;Платежи наличными&apos; открыта" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;МТС&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="И пользователь ожидает &quot;5&quot; секунд" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="То в логе ПН сервера присутствует строка &quot;POST параметры: [billing = &apos;mob&apos; , service = &apos;100&apos; , provider = &apos;200&apos; , serviceGuid = &apos;100_guid&apos; , providerGuid = &apos;200_guid&apos; , operation = &apos;init&apos; ]&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь вводит &quot;3693693693&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;Далее&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь вводит &quot;500&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="И пользователь ожидает &quot;2&quot; секунд" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;Далее&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="То шаблон &quot;atm_total&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="И в логе ПН сервера присутствует строка &quot;servicesPayments/edit.do&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;Оплатить наличными&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь вводит &quot;3693693693&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;Далее&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;100&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;Оплатить&quot;" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="И пользователь ожидает &quot;5&quot; секунд" time="0"/>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="То в логе ПН сервера присутствует строка &quot;PackOfPayments/confirm.do&quot;" time="0">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)
+	at ✽.То в логе ПН сервера присутствует строка &quot;PackOfPayments/confirm.do&quot;(Touch/Платежи наличными/ПУ для платежей наличными/1227.Оплата сотовых операторов.feature:31)
+</failure>
+  </testcase>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Сценарий: Оплата сотовых операторов" time="0">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)
+	at ✽.То в логе ПН сервера присутствует строка &quot;PackOfPayments/confirm.do&quot;(Touch/Платежи наличными/ПУ для платежей наличными/1227.Оплата сотовых операторов.feature:31)
+</failure>
+  </testcase>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;Напечатать чек&quot;" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="То в логе ПН сервера присутствует строка &quot;payments/printCheck.do&quot;" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;ОК&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Сценарий: Оплата сотовых операторов" name="Если пользователь нажимает кнопку &quot;Завершить обслуживание&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Пусть страница &apos;Платежи наличными&apos; открыта" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь нажимает кнопку &quot;Платежи наличными&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь нажимает кнопку &quot;Нал люб&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="То элемент &quot;title&quot; с текстом &quot;Нал люб&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь нажимает кнопку &quot;1.CashPay true puTypeSum=0&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="То элемент &quot;title&quot; с текстом &quot;1.CashPay true puTypeSum=0&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="И в логе ПН сервера присутствует строка &quot;private/payments/servicesPayments/edit.do&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="И в логе ПН сервера присутствует строка &quot;POST параметры: [billing = &apos;Cashpay1.t0&apos; , service = &apos;0001&apos; , provider = &apos;CashOnlyTruePTS0&apos; , serviceGuid = &apos;9999_1t0&apos; , operation = &apos;init&apos; ]&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь нажимает кнопку &quot;Далее&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="То шаблон &quot;atm_total&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь нажимает кнопку &quot;Оплатить наличными&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="То шаблон &quot;atm_input_phone&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь вводит &quot;9054564545&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь нажимает кнопку &quot;Далее&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="То шаблон &quot;atm_ndc_input_cash&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь нажимает кнопку &quot;100&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Если пользователь нажимает кнопку &quot;Оплатить&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="То шаблон &quot;atm_ok_self&quot; отображен" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="И в логе ПН сервера присутствует строка &quot;ЕРИБ REQUEST: doConfirmCashPayment&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="И в логе ПН сервера присутствует строка &quot;PackOfPayments/confirm.do&quot;" time="0"/>
+  <testcase classname="Сценарий: Подгготовка основного платежа" name="Сценарий: Подгготовка основного платежа" time="1.225"/>
+</testsuite>

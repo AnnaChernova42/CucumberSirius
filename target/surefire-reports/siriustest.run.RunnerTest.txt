@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: siriustest.run.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 106, Failures: 4, Errors: 0, Skipped: 14, Time elapsed: 158.181 sec <<< FAILURE!
+И в логе ПН сервера присутствует строка "ClientType = 2"(Сценарий: Авторизация в гостевом блоке (успешно))  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)
+	at ?.И в логе ПН сервера присутствует строка "ClientType = 2"(Touch/Платежи наличными/Авторизация/1084. Авторизация в гостевом блоке (успешно).feature:28)
+
+Сценарий: Авторизация в гостевом блоке (успешно)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)
+	at ?.И в логе ПН сервера присутствует строка "ClientType = 2"(Touch/Платежи наличными/Авторизация/1084. Авторизация в гостевом блоке (успешно).feature:28)
+
+То в логе ПН сервера присутствует строка "PackOfPayments/confirm.do"(Сценарий: Оплата сотовых операторов)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)
+	at ?.То в логе ПН сервера присутствует строка "PackOfPayments/confirm.do"(Touch/Платежи наличными/ПУ для платежей наличными/1227.Оплата сотовых операторов.feature:31)
+
+Сценарий: Оплата сотовых операторов  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)
+	at ?.То в логе ПН сервера присутствует строка "PackOfPayments/confirm.do"(Touch/Платежи наличными/ПУ для платежей наличными/1227.Оплата сотовых операторов.feature:31)
+

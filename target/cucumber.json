@@ -1,0 +1,2266 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: ru"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 47675596989,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Авторизация в гостевом блоке (успешно)",
+        "description": "",
+        "id": "платежи-наличными;авторизация-в-гостевом-блоке-(успешно)",
+        "after": [
+          {
+            "result": {
+              "duration": 5266630023,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 11858400007,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "страница \u0027Платежи наличными\u0027 открыта",
+            "match": {
+              "location": "OpenPageSteps.openedCashPayPage()"
+            },
+            "keyword": "Пусть "
+          },
+          {
+            "result": {
+              "duration": 4422578207,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "шаблон \"atm_cash_menu\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_cash_menu",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 659067730,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "в логе ПН сервера присутствует строка \"PaymentSource \u003d 0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PaymentSource \u003d 0",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 24042378,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "в логе ПН сервера присутствует строка \"cashout \u003d 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cashout \u003d 1",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 23708484,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "в логе ПН сервера присутствует строка \"FormFactor \u003d ERROR_ON_GET_VALUE:err_code\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FormFactor \u003d ERROR_ON_GET_VALUE:err_code",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 22889467,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "в логе ПН сервера присутствует строка \"cashin \u003d 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cashin \u003d 1",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 23092980,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "в логе ПН сервера присутствует строка \"nfcReader \u003d 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nfcReader \u003d 1",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 23724037,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "в логе ПН сервера присутствует строка \"PaymentAuthRes \u003d 0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PaymentAuthRes \u003d 0",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 32590273,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "в логе ПН сервера присутствует строка \"PaymentStatus \u003d 0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PaymentStatus \u003d 0",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 23468239,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "в логе ПН сервера присутствует строка \"printer \u003d 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "printer \u003d 1",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 23213103,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "в логе ПН сервера присутствует строка \"system \u003d cash_pay\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "system \u003d cash_pay",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 23655206,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "в логе ПН сервера присутствует строка \"terminal \u003d 222212\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "terminal \u003d 222212",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 22419565,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "в логе ПН сервера присутствует строка \"PaymentCurrency \u003d 0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PaymentCurrency \u003d 0",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 24187650,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "в логе ПН сервера присутствует строка \"PaymentProvidedAmount \u003d 0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PaymentProvidedAmount \u003d 0",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 22667422,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "в логе ПН сервера присутствует строка \"NotesAccept \u003d BNA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NotesAccept \u003d BNA",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 24064881,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "в логе ПН сервера присутствует строка \"DisplayType \u003d touch\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DisplayType \u003d touch",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 26032508,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)\r\n\tat ✽.И в логе ПН сервера присутствует строка \"ClientType \u003d 2\"(Touch/Платежи наличными/Авторизация/1084. Авторизация в гостевом блоке (успешно).feature:28)\r\n",
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "в логе ПН сервера присутствует строка \"ClientType \u003d 2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ClientType \u003d 2",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "в логе ПН сервера присутствует строка \"cardreader \u003d 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cardreader \u003d 1",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "в логе ПН сервера присутствует строка \"scanner \u003d 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scanner \u003d 1",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "в логе ПН сервера присутствует строка \"PaymentRequestedAmount \u003d 000000000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PaymentRequestedAmount \u003d 000000000000",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "в логе ПН сервера присутствует строка \"Пропускаем проверку токена\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Пропускаем проверку токена",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "в логе ПН сервера присутствует строка \"ЕРИБ REQUEST: GuestCSALogon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ЕРИБ REQUEST: GuestCSALogon",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "в логе ПН сервера присутствует строка \"/CSAATM/login.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/CSAATM/login.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "в логе ПН сервера присутствует строка \"POST параметры: []\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST параметры: []",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "в логе ПН сервера присутствует строка \"ЕРИБ REQUEST: NodeLogon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ЕРИБ REQUEST: NodeLogon",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "в логе ПН сервера присутствует строка \"postCSAGuestLogin.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postCSAGuestLogin.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "embeddings": [
+              {
+                "data": "iVBORw0KGgoAAAANSUhEUgAABBAAAALLCAIAAADPLuZxAAAgAElEQVR4nOzdeUCUdf448PczwxwcwyUwCAgIooKoIJokhWhhmGgotSGVQpfYN4HdgqUNdm2xjbDfJroV2pboboAVioZJsSmiKOYBXqAiiNyXcgzHzDAzz++PZ2Z45ng4FMXj/dq+fpnn+Dyf52Geh8/7+VwE2eIHCCGEEEKIYnMcWp8ag0QQelSwxjsDCCGEEEIIoQcXBgwIIYQQQgghRhgwIIQQQgghhBhhwIAQQgghhBBi9JgEDNLstcWEkPrvjG90fX7teOdoWGfrVRke/C/skFT/xrUdsWsvBqw87xtWnV2pGDZtcWVbbNjlLZfuPAUVafbaYmKrSPVRlCIsDtmnyuTZekJYnHJ2JOkoai51ZO+qjlh5fmTbP1Y0r+pDhnbrzT0fEteYWynT3ECWG1dTKNbcJa6mRGPJqK4A/WYvJhh2FJ+tj1IvF/dlJ152FhYTwjNBiW1XxLqba27PdLMwpiMr2XF1uufIlyvX5idezW7VWKJne6YHxXAPkNE/BHTyM4Lrxqi1a0v0eWpf37XV2drfCjRCw94aD/XT40EkPlvvJayg3QiKwsTfbeM6OscxTwjdF49JwAAAAB/OIlv8yBavlCm3lkY0lo13dobh40C2+Kn+e/Lkh8ZgLYxYwNW3qaJwd1fI9pmF+2YXxrFSVlbmturbSkV8tj7gqWu5NjYhnneYwtiqOVQd4HkyIK69hGcWlToj1uf+HXoInWcbI5Y2lox3Nh4R1K13fMZGH1HUU5dTLtEKo7W30nc3ZBzRLC+2NsTuEI2q/Kn/iC1+ZItf7krtu0bceith7c1m5SdF4WeXVtdZFbb4kdemBZy9FvBZl3jo7fXfLIzplO24/GSxWW6xH9niGdF2IyBJWbZgWg4AALKyXZVLv9YotevfnulBMeQDZPQPAd38DH/dGNW2hS2uubJ02pUWP7JlTu7b3IyVZVGHH9aY4W6eFficeejwfWxT1ohit6q+7ZeaE74WbImzMB/fbCF07z1OAYOSQYDfBLjcdeU+lonvVldH+se9s6Ntg8z0rmYFJDoH8AEA+D4Twtras88yv08SdyWsvQlrPAq3WjvfWQpjqvPwdd8kecS++TWH3LaETfB1M+DfnwMPR1zbtevcyGta0AjwDbzCJm8J6vkgezAYKMtv+gVg16Eurfdzpz6u3nL23lx/sbgZuLZt6s99ZbkDzy01cwYAM0HAUmiplHYOtT3TzcKQjrgrI0nySbTtdDMA4Ie9bQe7WwtbmZcDgLgvd5fI3FOgmW3m7dWYHhRay0f7ENCbn2GvGyNZ/rYbV9522bKUzwcAYNn6OWQkG2+Pri+8qxhx3NzNswKfMw8hg6C4yb5f16RfAgBp9uYbkDwpzGa8M4XQvff4BQxiaf6+dmGITcDgHS4r2XU9aG4xISx2Xlq55Sz1okuUIiwOiKsO8/tdc7lqe2p52PX0szLdal/NBg89GXGXp3uqGwbUU++TxJcaAzzPRDC1MqKpOdS8C2w2vmwykvPrBDDnMf1aFSU7bqRNmpy+2cKZYYvhUrhDzcWNEUvPEMJiW7/Lsfv6VAWDnoxNvQkZbhFuBnr20WxToby84r7sROpinvGNbizpojbVuv6DH4e9yJ1nm6PCzhDCYmLu5ajsHipjzfsqJkbdBrj5pLCYUNY+i1KEFdlnO2LDzhDC36dHt1wRg7iyJcLvd8LzXNgO0XBFJdmVfdWa3xn9hwaQle2imp0UOy+9PviWt1uUsakmJfGq79Kr6ZeGLmGMNKudlbe2xFUErL2ekN3VPLjv5Yzijtiwc7bCYls/9bEYr/AocZ19AOpUJUtxV/bW3hdCrIR7mnO1WgmuMevc3Fimt3XQSG6c613pcRUB0dUZh8WaaYhzcyW2Gn/djbxCOL/kdtUAAMiar4PQjWs+1PYaaDcLQzqXRWlgNn2SaodJPF9ov1LHvByg+brca63OHcq8vRrTg0Jz+agfAvrzM8x1Y9balbEbwvwE9FcDtn42L7e1llyG5n0VWs2oBtso6nsgMDxYqAO1hehpmUb/6irKdlx2Vj2QmZIa+vum71kBoP/m0r61mfYdjqwsm/qDdSYosYVeO6HvoAAAnSfqI5aeIYS/Tx9sbMZ8R9d2xK69GJFYE7W2IiruatAm7WAegY31xmT44+a2K8X1sXVOW9aM6E8zQg+7xylg+PgCISwmnE6nSOzz0ybYKpcqSrZeDjkh2PKbH9niV5ZomP38YJOJTp7FluInyJYnS+I4quWKwk1lT2YbxO57gmzxK0sUXLmkU6gRd2k2eCiPbJ2QW+xHtvg1pVuOPt89uTs6Z3/IVL1Ap6jZ15gxxylqgb7yNwCIRdkf9y507EsJuxiw9Ly+ZsfDpXCHZGVHpGG75pItfldSjQujrqVTLadre3PNbAN4bbFh1N/pq7SojGKZddGPbJn1ifKjNDfmUmybTf4ZP7LFK92z48mwer1lyhFTXLkkC9k6h2zxI/daNceUxx6WAYDtSvemdEsAp5MtfmSLu+rt0e3YHdKo7XPJljnpNk0Ru1vyr5tlFD/RkW3bmVSRMFSDCkXJ1svuO1iD35nifjHDoeFsc1C8IuFnP7LFr+bQlBBVUbWmjhuW6JywaVphHHt9WO1w72KHz2rNvqvTVzaLlzplJwudT1ROXKq+kp0J23pDts5pbpmfv1Y2gmONivjKCRD68Km7T3z21qdgH5tqG2HdmX1C8zCTJmyMkyXs6LmDg/PNbHZusI3a7J67wTg/+gKtqKco2VrXucBMsxaLFfC+x1e8Ot+w+vxD9RsrnXLfV2+gd3s1rZtFfzrNtSIA48GQw4Y/HaBZrGBaDgC2ngLdovwQ26swPSg0l4/+IaA3P0NetyHV9e8BgfMkzYU2XC8YKKmV2q50J1v8yJ+dVPe+X4JGG0WtBwLDg2UQdQurt9fSm791IPY3B98RJaWf3meF/ptL59ZmeM4MTVG29bL3Loja+yTZMjd7JV8dGDDf0dDJs0g5NJdsmZMdMhD71MUtQ5yauCdlXXlnmHvGJuf0rTbi3e3TFwmwsY0urzUun9TdCFjXHpJo6/uAVIsjdI89TgGDslnzk9lLe6PmXs2m3mjWtm38mLslWTjdDADA3M8u5a2eD3Yp36k4+xjbAgCwbBc7bFzT88Gurs5LzbHbDD7f7BxkAwBg7incslbr7YI4/4hIrN3gwXy6TnGf72lXeGluxlK93RJoyRW3p1w2jw0RDPdQEqUIT07+DFK22nkxbXpdlA1gHuSQnT2z8NDMBLgREHOreVQp3CGDoETVFfObEAa9hZVSAIC2gaO89o2fKSK2zyVb/MqSefRoTY9L7RtzDVM+tHbmA4CB1xqHmHM3008M1fR5uIvM8l3rEGQDNZe6CusMpi8Y2H6pf4jUfIMsppsBgMH0GbxTSQO2S/kAYO5pGbZgIFc3bhzMdnPUx6TGdyZawGc4tFgsA5CJJdppOM/g8ZVnZPZCW2vJ9SGyOYKs1rZERXWFbXdPWGxk6yiISnWLqbu5UVWw9n2Zqn8z8AqyWjiCY42UWFaWfTPhiEnCYqpxiyx/T5MwzMLXzCzkbc4vO25rdSvi+zhu7L65Ref7MNzvlBuyVVlnZe4mTIjm7tncTqVcs68yrNsmzFEnX9e7cy8LUpJtbOt6O/mDF59pewDQe7MwpaPFHKCmVc+Xlmk5E63tmR4U2svH7iEwwvO9lxgeLJRWSckCji3TriAry25M97NX9eJgTGqED+pBDDcX0609Oq23Nn4s+XOiS4gjCwDMfcxChjwotVL1h8zAK8w1/eWeP2Yz9za53rnlnGWQjwEAgJkgKAjSzvbeXY4fUXxByFpeS5tV2Bi/XEPowfU4BQxKLNvFjikh7bG7u8QAzZc7f4Hbq2eqa65PLvoaoFuh8zw1mO5jCmf7z9SJzoO5r6e+hAEAFGW7umypdr1KRgFrTH7Z1ZzfemcNVWX5expaXrYN0V9qoRMktPg1JfPSn7qYwtT4WwItYBnmQxUEWAErbVpy20taR5PCHRscFOXCB6plzbUiOKII+VDoZQYAYLvYNjaoZ8vhvsG1YOhMe+vWXNl1Hiymqy8Fn+cbBOqS+v6o06pf4uAhhtVZXBPgeSZo262yy6Karjs7NxbfFFqAZFrdzPCd0Xtovp9txhrF+qfORx0a4t36ANxhsUOZ1ebLnb+AVYiP6vbnG/r6wP46nUT5LPM7PxaNsnKvLOqEcfrxmbHUpai9lb6HE7vUjA/gu9hh9uXWQu0Xnyzf9x2BoWHSCNla8+CyQgwgPlsfFiXbuEb3LXhPevQNeN8pwo3r9bZ79qKuRWGNZUNtT9G9WfSno61LVgMw3VGn9Mm0nIn29kwPCp3lY/YQGNn5jh3dBwKA/geLcvu63pYZfL0Bw/6o04TwVOwlm5LttF4czEmNLp8MN9fIbu1hiCtF+8EywFP7D/dI72gw8FpgCid6rzAdQAItmguEQNxxbh9lrW0J8TB/TlNK7sPZ8wah0XsMAwYAYPFt1F0SFaoaYdp/2yfo/pnp7JaDcnvGNwriSx3Ni4Remsfyip5Z8bYsZeZJQlg8Mer26HJaeyt9D+fPL490BAbbxY4pb/V8sKOjWe9qHggBYLAEZACgHRoNk8Kdab0VtvhSto1jyU2N5gG2joYAAufBIg4LQF3yVlw5extC9LaFGCTuHvz5hfR5qt8gUwsEHV23Ylc1mCfPurLdJfZtu5BJw+9xJ/R+ZxgPzQ/aPLvjtOP07EvOa5vvrsHV0FlqWuSkjpNPr86/NweiKCv35pZsdQhxUz5zyvKbfpnhEEQ1OPE0jZjRm5Kr8+KTL4iNho27h+0iMixp7tabp6Azct5gSLk/6nTIPilc6ky5bBq2QFmA9g2xXXiuPv8S8/Y0GjeL/nTA1lEAIKpRl8glsmYwtuUxLmcyzPZMDwrd5WP1EGA43+FNMV4Ht0u0hm1tFZcAx9dtiHhJ3wOB4cGi3L64/QUfQ73x3gvp88hrsyPaKkO2qtq8DZXUKDHeXGNwa4slCgAWX/d7Mqo72ozN+AdlivE669v5VNPQLlF+vknsYqM7yegjTpa/+UbNhy6Fmyd3xtwYcecThB5uj2fAIOusA7Ax4APYupnNhvaS4f/OyWou9cIC46fczGZDR1mlvk0ut+dKLIJ0GzxcaoxIkkf8Nv8O+jDUnGj/ZYZDmN/If00svg31x0OfScYhIGlWPd3EYikAx1z7b8+QKdyR5rPte9rstyRa2Gr99Z5k/AKIagZ7uyrE3TCbTwAAiEX5ufBCkIAeudm6mc2mb9/VW3gCQjzvovnU9f5dYBnmxwcAEPeX3ZspIGz1fmeGPLS5o0XsLo+E7qqI3T33JEuOAiFMPHJTM06OFgy/p8rdluDFXdlbe+HyDW9l+eb8Hy9DS3ZHiU4piu9jlyBu+/SOjyORwQKOLXDDdtFPdtYnAC+kz8tdyQVg6bwd4PKH2p6OfrPoTQdgEu8FEJWpysfiStF+aytfT+blTIbcnulBoWf5mD0EGM53WGaCkDWc7FyNrrQ1h1v3z3AIGuL09T0QGB8sANDVkfG1TcRi5gjEzCRig4P44zpqXIGhkhqloW+uu7y1zacInoPuMp1WgiO+o2VXznarOxHRKX8dZhZbsic3J1VEbKqJim41z5qWoFObgcTFtRGHLFPWCvietls2SGI34yQM6LHwGD4LFDWH6zfuNvkkzMwcADytNoZI/xhXk98KACBu7UjYNHjzd7ZJOgEAZGXZVVF7TD4PM+N7Wm0M6d+Y1FjSpQAAce0t9XjMzaaCwRph2uFKsm/yE50iPLXfMY9gsBdx4Z7O2WGmXlpLtXYU96QnttUofxbl5sJzS5V/VrW3NDOL+pBI2dZWAwBicfaOpvkf2gaYjSaFO2JuyhNC/5VaAFA0H76VC7D/RK8YAGwmxL7Vn/Bxy5UuAICafTcTKq02hpgAyEp21Hxq45Sg1W7Y0zIhRJSifPEpK9xVv2u4/tnD5N+a8xxIyiplALKSHR3mYaZwoo+6DlQkmVs8FmPDK78z9YWttO8M86GVugbutInUCPjYpIe0J3zW0SwGoL72W4ceRJ/nHAQl+dSQONL8TdXqEvydfUPEZzsy2mz2XaMVbq5NX9umMyEDAADL922XT+bQ9h3miLL8XS2qjrw9ubv6X357qOGAYIogbEa3ust1zYn2o3NsAoYquTLcLEzp2FhErYFPd7TVAECXaMumpucSrXyBeTmTobbX/6DQv3z0D4HRXrfhfkEGQRsmBxyqjMru6wQAUDQfrgmLkX2y2VYn/2r6HwiMDxZQlGyru5I8MWTogSKmGAeA8m06c1LDf8O1nxXD3ly0W1vPc+ZS81CHc7Te+CGRskk5QFxnZW/JCA5ac7a3GahTq994yDJljRmf8Y6W5u8QBaVO3vi+c/ou9y2LB+OnMflb8CgQ92zZ1OSb7BhkBgAs3w1OIYdujn0jXoQePI9TwEA1pBaeCdohi/h5RoKycM8N2e51ZOXAxueLCWHx9LXt5gsM1dW1nYcbw/x+J4SnQnLZKb/NiPVUbp+9uDf2mZOE8Hev+I7pfsZ8AAiZmh2tp19y876ri/JtYhfc0Wur2q6ME8YRC4Ybso1vErEWtqy9GLDyYsDqWvEG7+wwpsOxvKJnFAaJYldeDFh9o2TxrPxoE/7oUtBHeWEHW24oPz5/U5lBP8f8VNg4r5iYezGhbkJ6us20Q825rQDACtg0J9enM8SvmBD+HrSHs2WfW4gNlGw9FXZCkLXdTmf0CX5YmmcCNAZ4FhPCsoTr1iezHe6qf7ajMD3LtGTdKVu/qrLFjgnvO38iuZlNvez3tM1INcxdd4oQFk/fcZev+anvTH/C87TvDNOhK1uokXwJv6qyBVOz79WAfdyQ7bM2mrYGzC0mhL97Rd9ypr7GzNuHJXuEdd2cLCx2XnrzylKHP9/V0WX5expgg43GeD5mFhEbOLoTMgAA8AWxm5yGKrxqMJg+aWDj6quxO6ojVtbVvO05THdVviAhY/r03MqguJqE6MsRJyxOZtsxl1yZbxbGdAyCkj2zJrUHCIsJv8qylbNUNxfTcsbzYtye6UGhf/kYPQRGe93oHK2zD0/zPVHpJSwmhOdCcg0SjqsfyHowPRCYHiwlW08+ua33VNJ5reeS9izyfEFEsnlhRGV26xDPqBHQflYw3Fx6b23d5wyPMOdLdlUy9Rxi+UbPKFwLGdEXA9ZeTzkrU/21Yr6jZ0yM9eyImFtMCM8E7FDE7psW4QhD3tGiP64+P5lq3TT3cuxhbKOvoSb35gcweaO6stHMIiGR82li84M+FSxCd40gW/zGOw8PJlGK8EKJnkYICCGEHlwlW4tTJmk9ukUpwgvws9YgrQ+omn0VEZLJhaN6a3OPcpJdMTmGc+jalBEM6v3IsTkOrU+NQSIIPSpwRDCExoQoRe/gKkFTm3ZZj/jt+AN7OITQ/dGXn8vbuH28ogVF2aFbYp8JvjYsEEuvXJfCDDPbxzBaQAjpwIABoTEhSGjxS3hkD4cQug8UJbuanZNdAsYrXhDLOlu7tqy9uf+cBKwNn1tqd3LfEH1LEEKPEWyShBBCCCFEg02SENL0OHV6RgghhBBCCI0SBgwIIYQQQgghRgRJkmObIglAqP4d+WZUJrR2KWw4vqX0q/0NRRPYxpsXJEV6vKKbAgx5rDtbhRBC6BGw/i9/A4Cv/vHReGcEPVLwe4UeQ2PW6Vld/h78dwRFckK1q9aGVzuu/uv819lVP7VLu+ZYTHtrxpoVLs8DgEQu5bG56n1JEghiqLBhiOMPG2wghBBCCCGExixg0FPspqIBUica0NmeXmrvlN7ecWH3NxVZ13puOhrZ/MV9/Tuz37I3tgOAQzcKPj//1Vwb7w/mxQo4AlDFGSQAkEAQIyr9a22D0QJCCCGEEEJDGPsaBtAMEvRGC5qUmyhI+Q+V+7Zd+Ka4/bwRm7/GdWWs1zpvGy8AuHSrPK3syz01v4ikolZx+4tTVsyxma1xXAJgZKV/rFhACCGEEEJo5Ma+hoEEjcL48caSS+3laz3CDQ30jCytLrgfbyrZWvpVbsOxAYU0UPjEu7PeWuG6DABa+lu2X9iZcfX7G72Nrsb28TPfWjcr0ppvrdUCChj6TjAFBsRQKxFCCCGEEEJKYzlKkrrjsroY3tDb9O7RuPUnPnjp57UFtb/p7kIAVHVV/ako4aVDb/xQ+8t0E7t/+SbtX5G5wnWZjJRllP93+YFX/la69ba05+2pLx8I/k/iE/HWfOszrWUv/xyxrSxdKynQiQAIVa50skrS84wQQgjda22lOclRgV6urq6url6BUcl5VRI9W9VnhieWaK8oTXal8QqMSs4r72ZYq5JcCgDQlhOpXuI+Pzg8eufRKvWe1Epqw8GUaJ/bciJdXSNz2uirBz+qSEqTA5NLtQ6mg9pP55AIoYfA3dYwqFsf6X1db82fsGHmWzsqdh9sOnaitfTFyUEx3lEzLD2otSJp1zfl/91x+bsKUbU9zzrO863/m/2mk8AJAA7XF6WVfnWg8TgQxPN2T0d7vf2c4zMAUN9T/+WFb3ZV5jT2Nlb31L44deVEIyHT0Slay1UZJtRrSQCSVLT3327pa+0Z6GWz2OZcUyvDCaZcgQFLeX1IILulIg6Lo52WxpGUabIJFo/No/YSSXsMCLZGwyz6XqrlLILFZ/MAQK6Q98h69R6IIFgcloE6S2pD7KJ7IAOCzVX1Gh9MgVT0DPTQU+CwDLQTBAAAsVwiU8hYxGCcOaAYMOGYsGlL+mT9ClIxuA1Jyki5gGtCACGS9rAJ1uDVIEk5qRBwTbSO0ifrp9aK5RITjrFuhhFC6CFUmh4enyFVfhBVF2TEHK2Gop3B1hpbleeln8ryOhrvu8SUMSVRdUFGTEFZ99GccIfR5EDaXnHq4KZTB9MC0wrStY575+pzosIzqsODxyg5hNAD6G4DBnVXY4LW+ZhS29Mw0dj2Dc81K6YsTT//74yrP3x97fvDDcWR01dHzlh9pqV0S9n2I61n+SzDMOdlf/Re/4RwLgBU3L6y7fyO7OqDHdLuOZbT1s+IXOOxmsviiuXijMvffVW+60LHNSu+5QaP19/1epOKFoAxWtAzWKtWn4qqrpqc6wd+qztW3VUtUyiUQzYRwGNzHUzsPSd4vDItdK7QWyKXflCcfL7tEkEoQw6xTKog5QSLAACSJIEEOangsDh8NtdHODttYQoAyBXyv5Wk/N58DoAkCAJIkCikClCQJDXEE0kCyWax+Syeq/nknYH/YhGsW+KOdwv/3NDTQABBVYOI5VIABUmSJBAWPHNLvrmXtecLrstmTnCnTqFdfHtD4Z/re5oI1dn1yyQkqQBC1USLJOWkgsfmclicF1yXxvtEa10mkVQUc/SDys4bLEIZaDxhO+dz/491L+jp5nN//z21b6CfOpQCwMXMadvCFAu+uXqbwvrjn539l0Quoa6kgiTn2Mz63P9jDouTUZ61p3IfSZKE6kDBLks+mPtH+iH+c+X79AvfkgASuTTQMeDDeX/CgAEhdF81HoNzm6HlDPQ26d9g8jJYnjf6dD0CY1a5zo8J9XbgAXSXZ8aEJhXlFLUFh9JK7pKSzLQGgIa9RZuWBGtHDP6pJTtDrQFAUpUZtSSpqLxKAg48nbX6RPxYleQNIOmuL02PidxekJpTHhzlMfpz0CEpTY6ML1KFQdahO6tClT+35UT6xsNQmUIIPTTuuoaBVh6nvbiHDknn2l+ibIysE+bFeFvNTpr/wUq3FWml6T/cyE8sTfu+al9j3+32ge4A6znvzn4rdMoLAHBLfHvHpZ3fXMmq6qlzNLR91+O19V5vTjS0BYCfb+RvO/91fvMpYLFWOj4b6/2Ov90CALh0u0IiE/vYeA+dMa0lqt4O5Gdn/5VRkdUv6weA0Ckrgic/Z2tkLScVVV01/6nYc6a19HrnDRZBzBV689m8j3wTgnJf7JB0Uu2Z5tv6vDL9JY7qfb9MIWvqbf3u6vc3u+vteu2UF5dlsNH3z8v2v9zQ00IddqH9gpenrmQRBAkgV8jb+tt/vP5T+e0rhhxDahcbI6u/zItdmfcaoQrFljkvWer87IB84Fzbhf9U7LnRffNc2/ndFXtivKP+b9YbACA0sv7r/LgVB16hAgyCgOWTg55zWswiWCRJsghCIh+oFdXtLM9q622+1X9b91qZ88w2Lfhwae7LvQO91O+wpOmMWC6hKj3onrL3/YPbyk/OfE5FTVwW97/PfUWPFgAgyOmZkqYz/73yPRWuWfDNkp6Io+oromZFXLh1+bfao0AAScIcm1mxXuvp+3ZKur44/+/WvjYAWDllWdIT7xlzjHUzjBBC98rpj6EkSbuSdmzwfKM2+6o+mHoEBvsmFQkEGs/Z7oKMLIe4xMDMTTvz6oMZqw8kEgmAS0Sor/ZDetgsmDr4xifH5C3ffKqiLcrjrkvyVOXC3aaCEHrg3XUNA8Pyqq4bdX1NhS2/l7Sfe21K6PrZb3hazvj6mW2htQVppTvym0umm9j9Zc6GNz1fFXBMAcisqz98ceGb4tsXTdjGka6rYr3fmWU1EwDO37qwtXT79zW/9sh6FljNipoR8ar7ywSweqSif5fv3nbxGw/zqfuCvzMg2PoyRmgtUVeGAMBfT37y3ys/UMuTn/zLK9NfUm/pYTnteefAPxV9+FN1vrrQPIFvYcWfcFvcQSUQOiV4+eTntA66bHJg4N5V9KOacU1tDK0be5qpQz/ruHCp87P0Xf7gFvLMvlUKhUK9ZKKxrTHHuHegj5rLIsIj3MdmNgC84Pr8fFufmMIEOakYIAf+39l/eU6YvtDeDwAcTOxMeSbdUhFJAkmSr7m/PNfGSytv/vYLXvjpFYJh1KoJPAsem9s70ANAkADNfa1nW8r87ObrXFXCxcyJmuyPJMGMZ2prLNTahucelTcAACAASURBVEWwXMycSQDqetsbTxQaKf8ocVgcF1On36iGYQAOJnZaXeG/vPBtS18rQRB/cFuZ4vdXvVlFCKF7pbEISpKAxQHfv4P7GjCaeM+OJKk/mpZe4h6XuZBejVCft7MgMCY1cr510fa0vPJwrTqAonhf13gAAHD3T/4xJ9ybp3/tMLUNAACgFanc0TmUJkfGF4F/aqpLfHzG6PbNeNE1AwCAa+W+MDgqOibYg7kBFkJo/I1Bp2eS/q+qN/FcG++fl2e967G2d0D8cdkXyw+s3nFpp0QhCXIM3Lts93cB/9z7/H/+6P2OgGN6rPFk6ME1rx6NL751+Tnh/Oxn/vVt4FezrGY29zX/7dQ/Vvy89tvKH2x5Zp/4vH8g+LvX3FcTwNp7/cCKvFc+PP25WCYuu11+uqVUKzNMH9WF5ZzrP1HRAgAsdvSnRwsUNsH6YG4sCdAz0EstUZAKAJIAAoAkCJCTCtBhZ2y7yOGpDkmHZh5Iqp0TCSCVD2jtYsQxCpy0sFPSqV4iJ+XKEjkACSCVD/Z9e945cLbNTJJq4ETA3ut56l3opzqgcxQAmGU1w3OCR4e4S3cVAJxru3Bb3CE0slYdFn6uKdC7pUwhV4VdBJCkXCHX3UYB1MWhmiQpSFrm5KRc/YVRaF7Dqq6a3RXZAESgY8A/FiTqPTpCCN1D5z4DkgTfv4PPn+9RtKDqFeyxcHN3VE5mlEaZvzwvvS1iXaApWAevW92WWVTOmExFUdKL8yMz9XaaHoqku/5ocnxaA3j53m0JnapccInITA91ufNUpO0VBRkxy0OTS0d7Kgih+2kMhlXVmOCZAABo7G3ul/VPNXfbFpC6ym3F1tKvchuL1p1Iyq36eYP320sdA8OnvQQAVd1V20p3ZFUdaJV0zDZ3W+cZEekezjcwHFAM7C7PSr+ccaajwoJjtn5a+Abv9e4W0wDgdMvZz0vTf64/asgyEPIEANAo6T58s/BJ27n0zOgOukrXM9D7eelX6q1em/6y3vOyNRZGeIRNMhmsEiaBpArr1It8vXtFe719vesGfYm6uMxUG/Om52tzbGZpvftXt/LXOsw8mznnWs5Tb+ivdVTJSQXV4ZgEdZYIUnsnpb/Of79fJta7aldFtiXfLNZ7/QfFyVRiv9UVfTDQa8LYIoik6iIYV6qn4tY5b6rpmtb1U5CKv5V8IpFLfYSzP3sqmd6vGiGE7pOWMwAA7mvux7EqDsYvL8hLLdgZqvwrIynJTLOOKvDmAQDPNzwGQjNLIjfRWx0N9mFoK8+JD01Kis/xH+z2PGStguqNPsUlIjF0VL2ltakrF3YmefPgDkY8UvapAJDUl6TFRG7PiNkZWjQmnSoQQvfCXQUMpLpQqFkmPFidv6n08/dmr3vDY80i+6cW2j353yt70i9mHGosPtFW9vLk5yM8w880l351KaNCVGPPs/nzzHXver/lYOwAAAV1h9PK0g82lgBAsL1/rNc7z0xaCAC1vXVfln6dWb2/e0BswTFmEYSCJFkAZmzOydbTMoXMgGWgzonW5AxaihpONPY2UWvMeWazrGYwneDf5v+Z/pEglA2aCAKY2vZMtZgy1WKK5jKqxwTjnA+OAgdHgcajmyCo0j+9V4iSOc+UVIUTndJuiVxiZGCo2kzVzZkhb/OEc/QurxXVH6k7tsw5cJVr8D/PfdnW304A0dLXeqzhpFYDKhVlJcGQs/JREYGe6IVUxlAaO2dd3Vvc+LuTwOGLgM264yYhhND9QPVyvoctkdS9giVtVQVpUTFZ8am/Bm5dYgpU9wVpGSx0TRrcOqMg3len6zMA8Kw9whOTMpckFZS1hTuMoifCYAugu2iQJClPj0rMqHaJ+DH97sIOAACeulNF9Vh0qkAI3Rt3FTCoiqfay0UDPbV9LTEnP95flR/t9fYLLsFr3MOfd1my/fy3317ds6Pyh0P1hc3SLgOC9ZrLimiv9XNtvAHg8q3yree376n+pWuge94Ej6gZa9e4hxmwOGJZ37eXv9tRvvtab5M1x2gCxwgASFAAEAogeQa8G6KbTX2tk0zsdHOiG8+QJBQ1nFCOUwRgbzLRnDfSelll032dwu6wV0n1Mn6kvehIEgiCUMcMdAOKAVVOgEOwNd/EKyM43Zf6Q9tXlacgFc9PDuSyuU/Z+e6rOkgCEEAU1hczBAyD+WSmjF7YmuPAkrQgTr13najh07NbeAbcrQEp6g4PCCH06OJZuwbHROVkxYtEVFuc7qI83XagBXlF3cH6Iga1kTbkUb/RHwOnMjKAq6xcGBOStjYAL+4YpYYQugfGqtOzRtE2xjvKUWC/9cLXh1tOnzx8ObTyQIz3urk2Ph8+Eb9yyvItZen7buT7TfCMmb0uxHU5ALRL2rdf2LnzSnZVb72zsd0fZ0ZEzYoUGgoB4Kcbh7ad33G8/aI5iz+RK1CAsjULoXqZzgIQycTVXTcmmdjp1nVQWdQYyomA6q5a9ftvC57ZaIrXVKxAkAD/PPflvy/9hwBgszg2RlZTzV2nW7h528xyNXPWc5VULXAMWNqds/WiN+bRKpPX9zSqZ6MTGtnwVEOOUkV8au/3jyXx2XwA4LG5tsY20yzc3C2neVvPdDCx0z2WXCHfX31IwDVZMHE+ADzvHLiv6iCV4JH6Y91SkSlXoO+MCCCBIAiqfkMLl81RZZJkESyGKzx4Zokn/yGS9nzi99chansQQugBIrkNAMCzHMUu3b8mJ7cHK0dVBUl9SXpmEcAyqvNxfd7OAu7q78poTZAkRxM9Xtc/WJKkvnTnpuQKsA92H5dXLC4RmWNQuQAAAJL6o6lJmdIx6FSBELqHxqAPAwDQowUFqWATBi+6rQx0Wvz1xV3fXPnuv9UHjjaeemXayndmv+lh6b5jcdraptMellMseBZyUv7dle/TL+08efuSCdv4jSkvxXivmzlhJgCUtZ/fUvrVwdqjBEHYck0IklD3q1ZOhgAECQQA9A/0UQNxakUL1JaE5keZQnZbTA0tShAAxhyjOzvTuUIvL6uZclJRK6r/5eZvxxpOABBcNvcFl6CkJ+K0GtWo38S3i2/XiupJIAkg+mX91V21JCiedw7UOgbJXHtT1nZZPQDRHOFs9flRo7BSey+093MSTBogZdduV/5ad+Rw3XEAUsA1eXX6H97z/j+2ZtBS3HTqRlfti24rqDwvmDhPaGTd0tcGAG397ccbS3SzB6phjqRy6f/qjxqxaTEDAUDC1Y5KVU2C3lZLGvNj7Cz/rqjhxOJJC8OmrtKzLUIIPYCy54H4FoT8AkLt0eSYSEqLMvZmZeyltTgCrn9q/BJTACjPSy+D0GiNV/Y8b/9lkJVOGyyJPg4SALhEpEXSWv1rrR1FrYJmBwfdz/4aW49J5YLWIe66UwVC6N4am3kY6K/wRQOi94o+fNU9PMB+wfs+0SFTnt9aun1P9cGU8+mHbv62znNthPsrfhPnAUBhw/G00q9yG4+DQh40cUG017qlToEA0NjX9GXZv7Oq9t2SiCw4xiyCRYKCVPYdUAAQqlE9CQAFmyD6SXm3VKSbN62yKvVRohgQy8RUgx8SCBbBHmKWaN0kQdWoJtAxYKWrcl7LeJ8N7xb++UTTKalc+kPl/vb+218/s0WrXE4FOf8q+3pb2df0C7Zs8hL9JXLqXxJ4tGnLjtQfr+qsolYKuCbhU0O1diKAAIJ4ye0FL+uZ1KL6nsY3/hdzreO6SNqTfmFnt1S06ckP6ftkXc0BIJc5L6E+GnGMFtr7fV+ZSx0l78averNHXf8uaff/HY4jB09QOT8d1ZiK0KkeUV9DiqEBv7KzavPZbQRAadv5ys5qN/O7GGwDIYTum0mL4dK/IXcJhPw6wpiB5x2eFtGenne0ol0KIHCZ7x8enRTpaw2q2dqW+WuVwk29F/rDwcyi8igPrd7AApfA0Ji77Ilwh8awcgFA1akiLj7YFRskIfQgG5smSfQCN5tgFzWf2n/zf6+6hWzwWjfFbMrWgM0vTl25pfTL/Q3H3jmx8acb+ZHTw0tazvz32t5WaaeXxbQoz7URHuE8Fl8ql+wqz9x+eVd5T601x3gC14Qak1QBwFL25mUpSFJ9UKo8KiOB1DfIKehM1gYAQCqoEVFVRVvFyBsk0SMQsWyw5agF3zzxifeW/7RaQSpIEo7UHy+oKwxyekadB3UCL7m98KxjAADISXmPtLe6u8acazbUEQEqbl8zIAwUQF66VZF6ZquMVAAQQiPrT5/a6GQ6afBMla2lgCShT9avXu5gYvf+nP97+zflbMrfXfnxD24h6pY/9T2NR+qPOwocAhz81LusnLLsh8r9AEACebzxZFt/u7WhlU6+gCDAgmeRFbRDa241giC+v7YvrWwHUwcHapgpAJDKpRtLUvtlEgDoEHd9eGJT1tJ/s3F8JITQg29ROkh74Fr2KGIGU4/gpPTgJD1reL6bKqo26S6nzZvsnVRVpW/X4dfSJ18e3Uq9ByrQU2eh//AMaY/2kAihB8GYNEnSeEdPAGHFsxBJe7+5mlNQV/SG+ytvea7xt1vwtN2TWVd++OLiN4caTx5tOdcnFzsYWv/F/Z13vN6wN7IHgPzagm2lO4raygRsni3XDGiDc7KU0QEJJMEiAABI1YwICgXJIQg+h6+VD41WL7Qf2CwDLpuj7MFAQC+tbD38eSr7SBC6Y6pOs5gy1dz1SkclFYn8evOIOmBQ5pckAGCm1YxAx4CRHEv9fn7T7/+PTbABSIlcamU4wct6pt/EJ0LdVlgbTtCfQ52Fs608jTnGvQO91PUpqD2iDhj2Xv9JIpf0ycTvHUtSDRVL9sn6VDNqECJp7+G6Yy9PXUnLmTJ7JAkGLJaj6STdCaEt+RZUdvSO16RuVMZlcV5yW3Gi6Xcq1dMtpf8890Wcz4aRXB+EEBpPBBue+y8AjC5mQAihh9OYBAwahUIDFseSb3mjp34Cz6RT2p149vMDN/I3zH5z1ZQXwqf/YYnz4h0XMjKu7ZlnPfu9Oe/OsfYCgEu3Lm8tTc+t/R8JYM01IQYH6SfVL7OplkjU/7QG2TFmcc25ejpLaZVVqbS4LI4JR9nBgCThVv9tBakY+aj/VJFatxcvi2DZm9hV3L5GHblWVK9xXIIgSZIAQiqXjvQ4JDXhA/npUxupmZ65bK4Jx1hvJ2PVcQZPk86cZ2plaNmrmoGuoaeZ+kEil+ZczwMg7IyFN7trFaqLzibYtsa2Tb1NVNBy8MavGgEDqeyTTV2NAfmAbsAgU8hBPWGFTj7VQYRULg1xXXai6fcfrx+ggpUvL3zrbjk1WGcKbYQQGjfl38KR9TDE01vSDbnPQUT16PpAI4TQw2OsOj0P4rG5jiYTj7ecMzLgcdkGQragvKvq9cK476sO/Mlr/RPCuX954v1XPVZPMrEjgGjpb91x/ptd139sF3dbcIxZLGpONFW3ZlXbFaq0Tc1KICeBTQBBjasKIAOFiQF/kmASaLY+0jdaEgAAi2DZGgsrbl+lWtk39jZ1SUUWvKHaBWkkQgCQBC1qoZ84T9nJgSSpwU9VSNowqSM7ChDUuRMEYWcs1Du6kZ6dVNUqWofhsDlGBoaEqqZDnbfC+uN1onqhkfWe57/VKvTn1/y2/sj7AEACnG45VydqmCSw13vIIfKjrLDQaS2mHsxKASQA/HV+/OmW0pruWuqUE0783cHETt0HAyGExttIH90IIfSoGpv24qTmD1PN3cQgV0/OZWzAs+AY/a/++B9+eTP+eFKt6KajiT1JKjLK/7vip/CUi19LB6SWXGPVbGVAvV8HWgMb6qW0ggSFgmRT9Q8ElXUS5KQ139LZ1EmdGfX7bybzhF4k1cAJoEvSffX29VGcKUl7k69JKpdQ7aYIgjAyoA++pBrISM+sxwxHoU1sNqCQjTBrqvY/2jmTKWRimUS9WJ23vdd/IgH87RfoVhEssHvCytCS+iWI5ZJjjSc1s6f6h/l0CFXYI1PI6NUMhCqmUi8x4Rh/+tRGA5aynVjfQN87R+LrRA0jOmmEELrXPN6A/5NANKn93wYZTA0DAOCZQsgvWL2AEHqE3VXAoC71aXUV8LKZZck2lA2+WiaBIEw5RkCS/7qSuerg2tSzn6/OfzO6+KPaniYhz8yAbUAQBFXeJVXFatWQnFT5EhSqXgdU715SNV2wSCGebeVppjlXgPJtulZuVf8udXqWx+YRykRgb9WBUZ01QXVT0CkrN/e2AhBUstM0JntWBj+kbp4AAKClry3q8J/OtV6gHYIaxElPgx7GXNFqMLSy1i0V3ZLcUs+vPNnMEQCqumoO1x8jABZPelo3NVOu4Gm7J1Vth4i8G7/SjqQ+IHNgRqgiHlJPkKT6tQ7u/IRwTozXOvWFau5tjjr8p05J10hOHCGExgEph19ehWvZwDPFDgwIoUfeXQUMuj1aqTKgj7XXFMGkAbmMKhcqQwEgWQRhyzVr7m//6NwXhc0lE3gmRhyuujU8UIGFuphM9VsAhTqXBAGaL9EJgiDkAAvtngT9RfHBlIFWjHYynfSi2wrVLAfkzzcKLraXj/x8SRicVU2tTtRQ2VkFysoBcpFmKZxQzcCmt7PE+fZLv9w80tTbPJhn6qIR2o2LhkAqu4GruiTTVHZWi6Q9VFMlFkEsdngaALKu5sgUMkOOobf1LL0JBjk/o5zUmoBzbeeru2rUmVNegyHqcdT9HAg9QY86rqGvWD/r9ScnPqH+NZbfvhZdmCAZaZcPhBC6v45E3Wm00FayMzp0vrurq6urV2B49M6SNvra0mRXXcmlGil0l+clRwV6ubq6urrPD45KzqvSme+5LSdSM4nInDYAKE/3d3X1T9f6i9f9a7Sra3BmFXV0r9DEX9W98EqT1fsCAEjKd0bOd1dnSGutiqQ0OVCVZc2MuM8P1T5hlfrM8MQS7fPQe4DSZNolodLXukAAUJ8TqdpP51rQLghCaITGeAhLqqAq4JoscVzcJe9XgEL95ptQViKQPDbXli8wZvOBKuYS6nGESGIwGYKktf4hAFgsAFooQW0pVsimmtgvclwEmq/V6UMkadU2UAvfn/PuzAnuVCeBXllf1OH3jtQf0zoXmUJ2pP7415f+Qw3DyiJYQM0ERwAA9A700TdOK0uXKKRUB4rnHBc/beerXsVSxTsAcFvSoXvRDt74FQAM2Mr+JGyCDQSLVA1aZMAavp8Ji6C6dSjPTiIbLGdL5dIvzn9Dqmo31rqHTbWYclvcsa86D4CYYekuNNI/T+gTwjmWfAvq1yeRSX+8rqyHMWCxVb8BgkUQbH1zV7MIlnoeCdCYPQ9YhHJ7AoA+giqbYH2yIEnAMaFGuyUIONZY8ufjGxUMA+YihNB4qjsMPLPRRwv1OZH+r2w6WNYuBQAQVZ86uOkV38DkUp0SP3MKeVH+y2MyCqpFAADS9oqCjNSCKp2tyov07ewRHh8IDWnpv3bTFkpKiw6CfbCXK/VRVJYVs1OnAA4AAG0FmzcVtQ/zIqc+Jyo8o1r/Oml72cFNr/jrRgZQnpd+KivzaLe+vUZNUpocGa/3AiCE7tCYdXqmzXhAEkC85Bbyn2s/9A+I2QZsoFUMUGsVJBBAslRTNVMjeJJUmRdIAFAAsJWRBvWqWvX6nFD2maXK+rekfVHTX7WlFXnpPZ7p4wXpDBxk9k3gttijH5xo+h2AaOprfr1gg4/NbB+htyXfXCobqO6+eablXENvk9BIuGrKsgl8yw5J5y1xh/qt+reXv+OxuWY8sw5x5y83fzvRdJpqqrTI4elPn96orknoGehtV04sDQTArvJskgQngQPfgKcgFf0ycWnbhQPVh4DWrL+1r0080E8QQJIEAHm9s3qe0Hvo3g9Nvc09A72gGpHp87IvW/rajDj85t62/dU/X751hVoTNnXVX+b9CQAyKrJu93cAgLulG1Oa5jyzJ4Q+v9T+Rv1asq/ufXPGa5Z8i5uieuX1JKBLImrra6dPB0H9Nm9031THaC19be39t6wMJwCAXCG/2V1HtWUiARp6miRyqXpmOifTSetmRnx27gvV1SAOVB/iG/A+XpCEkzMghB4sYacBYLT9FuozY+KLpC6rUtOSQj1MASRtVQXpMXEZGeHJgWWbfNW9yfxTS3aG6n2XU5UZE1MgEgQm7kwM93bgAYCku74btCdSa2uoBlj2VenWJaYAbTmRvqoZoE2Do+NSCzZvz4tfEq7aqbwoB+xj/D0AwDup/FuJ1+tZBafKk7y1JosD6D6VVwTglfxrTrgrwxlSRXWdkEI953T30eTg1zMqqtvAl55nauY6aNhbtGlJsJ5BD0dFFbFoXpQRT3uNENJnbGZ6Bo0yOgEA0yzcXnQJ3lK+y5ZlCgQJqsoDZWGfNdhzllCPnUqqJ40mVB2XlVMXqwvTVDmS+igekLoZ2a6Z8Qo9PwTDz7qsDSfsXvLVD9f3/1CZe+nW1QGF9GzrhbOtF0DZU4KcbT3zTc/XVkxeasE375eJ4479Va6QW/DNqHx3Srs/OrWZRbAMWCwzjulcobermdNzTs8scnhKfYgBxUD88b+JpD1mXDOqhD0gH0i/9C1BEgTBAiCpkUxNuQI2wabKzU29zR+e2GTKFaj6cUD6xZ2TTZ2enDiP6USaepsTij8y4RgTBIsqi1d2VP215B8AhAHLwIJrumDiPDcL16VOz8639QGADnFnfs3/zHlmBBAzJ7gPcYnmCb1ONZ+hJoOTk/LDdcfsTSZ+e/k7c54ZoYz+4L1jiemL/2lFmxRif9XPBbVHLHjmVBwoU8gSiv/+5aLNXDb387KvzraWmXPNqPZgN7pr/nH6/33k+4F63wiP1Qdrfm3qbVF1eofcqp/tjSdu8Hp7yF8mQgjdX3fSxbk8L70MvJLTN4cqy9s8a9fgpExo8I7Jyjwa77tkuKKypGRnchm4xGWmR6pL8zxTB93Qor68BLiR1vrS8wiPD9wck5xeEkpFKJKSnEypMl4AAN7CqM2BeTGbYxLddyYtHCxzS9rKc+LjCrheccmhTNHCkJULVCrdEglw/cP9NQvz3QUZWQ5xiYGZm3bm1QeH38080gwRC0LoLt1VwECqyvpaYQNl/ew3D9UdbuhrNTHgkapggIoPqD4AVERAsJSN2qkSMkEONq0hqUoHUrfOgCAJ6FD0J818z8nEgV6TwPQz6FvIZrHDpq4Km7rqRvfNhp6m5t4WiVxqxDGyM7a1N5lIH8yUx+amPvWRbusgEsCAYPPYXK7qNTmdAcsg+cm/sAk9jXbojaYoxhwjALA2tPomcCuHxVEvl5NyzTGXtFkbWn3z7DaOvpZLBiwDHptLT406UNbSf1O5EqimpNDrNfeXV01Zrv7IJthsFvvA8u/oPTEGFDILnjl9r2cdA/ztF9C3kZNyDpsDAG94vPrGjNfovyCtftPGHOOcZbslcglJkgpQAIBcodAcoxYhhB5O9RVFDTA/xl+rvG0auHo1FOSUVcES1Rvwonhf13gAAIFLYGhMdEywB1X0Ly/KkUJgTLjOu3/tI1WXScHXQ3/B2zQ4Oi6tYPP2vBjfUGuQlObl0OIFAHAITi+bX5qZnLTQ43V6dqz843YeTfd10B5VT0XZDsg/NdUlPj5Dc13Gi67UEiuviKSC9GDNnNXn7SwIjEmNnG9dtD0trzw8SvP81FdjeFTE4hKRGl4drzVztjoLgLUNCN2BuwoY1O1ktPoPUB8djO0Sfd5782icTCFnE2zlmDkkEASwaL2aB0uMg8PvKCMRUjXUjgIIFqkaP4kEAGiXikImLXpr5mswRK2CvohBb7XDZFOnybSBWXWxCJaVvpmVh0YAMYE/urdQBiwDa0Or0e8yirxx2dwJ7BHlisPimOvMUME8c5ySCccYOMZ6V1nwzfUupzM04Bsa8EeSPYQQGmPGE6G3CfqawGji2CfeVn4KIMJepxjPM+UBSPX2YhBVF2TEFGTmpBXtDLaGtuoKKbj7uw9XEdFdfvQU2Me56O+gBuARHrcsbX1aTnlolENBRpbUKzlYo4hen5cUmVQg0tqrvWhzZAzkZEZ56AsZVEX1H9NDIZW5eN9elhGzsKjku5xNvuqzKM9Lb4tICzQFXvC61YnxReVRHsNFRHqpI5adSf6nIu8kBYQQo7FvGk4vka+asvxPnq+3SHtIIEnaJAvU/1d2diZAAaSyp4Jy/gX1KEgkKEMMZRhBbdA90D/T1DVlwUY2aLw7184JMdSopCOeRQ0hhNDjQTgXAKBi9707gkQygv7N/qklVVVVVVVV5SU/JftzpUWpOeqBjUx5TK/41YcoLToI4O/O2HIITJdExbg0pKXnHc1MK+Cujg6lBzHdeZtiCkRcr3XfHS2v+jFCmZ3Sn1JXuUjLNkel6umgTSuqe+vNXcSPVcoTOvrtapfqrMhUdbdnSUlmmnVUpDcPAHi+4TGQlqnVJVp9NZR+jNB3CFXEkpkeqrdmRZ2FqiqsXkBo9O5uHgbm5epVH87/0/ppYU0SkVw5CJJqzmZQhgwECWxqZH5lRwZSQTVVUcUV6i4NVAKdA72TjG2+CNjsKJgEDLQrLfTlVndMWIQQQo+1OXFAsKDkr3D2U+hrGuPEHTz8Acoa6rWXd7e1AXD1FrR51h7hiUnu0HCqog3A2t4F4FSp7iCqmskVZGUBLPPXX3RX8giPWwYH46LSql1iwhfSt2wryCkA8N+UHq/R+sjUI3RzWpw9NGTkaJXnJeXpQxfVNU7IYWFS4mqQ5hSVq3KbkSUtS1qoHOx0+eYGaVZGwWgHS+rOGyZiQQjdpbtskjT8cgIMPnv6Iy6b82XFd2ZsPo/NpQbNBJJQqPoxkCShAGU7JVBFDgRBkKSCBCBAofpItkt6PC1cvwzY7GWlnD1Ab0eFIXJFAtk/0K9Q98JGDzYSgAWEEWeoXhwIITQ27J4G379DyV+hOAGKExg3m7wMlueNOnFr9/n2sDk9syQ0yZdWqq3KQZU0YgAAIABJREFU234QYPV8pmY4ku5uAKp1kcf8ZZCRtTUnciHjMEVQlbezACBwie/QDZdMfYMD4eBB64jkSI0DS8pLiwCWrQ7U057Jwz/cfvPmnFPlmxbSXtGfysgA7miL6qoWWN1FeQU6KwvyirqDRzVY0t6MDHCJ+HEEEQtC6M6M2bCqFJLUfnNPArAJzqd+H00WOKaWfdE+ILI0MCKABYNzjWkMhDo4TBKQBEGAqnt0v0zaJROvcAj49Om/OZoM1i3oLffrXUiFFn0DfasORrSL21Vjtqpnj1ZuRai7caumh9BJT9VgSmOReg/l0LG0Co3BNKm80es6CFoLLGWi5OBGJG2Jums4qcozLeca50I7xGDmtbubkIN91lX/x7SvOv/K81JdGeUqjdMh6CmTyhF1NSdvowahIghisLM7/XTpF4gAkgRrQ6tfQn4AhBC6D+Z9CPb+cG4ztJyB3rGtZPAIjvLanJQRFeOamRpODatanpcak1QGLnGar/lVJPUlaUlpDWAf7m4NAKYLIyPsD2YkhUZBZnKohzUPgAooTE2pvbtLkqOSysA+Yl3gEOVtSVt5Xmp84kFwiUiL99U8blVFEYC9h4Pe3V3d/QGyTlVUgTc9YBlZ5QJ15KqCtE1ZAMvmuwJQ3Z25q7+jDykrOZro8fqoB0sadcSCEBqdMQ4YVFMaE+rIQV1AjZr1xvyJ8z45/c9fG09yCMLIgG9A9VGg/kcqJwamUiCpSgggSCCl8oEOWb+rsW3inOi3Z0YaqMb8IWml3KFHRlLmjfYzrcCqni9OWfZVRwOqNlHqEqxyzCZ1atTPhLIpFXUGylKyepV6PCj6KFL0cEBdrTJ43VQnQssGQc0Zpx62VjU9trr0rjoErWCunsmBqpyhdtUs5aubhg2eGKnanlagV3VCV3c6pwcAhHI0Kyod+vTPqjn7CNrVG1ypnkuOpIc6qn8Ho5kR1yAhhNDYsHsa7J6+Fwk7hKelFgTGFyQt904aXMp1X5eq+Zpfa1wgl4g05Xqed3xaRNGLGQVJywuS6Bv8mJfkkBfpG18EANzVyfGMZee2HOVWIAhM0y5jlya7vpgBwF3tpb8Cg+fh7Q9ZRUlLInnqiSJGVFSnD1EEwPVPjV9iCspxZkOjNfbmefsvg6x03cGShjCSiEUzC0PNdYEQ0uOu52EgB983q4rt6g4J2rytZ2Uv/XZ/Vd7uq3tOtV5ol/WasvkGbDaLZLEAVB0qSDlJEkDKFPIeuUQOMMXE7u3JS9d4rHYWaAxkRCgPqidaUBY9aR/VZV1jjnF+yA96h3VCCCGE7iWH0J1F9juTN6cXlLVLQeAy3z88OinSl6ngqh5WVV2k5nknFZQEqlOgklgX7soDCQBwrbxCk9I26a2tUONauS8MjhocrFVrrfuqtChfhgSsg+MSc0o3nVIvGHnlgvLQXoFRccoTpmZr0+lsYeq90B8OZo58sCSsXEDoPqAPazpqyvfDOsXtwfYo+pYDgJxUlDT9/lvd0ZLm0zd66vpkYpFMIlHI5ATJAZYxm2tiwLPmW3pZznzafsGiSQsnGtuMJH3dAzHnnBx67mSEEEIPu/V/+RsAfPWPj8Y7I+iRgt8r9Bi6607PqlL3YMN7ncZI5GBtgHIJm2D52fn62fkOKKSNPc03RLWtfW090h6ZQsbnGFryzCcJHCabOZlyBIzH1Umf+lE5Bqv2cv0pYN0CQgghhBBCQxuzPgzqkrdq8gTaEtUPpOZHAOCwuE6mjk6mjkOkTGpHJQCa4QctQY3ajiG6PtODHQwbEEIIIYQQYnK3E7dpT26g+ofQ2YAgBkdD0t1R7xJamoyzKIywRZXemRmYliCEEEIIIYQodxsw6A0AlOPtkBobAGhM6DZsMZ0pFGHMwZAwKkAIIYQQQugO3G3AoJeyjwE1epJqoWpgTo2FunvRP6oG+tT+gYaktVbSXMF8IOUG5FBrEUIIIYQQQjCGAcOwr/B1R0wagr7qhaEPoTUJgcYueoMHAodJQgghhBBCaDj3pIaBTm+hnBgyfhjNjF0E4wd9qWGVAkIIIYQQQqNyzwMGuhF2UCaYe0EoZ0gm1T9q/KC7CjR7WWDMgBBCCCGE0Kjcw4BBt5OA3inelKu0ttTZnlStIFWr9Q6KqjUFhO4hsBkSQgghhBBCI3cPAwa9nQT0dk4YyVt/dXGfUE0DR+2qERuQg5UYWmlixQJCCCGEEEJ3YMwmbhshpi4No06H0LMrvUZCa9o4rFhACCGEEELoDtzXPgwIIYQQQgihhwsGDAghhBBCCCFGGDAghBB6lB09dapLJBrvXKBHQZdIdPTUqfHOBULj4H73YUAIIYTuDwO2gUwuy97/c/b+n8c7L+iRYsDG4hN6vGANA0IIoUfT9CmTxzsL6NGEXy30uMGAASGE0KPplZUrBMbG450L9KgRGBu/snLFeOcCofuKIEc4/TJCCCH0sOns7t57qODK9SpRb+945wU99ATGxtOnuK5aGmhuajreeUHovsKAASGEEEIIIcQImyQhhBBCCCGEGGHAgBBCCCGEEGKEAQNCCCGEEEKIEQYMCCGEEEIIIUYYMCCEEEIIIYQYYcCAEEIIIYQQYoQBA0IIIYQQQogRBgwIIYQQQgghRhgwIIQQQgghhBhhwIAQQgghhBBihAEDQgghhBBCiBEGDAghhBBCCCFGGDAghBBCCCGEGGHAgBBCCCGEEGKEAQNCCCGEEEKIEQYMCCGEEEIIIUYGI9noek1twbHjNxsau7pF9zpDCKG7Z2YqcLK3C3z6qSnOjuOdFzQ2bnV0FZ0+V15543ZXd79YTJIkSQJJkuOdL4QeVmw2y5DPtzQ39Zgy+el53lYW5uOdI4QeXMSwf2/yC48dKPgN/ywh9NBhsVjLn10cFPD0eGcE3bm6xtbDJb9fvFol6ukd77wg9CgTmBh7TnV95sknJtnZjHdeEHrgDBMwXK+p/efX37LZ7OXPLvL19jIVmNy3nCGE7liXSHSq9PxP/zsil8v/9NbrWM/wMGpuu7Vr78Hq2nrqoyGfN2u6m5vzJDOBwNzUxEwgMDUxIghifDOJ0MOrtrG5s7unSySqrKm7cKWyXyyhlk+eZB8RGmxrPWF8s4fQA2WYgOGz7d9U3axdGRS4xP+p+5YnhNCY+LXo+L78Alcnx/fXvTHeeUGj0CXqyTyQf76ikiRJHpe7wGeWl8fUqc5OLBaGBwjdEwoFea3mZln5tRNnL0ikUoIgZru7ha8IMsP3pAgBwLB9GGobGwHA19vrvmQGITSWfL299uUXUHcxelhcvHp9e+beAZmMxWIt8p27bLGfiZHReGcKoUcci0VMd3Ge7uIcvPipg4eLC0+dLSu/dulqVdQroTOnTRnv3CE0/oYJGAYGZACALZEQehhRdy51F6OHws9Hiw8UHCVJ8PKY+uLSZ60tsRcmQveViZHRy8GBixfM+/HQ/8rKr33xn++XP+O/bBE2skCPOxxWFSGExp9crvgqM2f/r0dJEkKWBKx/5UWMFhAaL9aW5utfeTFkSQBJwoH/FX2VmSOXK8Y7UwiNJwwYEEJo/O3Ys6/s8lUel/POqy8tXbhgvLODEIKlCxe88+pLPC6n7PLVHXv2jXd2EBpPGDAghNA4+7mwmIoW4t5eM9vdbbyzgxBSmu3uFvf2GipmOHjk+HhnB6FxgwEDQgiNp0tXqw787ygAvPGHkEkTheOdHYSQhkkThW/8IQQAfvqt6OLV6+OdHYTGBwYMCCE0brpEPemZOVS/BaxbQOjBNNvdjerPkP5dTpeoZ7yzg9A4wIABIYTGTeaB/AGZzMtjKvZbQOhBtnThAi+PqTK5PPNA/njnBaFxgAEDQgiNj+a2W+crKlks1otLnx3vvCCEhvHi0mdZLNb5isrmtlvjnReE7jcMGBBCaHzs2nuQJMmA+T44gipCDz5rS/OA+T4kSWbk5I13XhC63zBgQAihcVDX1FpdW8/jcpct9hvvvCD0yKrKDA8Mz6wCAID6nEj1z3dm2WI/Hpd7o66hrql1bPKH0EMCAwaEEBoHh0/+DgALfGaZGBmNd14QemQ5uLjUn9qZWSoBqCrILKp3cXG4i9RMjIwW+MwC1f2L0OPDYLwzgBBCj6OLV6sAwMtj6qj26hdLDhYeP3nuYmNLq0wut7a0mOM5ffnip4VWE+5NNhF6uPF8k/JSk+MjPVxFAq/VqXlJvry7S9DLY+qRk2eo+xehxwcGDAghdL/d6ugS9fQa8nlTnZ1Gvtf5imubv/4PfVTHuqaWuqaWg0eOvxaybNVzi+5BThF62PFcQzflhG4aq+SmOjv9f/buPq7Jev8f+PvaxjbuBqKjzBEpajmqIxw7wbcSuhEsBTPBUrFjQqVwOh6tVDKLkxXdnJ+djmfo6YB6Eq0jmIFWDjoJns4ZHWsza/MOVNq8ieXNAHUDtuv3x8XNGBsMZY6b1/PBo+Tatev6XG+uXfu8r8/N5SsWNTReOnfBNHxYUF9tFqCf83CXpMPvyf/x4SG7BfX7l8s/+uyUw2oNR3fuypy2MUa+MWbiP+b/7vPyQw1dNnVO/eGnTtf5MXdjjHzjH3a2T1pw+eiH2x+Sb4zJPUZEZNz/8t0bY+StPw9N++jlDw87m9/gzCdPbHz7f5ZrPWIAgB79+1s1Ed152zgej3HzLd8fOvrq+x+YGhr9/XxTH35oVebCNcsW/3bW9FE3hra0WDcVl360S3nN5TLueCrCqad2GO1Xq9qwaPrdEyIiIiImTpn7+01V9i9q1nR9A5FFs2ZK52X1ut1rnG6ltRBrNO2rGspenD6h6zaJiHQbpkREREzeoOu0s8qXIyIiJthtweXO2nexY67DIa/REFF92e8nRERELNpdb79yzbbpbYfoPGJ2e+4SXMfXDDuemuB0/fb39RxtzoS7p8/9/Tu7de1ldatwlqqXJ8zaZnCjsJ3/su4cjlGzY82iKRO5ws3qGnUiIsO2WRNernL87u16FnFLOnbX83l2tQHvAY/H3HnbOGr7FAMMEZ5NGI7Xqcm68+va9gUN+3/aR1d+PG5/bagr/13Rk6uM6hNERNRkPfbV2dWziv6w025AkeWY4rGSzLfOd1rnnz85r92f+vbttxrtnqvS1GiXfTSeuPLlW//NXHvc8b2HtFsO0s4PD3bNVAAA+pj26AkiGndLmJvrXzFb3v37FqvVelvELX/NWf7kY9Niou6YOGF8ytQH//LKC4n3xRLRR7uUh2tOerDQHIvmnemT571bfuiXJiKihuPffPb6vJgpazTd3W4x7Fg0d/Nx+wW7F01OWrK501ZeL3feycNStWHJJ4eanG9ZPvfFaUI69f62yo79WzTlO4iEc6dHub8zo+4bZ5uXJCxaMoaofNNuu9UN3+w4RDR5+mRpN4fsHotmzVPL97k4NupltJt+OfTNZ39bknT3U7udVMxdqC/f/FHTgQ27dT2v2rPOh2Open/u8s3lxxu4wh347PV5s7qUXLd7w4GmjzaX11Mf6HKe9VDCq8V9crlPMcAQ4dGEoeGE8RjRmS9q277DLD/+20REVYfPtq9zbmfF6q+IRkvfK59XpVtYpUv98I2QcKKqVf9uu4BcVuX+e8thEt5243vlT1TpFlZpHl7zqPCh+2522hHx6OcntESRrz5clW3/1NQb83ULq3RPlv/txpFEtYfPdH5So0X9z5/OENFX1eWOrR8A10XZvq9Ly7+yWq3dr3buwsV3N+Tnfbj1+pQKPOS8qZ6IggID3Vz/s4qvubaFFc/+dsSwTnOwCn18Muenjh99M8uyH+2+9kYGIqIFxTXtihfYv2LRvLPkb4eahJPX7NLU1NTU1Ogqtz47UUjHNy/Z5KrK2bWOVrNtyZLyBgqcsmZXla6mpqZGU/zixDHTJ0Y4e3t9+eaPmkg4Z6Nu0ywnNXRJwpLVE6npo7/saLtJbtHs3tFEo5bMinJ/Z8bjx4lo2npNl0OWP/XyHCEdWLOp/Sa4Yd+OA0RTZk2xK419xGpqalZHuYhFZz3Vb92O9uR3qriXi1+cLKSmfRs6pUPdFc6we1M5EZ16f1uXm/y95ng4oqjpSx5bU1zJRX3rsxOITm3unJlYqra9f4qIyjftdmzj6DU3coGeEwr3cJ9c7lMMMER4NGGo/d5ERHT4JzX3AbVU79tORHRm/5m2TkG1nykaiXyXr0uKHcXV/wPHz3x4xWwiMn32r3NERKe+zd9OJAxas/mR2FF+RESikVNefXjpXV2/ahuO7vx09XtWGn3j0kdHOiuRlbuWhN82MsB+cf3Bj7fTuPk3PkRXtnzeBxcTgF77+n/ffbG38s8F/7h0+bKrdWpqf3p7/QfHf9KbLeg8N7BdMZuJKFgS0OOaHJX6ByJ6JO4eh2yBw2OYeTMeJqKDh49d8ei5UV+5afMpEs7ZsGGuXEJERCJZzPL3V08kOvX+DqfdPOrLXpy72SAUdiyxVG1ac4BozIvbNsyVS0VERJKoRRu2zZJ3ebPFUPXOUy+Wk3Dy64viXI1VjZj1+zlCOrBmA1flbc0X5k6W92JnNbp9RKPkMknXzYvinlo9kZo+erc1I2nNF6ZPdrJur+g2PLW8ioSuV+h1tEWyqFnTY4joUI2bVVnd7g0HaM6CBaOu/Sa/k8MRxSx6d26UTERElvr6+noimiy3n6OovnzzR00TFiyYRtfcxtH1PHOnhFeJ++Ryn2KAIcKTCUNd7ffcP5r2fX+OiOhw7Wfcgq/Pt/ZSMhrUp4lukt4+xv6NosgHpURUdfg8EZ37/qyWSPj4nXH2V2fR8OGdL9ZVq0pi5EVPrjrfcO+ovM2P3O741XI2Q74xRr512rNnLfeOfTtrjP3rZ76o3kfCmY/fN+VhOqPQqlEXg+vvmXmPhwQHVZ+sfSvvg7N1TjoUVGkO/LngHw2Nl26/dVzmk/OufwmhD7EsS71pYTj9cx0RjR99s6sVuJdaWqw/e/QZtDXffEZEUyZHdbrCyu6eNYGo6fjxruetYceSJeUx72x6PaZjmW7fjiaiyYs619mlUofmg80pERHyuHl/q5HPeWf3hlndzIXZVqXfXF7f1iAxcdF0eS92VnP8GyKa6GLCzdaMhKvS6nZvOEDCOQumXFu+YNGsWfIuLdi2Ya7rdXodbYtRV767iogmR7k1dSh3f3/OlOWz5o5yfpN/c4rd4IeUzVdxOK2DLORxiz8yTnhs/Rr7ViLD7k3lNGHu3CXTp11jG4ez88zdEl4F7pPLfYoBhggPJgwW44/7ie6SzryTqr44fI7ox8/PNpF05mwiOn/S/j7+GF+HCQFFEr7ddoiIom8LcXvHQmG3k6ad/7r6yTnKHzuuTMfL/36F7rw5dkxg9CNB1GT8+F8X3d4XQB+RjbxxReYzt4TJfjl/4Z0N+dqj1favlpR9+Y+inS0tLQ/cE5v55Dyx6BonBgQv42oaAX6+bq7fYrUSkVjs8u8u9PHh83hE1NzSQ6+2PiCVOlSWJSKnvfktmjVPLTfM3bZhVue+RpYmIhozxv0RAKKeTviIWS/OEVL5O9s0Nbs3lZNwzovtCYY7OzMeKD9ENCEmwkUSIIpbtHoinXr3L7sNldveP0UTVy+6trk5DTsWzd0me2fT6qie0w53or1veUxERESEPCZp9b4mGrPg91PcCW59+eaPmoRzpseI5JPnjrqGm/xuHk5TzaFynV1Sotu94QBNnDs5QhIzfRpdfRuHq/Os9yV0F/fJRb4AQ4oHE4bjZ6qI6LZxGU8G0ddnf6yvVf+LhLPHPPmbAKIm9Qm70cXHrzjcEmv45YrDxmp/aaRuxbwxo0ozPS/Dt/HrExlzvjzq+Do3hmFhVdWDy++lpsOnPv66tQCW/2nzT1PkzHEjiQLvuvkhon0fHjzT+8MFuFaSgIDnn35q0p13XDGb8z7culf1DRE1NTf/bevHeyr+zefz581MTp02lWHcnVcH+rnGy45XOlekIcOIqLpW72qFE/rTVpuNiKTDh/VJ2bpjNNY7LnAyXLlmx6K5myVrNqyOclq37rIRRwuKa2o0u955THrgoyVTfl/W/dqimCWvT6ZT7z81a80BJ/X57ndm3Ld7H9EoF2MoiIhINuvlBaOo/OXpSz5qsk9Hrka9Zs1Ty6tmbei21cSudG5Fm4iIAsdMmLLg/V07XITcgWH3pnISzpoeJSKST547ytlN/k7DHzoPZ2nTw+FEreZGX1TtWjOZDn2yeEnbhExc88bEWZNlRJKY6dOudiBDD+dZzyW8Co2uO44CDFaeSxjOnTh/hijmVzcOv/fmyWQqX3tw52l+xuORI0cFCYn2fW8kIpLKom8iOm38sdNQ48vc2OiHfnMjEQ2/LWQk0Zl/HuucA9Sd6To6WRQavezh1Q8Qnfhpp6sJUiXhcQ8HUHsB6OK+D41NRNo/fhEj3xgT88OXRHTwRPkh5+8G8CyBQJD+RMr0h+5nWXb7rs8LPyn5098KDmgP+fv6PvfU/Hvv+rW3Cwh9hCEiMjW4Oy1bVORtRPTlf/7X1NzsdIXP9n5NRGNuHhUc6O64iKsRcfc0Iirfp+t0ga05UH6KaNTdE+xua1e9/NTyqph33p/btRLObeSzT/Z1qghbDIaulXqJfNa77784ipo++1tPdUnp9N8vGNXU0NA05sU1czsqhm7srKZ82z5qH/Tggihq0ZLJ1NDQIJz2/vJral7YtmjuZlqwbbXLMRnt3I9266DnA+W7N6yeLnfvJrpu94YDRE0fzZNHREREJL17iq7qJr+bhyOSyuf+fi4RHajhvnu5rmN0YHVcRERERNTiz4iupo2jm/OslyXsDftnoQAMEZ5LGGq/bySicaOCSXLnE7Ppy+3GMzeNiplANDpkMlHT92fOEBGFxzwuJLry5+e//LG+hYjIUqdeW7JiO5FQOu3eQCKiCeNmjiY6/VPm7/YdNXJj2upUOWWPf3jM2W6DY2YGEdFnn1c7zRgsxtrKLxqpvY/TqYMff9V1LWv+P7UYyABeM+2B+PQnUnx8fP7zrVp/+swNI0asyHzm1jGjvV0u6DNc96GL9e5WO5IeuE8g4J86W/fBRzttXXpCfKXav7fqWyKameDhZ7dJYqZPE1LTR6tf3l3DXSPrdTteXLT6ANHERVPsK9xNTbIF25zf0uU2QuUvzl1TaWjbyrZFU1aXO50MVD557iiiAzv2dfdkXYtRt+NvO04RjXn2nafsy9HTzuo1G5av6Vr8Lts3VG7YVEUknPzu6oRr69XSRDHvbHKrDcD9aPde2/REDnp/k7+bw7FUbXhxm6Y16hZD5Y59RNTaZbh1diYHvR/I0M155kYJrxb3yeXzPfwkK4D+xGNPej5zcj8RBd0+mohEkY9IhduN456OHE9EktDxN9GX+8+ftNBIEY1/8u7HP/33Pw/+lBHzod3bhY//48HY1s93+JMf3KqedqTqq+onv7Lr1y08rF42LrrLNSDwNmkkmbTbv4kTCe1mVj2bId/YsdLoGzMeDKa2OVhHLo3f+XTbsOv6/ctjfti3/fC+ZZHXOKgN4Or9+o7bRwwbtn7LRyNvkD4993E/sdjbJYK+JBKKWlouu9/CcKN0+PxHp20qLlX+W3XCcCptxiPjRoeJhMLjP536bO/XXLZA1+PGpyRh+euTy5fv+2RJwidLOhYLJzvc4xVO7qaOJkl4d9uCQymbD21eGGc/jra+3DBrbteqX8TEyUL66MDqhKdEVU5mVtWsaR+NGzjl/U3LHfbazc4mi1bHLN9HRDTm2Zdd9X837niqdSUSTnh224bp1/jwhTE91W/tuBvt3mu9vz/lfc2G6W1fdLoNk5PePbBht27uIveTkW4Ox7j7b+9+so8+WW23TDj59blR1Na8MerFXfva91W/e1HUkvKPNpcvj2kv0r7lMRHLO210c0rE5gXF7VPDdnue9VjCq3axvoGIRN2PlwQYXDyVH9cb1IeJbgoaKSEiEv0mMuOmoCce5qY6DQn/FRGdP8aNexaNW/pJwpr5QeHcdCGB/OiHR+dVPrH0V34dWxt1z5/L/+8PD/uGt00pEn5XyB/W3R3p9MM6atKKlQEhLmZOE44QTp5/x8efPHK7iMii3amwEvnOf8RukibJnU/MJiLTx19gIAN4Vbhs1KrnFj+3YD6yhcFnxLAgIjp20uWYhK4eS7x/bvJUhmGOnvjplT9vmLNkVWrWihdy/9yeLRBR/j8/Lf1yX98X155s1qZ9W1+eNnGEkIhIOGLClAXv7/pmU6cqWY91NFHU6h273l8wZQK3FW4z77w8xel7RDGL3p8zsdsJpQLH3D3t5Y1l+zZMd7KFbncWOObuOe/s2uGYZnTGvaN43+7uV+uZG/XbztyJ9lXg7u87zPUkn75oYu9u8nd/ONIpL9pFPXDM3dNe3rpv0yxZe/NG+1RWREQkmbJgjrB3bRw95wK9Drh7uE8u9ykGGCKY7ucFW/zSq0S0/s0/Xq/yAEBfwke4f/pEuVe5T+UrFq1dtYzH68Uo9kM1Jz7eVfb94WPtz/gbHTZqZkK8qeFSwfZPuSXPznls+gP39X2hAbyMa+6xa2HwBpuNXfbG2itmy9TJ/zczMd57BQG4rjzWJQkAAFyIibpduU91xWw5erL2tjG3uP/GCRGj//iHZ6+YLWeN51qsLdLhIe2jnBmG8v/5KRFtLd2DhAHAQ46erL1ithBRTNTt3i4LwPWDhAEA4Hq7KVTq7+d76fKVA7qjvUoYOL5i0eiwmxwWzngojsfjbSvdM2d6Yh8VEwAcHdAdJSJ/P9+RoSO8XRaA6wcJAwCAF9xx69gqzQ///e7g9AfuDfDz6/kNbkh64L4ktC3AoCWdtalmlldL0Hj58n+/O0hEd9w61qsFAbjeMCkYAIAX3DtpIhFZmpo+++o/3i4LALhl91dfW5qaiOi+uyZ6uywA1xUSBgAALxgbHjZSOoKIKr75znj+oreLAwA9MJ6/WPlqalAsAAAgAElEQVSNmohGSkdE3Bzm7eIAXFdIGAAAvIBhKHXaQ0Rks9mKv/jS28UBgB4Uf/GlzWYjotnTpjC9mNsMYDBAwgAA4B2R48aMuyWMiA7ojn5R+V9vFwcAXPqi8r/ccOfxt9wsHzfa28UBuN6QMAAAeM3saVMYhmF4zKdlFd8fOubt4gCAE98fOvZpWQXDYxiG4RoGAYYaJAwAAF5z8003PhB7F2tjiahg+6f6Mz97u0QA0In+zM/cUxFZG/vg/9118003ertEAF6AhAEAwJtSH3lQPnYMEVmamt/94EO0MwD0H98fOvbuBx9ampqJSD52TMrDD3q7RADegYQBAMCbGIZ5es6jN4wYTkSWpua8wqI9lSpvFwoA6IvK/+YVFnHZwg0jRjwzZyaDwc4wVCFhAADwMj+xOGt+qr+vLxExDO0s27t+6w7MtQrgLcbzF9dvLf60rIJLEPx9fbPmp/iKRd4uF4DX4EnPAADed8OIkBWLfqvYsv3nX87zeLwDuiM/HKmO+030tAfu6avnQANAjxovX/7sq/9U/k9ttVp5PJ7NZrthxPCs+ak3jAjxdtEAvMmthKG+oVESGODpogBA36pvaPR2EaAXbhgRsnLxgr9/9Kmu+jiPz7PZbF+p9v9XfTA2+o6J8vHjbwnn8dAdAsAjbDb26MnaA7qjKvUPZouFYRgen2ez2uRjxzwzZybaFgB6SBh8fATNzS1VmgMJk++9PgUCgL5SpTlARD4+aEgcMPzE4t8veLzo8399pdrPsqxAIDBbLHtV3+5Vfevv63v7rRHjbgkLCgwMlgQEBQZKAvzQoxrgqv10+uzF+kZTQ8Oxk/ofjlRfvmLmlgsEgpaWFrLRQ/f8JuXhB/EpAyAihmXZbl7+098Kan7SC/j8pIfuj4maiHYGgAGhvqGxSnNg15d7W6zWiJvDXng23dslgt756fTZHXu+Olxzkoh8xSI+n9946bK3CwUwmAX4+1mt1itmCxFNiBj92NT7MYMqQLseEobqkz+9l7+JJWJttutWJgDoEwyPxxAtzXhq7C03e7sscDW0x45/smev4WzrwxnEIpEk0N9mtV62WFqaW5qaW7xbPIABzc9P7CcS8fj8+oZLZouFWxg28obHEh/As5wBHPSQMBDRnop9u77ca0PCADDQ8Hi8pIcemBp/n7cLAlePZam6Vv/9oaMHDh01nrvg7eIADE7S4cMmThj/qwnjx4aHoQsSQFc9JwxEVH3yp/J/f1176rSpvuE6lAkArlGQJDB81E1T7rsXbQuDyek648HD1afOGn/+5dzFhgaLpcnS1OzONRwAugofNfKGEcNlN4becVvETaFSbxcHoF9zK2EAAAAAAIChCQ9uAwAAAAAAl5AwAAAAAACAS0gYAAAAAADAJSQMAAAAAADgEhIGAAAAAABwCQkDAAAAAAC4hIQBAAAAAABcQsIAAAAAAAAuIWEAAAAAAACXkDAAAAAAAIBLSBgAAAAAAMAlJAwAAAAAAOASEgYAAAAAAHAJCQMAAAAAALiEhAEAAAAAAFxCwgAAAAAAAC4hYQAAAAAAAJeQMAAAAAAAgEtIGAAAAAAAwCUkDAAAAAAA4BISBgAAAAAAcAkJAwAAAAAAuISEAQAAAAAAXELCAAAAAAAALiFhAAAAAAAAl5AwAAAAAACAS0gYAAAAAADAJSQMAAAAAADgEhIGAAAAAABwSeCh7V6sr//ki/KjJ06Y6hs8tIvBIUgSOH706McenhIskbj5FsTWTYit5yC2noPYeg5i6zlXEVsAGEAYlmX7fKMX6+tf/8v6S5cv9/mWByt/P7+Xf7/YnessYttbiK3nILaeg9h6DmLrOe7HFgAGFo+0MHzyRfmly5dvv3XcvJnJuHB072J9/dadpT8eOfbJF+ULH5/V4/qIrfsQW89BbD0HsfUcxNZzehtbABhYPDKG4eiJE0SEK6w7giWSeTOTqS1oPUJs3YfYeg5i6zmIrecgtp7T29gCwMDikYSB6+uJK6ybuEC52UEWse0VxNZzEFvPQWw9B7H1nF7FFgAGFsySBAAAAAAALiFhAAAAAAAAl5AwAAAAAACAS0gYAAAAAADAJU89uA0AAABgALFarY2XLlttVj6PH+Dvx+fzvV0igP4CCQMAAAAMdWaz5Yyxzmq1cb+eN10cKQ0Vi0XeLRVAP4EuSQAAADCkmc2W03Ud2QIRWa2203V1ZrPFi6UC6D+QMAAAAMDQxWULNpvNYbnNhpwBoBUSBgAAABiiXGULHOQMABwkDAAAADAUdZ8tcJAzAFA/SRjUeTJZuNOf9JI6u/VM1XvylibdI5OFy2T3JKW/tEVV52KLpr0ru9lOK/32pxVqx4V1JU93vDHm0dSlf9yuqjN3evVpJxszqxVJeV021k/U7cn8o8rssNCsevPpEn3rL2qF8/hzP/ZRqlMVrkx/NEYWLpOFxyQ9r9hTbbpeh9HvuDhvuXC5c6p0f7Jx23c4Rbm3dD1vBxv72EY9kJr+Uv4ebceZVlexMm5S+woxSU+v7LgWmPYsDZclFGi7bFK//UmZ7Mnteoc/3D1J6S/lO57GdXtXPhBl96dJX1no8mIz4CC2nlSnKmj7kpoUl/q8ov3YtIVJMe2RmRSXan/x1OYnhMuWKrtcS82qNyfJot7qcvWGPuJOtsBBzgDQLxIGt+j3LH0kPuPtIo2BiIgMGuXW7NRHUhVqZ9fSGlVhjxvUKvPL8vd0eyk2aFRFG5el3hW/VKnvZjXSlyx7JlfT4x69xaAu3bhH0/lAzZq9RWVaY6+2Y9bmP5mYuqpQ2f43KM7NWNV9aKAz16eKuyfb0GOsUSm35mQ8Ep+a1/ZprzfWdJy7Bk1ZYfYTiZmleiKioNjkeaRbX+L4ydYq8yspPik2zGHrBo1ya07Gg/FpBVq7dzjsQFm4KjXxdyWD7w+D2PYp096XElNfa/uSMtaodCJJaOtrlvrWxa0vFedmPJjW+v0VGTtbTkVbHT/5pqqSPKM0NS5KfF1KP9R0ky34CJxMIImcAYa4/pMwZJfWGgx2P6Ur7F+tK3kto8ggS/2TUnvEYKg1GI5olevSooyq3Gdyu9b5tZoKovSiIwZDrUG9LtHZ7syqXQodGfN2qZzcIU9QqLliHFFXfJAZKzUUrdriMrMwqxXPZZX2rup9XekNNUQFnTMGs6ayyEia6tYvqOisjsirFQl2Eag1GGqzoomIzKq303IqjVHzFMqD1YZag6FWq1yXFhsX6VhLGFocz9u2cDnj9FTp1ck2tLTF9ohWtTM3VWZUvb22tKNKlajYzwW8WrUzN1lqLH2tVE1EFBSblE7Gor2dU2Rt1XYdpaYlhDnb+Nq0KGPFa2kOl5LEdWrub1r9dWluktS4K6d08LTsILYeoFfmbTVKk9YqD7ZdDb7IiOy0RkdkKj7IjCJN7nplHRFRZOLCWKosVXXKGEyqXYUkz5oRi3yh73WTLQT6+9886qYAf7+uLyFngKGs/yQM3VIX5ZRR1CsF76VGBnEXT3FQZPJbeesSyViQX+bQoF1XXaWjhOiIbi6zport66WZK9KlW0udZQxtxKFjE1/KWSwnY01dvfMN7X0tvR83LhCR2aBRElFppd2XvFmzt9hIpFLXuN2hSF+q2GiUJiny3pzR9jcIikx+a8vCiD4v8SDV06nS88k2VImDwqLn57yRRlRhdJKZi8Oi52ctlpNRra8jIhJHTc2UGvOKKzpObrOqZL2OUhJjg5xufPZb6xTJUmPB+lKn97nFYdHzF2fJyag2DKK+MxzEtg8ZjSqi6IT4yK6hcCAOGpuYtWweUZmBa3YIi0mNp4r8MrvuXnplYTHJU2IjXWwDrlr32ULoiOEMw9wwYgRyBgB7AyNh0GpKjJSYkeR45QxLyEgnUlZpO1V7TVpVGcUmRIeSS/qywqKUZVmZs7PkRYVlV98Yri/NXraVkldkOm3F6B9qtFVERMbijtuCZs3eIiMRkbrG4PJ9nemriipInrV4hkN7gliMu19uGQinSv9m6e4b2mKxq+2KY6culFJxUUVbFZQ74dOSnNRpW4XNyFgopUql2lWttdMOBh3Etk9EyNOI1GUq975RLPX2hx0Wn5pAuvUV7Q0t+qrSCpLPjkG+0MfcyRaICDkDgIMBkTDU6TU6ouiwrhmAOCI6gajGaH9D1lRVWkjyRHk3PWX0ql3azJT4IIqMTZFX7HJ9fTfXaUtXrnxNR/LYsV32blYrMp8rla0oWJvSj6/pprpqHaXOS5PadSTQaYqM8vT0FNJp9O7d1jNVa1RE8dH9+EC9JDfZbsSzq8HIbp0q3Z5sQ5rZpFcpslYVEaXJnTRomfXqLfkbjRSX2H6TIDouS07Kokruk22qKM4zSjNnxHR341cmiyZSGpxl0Ga9esvGfCPFJ0YNuj8MYtuHgmLnvxJLu7KSH8hUKLXdtd6aTdXK/Pwyki6OlrcuCo1PSSVj+7A6rXJjBcVlJOKS26fczBY4yBkA7DkZ2dMPdXv/i6jKaCRqyw/0yq1FFLe2u+usVplvzHovVkxEkQkZ8a/lK7WzO3U1LcuKDs+y+z0q+400x+1xo1ejcpSZ0eK6fjxgz6BTUmz2wvmRmkJFpWZZbKyY1KqNxtgVGbPrVQWv1Rj+Sm58UXM3w3psaAdnuj9V3DnZhqjc5PBcu1+lyeuy7u84B5VZd8nsAheV/YfkjpsEkbGz5ZSzUalNzYg0qZTFJF18f2+Hjiqfi5Y9Z7eDFcuSB894HcTWE8SR6UVK+ZbcP6/NfaY0Vxqb/sbaPybaH1jnsEuTFfM6BigExSSmUlFecUVW7NQgrWq7juL/1GUcOVyDXmULHC5nIPql8dJlh5e4nOGm0FCxWOSpEgP0JwOihUEkkbp6yUJElCDreF2rzK+k1HmJrq+zZtUuRejCtoQiLDY5TqeodHFnWBaVOC93y9dFWdEO34fa/OeySilZsS6jn9ft6mrURpKHySJjU+StvZLUqnxjfGpMmCwimkitdy/ZEeGS6FynQc/Oxju7faq4PNmGPGlEbEq24vOKPFeVSnl6vmPcIhMXxpJOUaEmfVlhEcmzknoYOmohIoqVOr/UyNM/UBVlDsY/DGLb10Jj57/3T432c0V6RHXBM8krK1y0NCTkKP+V16mLZ1D87IVExUUVddycHPbjyOFaXUW2wEE7AwBnQCQMQaERcqKK6q5VW1O1qoxIFtr2TVRX8uccnTx7fpzre+Gmiu3rjRUvxLZ1I4ldVknGjZ2nV22fuOY/uwrenH9/mMN3Wb0qb2WOJir7g7WOPfr7H4NOSTGRMjFFJmTEGov2aszqqnxjSlpiGAVJx8pJqTa4MyNPaFiUnKhCW+3xAg8ubpwqPZxsQ1lbMvZtZdH/y5rhOJKUm8mnWrkiinTqmi694MNiUuPJmF+2RVlcQfLZPQ0dNWkrlUTyMLtKLTeTT/Xn2c53MLAhtp4VFDnjj/8oyJYbC4vtnzLBhV2dnyQljbracW4DcVRCppSURWVFe9YbnY8jh6ty1dkCh8sZAv39u76EnAGGjgGRMFBkzGw5qXI3Os42qS8rKCRKjZFzlSxTxdqcMmnairRu7lbpywqLui415pVUuT1fUFl21tuG5HV5A+FOsL5a0/ZNHRabGmcsqizYs9GYnhIfRESyiGgincGtb+vIqBlSUq39s+N06WbT0H1wW88G0qkyQIkjM9/KidLkrlrr+ESWsPjUBDKuz86p6nmqGbO6UFFMNC9e3uUPJY7MeuuVKM3bK7vsYNBDbK+NWCqTEVV1zYdCp76xNo1Ks15zvJyKY6dmSKliVXYBdTuOHHrjGrMFDsMwoSOGI2eAoWxgJAwUmZyVQMaNmRl5bU/CNevVhUtTX6ig9vYEfUn2C4WUlLssvpvLrFa5sUK6orTzxPml2VIqdPpABhek89bmDogut2aDtorkMomYiCgscV6qcX1uHmVO5XocB4WOlZNK496zmqNTcxLIuCsr86USrantb6BSZDySPTgeueQhA+ZUGcAiM9atjdflpb/tcEMhND4llYiI4jMSuhlrbtKWvjr/mVwNReXMu9/ptSMyPW9tnC7P2SNfBjvE9qqZ9UpFfhlRglzW9cWg+3PWpUvLsrKLHK6e0fGL5UREPY0jBzf1SbbAQc4AQ9zAGPRMFDrjFYVSk1X6dmr023aLpfE5f0qPFhOpFbKZuUREuzKidzl5f9ZdstJ16gJZhUInzXjDoae5PDpFSusLlX+YOtudql1UdsErzr/8+p0arYooOqL1C4sbVKdd3P4gIFlEFFGZzvCmO4cTOuOV/ApdRtHWrMStdotlqWl9XuyBxGHwKBFll7Y/u60PTpWu229dmL3T6ZCJISlsdu46ZexzmctilHmJHWP4uRO+KC7Z2dBRh8BGpf0jz/Uok7DZbyiU92ZlvhCr/OvUgT+bT28gtr2g3/5k7LJKuwXS2Jx5zhsKxLHZBYtVyS9kKuRFWZEdjS+RMbPllGNM6fU4cuiqD7MFDpczEFHDpUsOL2EMNAx6A6SFgYjCZuT9q0KxMDGKq/3KolJXKEo/L8yIdP+yalGV5RvlWfGO1SxxVFwyUUVplRu3ykXJinUDpoNJnUGtI/lYadsXVlD87IX2E3sHhUbIyah1c2pVCpv63ucV+StSYyOkRNyfIL/i8/em4ga6UwPqVBnowpJzFElUuiqnU3tXUPzshZSYEt/NGSqLik1doSjdv+ut7tYiCpuRsy6ZdmXnOH/+2GCG2LrLTNKYtsujNCJ+Xm7R50Wuv6HE0X94KztKk7uqoFOHrMjEjBhpRgIe73ytmpqb+zZb4PTYztDU3HwVmwXo/xiWZft8o4tfepWI1r/5xz7fsktqhWxmbuI6dUGys1tUdSXpd2WRq1f7Afcj5oXYDnCDMLZqhWxmv2hhGISx7TcQW89BbD2n/0Ss7ty5+obGrsuvJVtox7Js3S/nurYzEJEkMCB0+PBr2ThA/zRwWhgAAAAA3NDc3NJ1YZ9kC9RtO4PT/QIMAkgYAAAAYFARCYUOS/oqW+C4yhm67hdgcEDCAAAAAIPKsKAgoY9P+6+SgIA+zBY4XM4gCQhoXyIS+gwLGhhTogD01kCZJakn0VmG2iyXr4bOKKidcR1LA+BJ3Z/tAABDHp/PC7tpZOPlyy3NLSKR0M/X1xN7aW1nCPA3WywCPj/A379vcxKA/mOwJAwAAAAAbRiGcTrMoM/5isW+YsxrBYNcf+iSpFaEy2KefHVvx5R6dSVPy2ThCnX7ArM6/8kYWXh6SR0RkTqv86vt9CWZvytpnSPUpN9buDL90RhZuEwWHpP0vGJP+wPK6krSw2XppQ6TiXbeqfN1AOD6Mev35j+fGjdJJguXRT2QtrJwr/6qH++lVsjwibaD2HrO9YutWiELl7X+TIpLfXplvlLr/hNIAQDc1x8SBiIiQ2XBsq0un/Wp3boyp9LQwybMasVzWaVtT1rUly2bv6pQqeHeZdAU52Y8mJav7avyAoBn6StWpt47P6dYVWMkIjLWVBSump+vGWwPBPYKxNZzvBZbY42qrDDnmcT4xxVq/CUBoK/1h4QhOqtWmS0nY6W2xvkKddVVOqLU/IMFM1w+R0Ff8kJ6rqbj9zB5cuorWyoOVhtqDYZarfJPyVLSbK9CxgAwEOi3Z/+2UCONz/5YVV1rMNQaqvcXZcelxkag3f+aIbae443YZu80GGoNhtpq7deluSkyY1Xu2l0D/BF4AND/9JMxDBHRcVJav12lzYiM7PJinaq0jKTzkmNdzz2gLcjM2mXstChy/nsdmwqKjEuMptJ6iaTvygwAHmLauz63gqKyP8hvf1a2ODQ264MoM+q01wqx9RzvxlYcFBY9/5VcbfH8QqORqNunawMA9FJ/aGEgInHsHwqyo3Q5q1aWaE32ralm/d43n8tRx2TmrbjfVb5gVitWvqaJWpGd5mrzZv3ejfnKqOzspN5dQ5XPRbd2D70nKf2lLSr00QW4Dsy6iq1GSslKi+5czxK3jys07Xm+ret2eFTc40sVFXa3VE3q/OeTYloHL71aorW7olhq9uZlxk2SycJj0v5YUj0Ee24gtp7TL2JrsbT/07Rnqf0Ih+cVbQMF9duflMke7tRF16x6Mypc9qrLfsEAMNT1k4SBSByd9am2NKV+7SORY8Ojs8qIKDc5XDb23hxDUkHFP19y2bygL1n2TK4hSZGXGdslG1AruGvlrbF5hvnKj7PsL+MdyUDrD7dTFwwa5dbs1EcyS9DSC+BpNVoVUWJcpOs2xaDYhNS2fxtrqopyf5u8soIb7Vm95bfJOcXc6CWDplhlpI6PvfKF1Plvl9YYichQsTEr9bW9Q26EKGLrOV6OrdmkVymeyy4iSpNHcHtLTOnYm6o4d/7MlXtNRBSWOC+VdIqSjvTArKksMkozp0ahmQkAnOs3CQOZtQVZ6atKuwxjqCldlZ6Rp3b+3cMNdKa0tW/M6L7tQLVrWeKDS/f0srqfuE5tqDUYag2GI6rSN5KlxtKsP+8Zct+CANeZxaIjIhJ1s0pQ4nutn81aQ/XXaxPJWFjGXSXq6zVECWtVra+WZdj1cpTGZRftrzbUGgz7t2RGkXFr0ZBrNkRsPcdLsc2dyd3zGht5b2pupVGapMiK53KWoKn/z9C2u2rVnxLJWKjUmIgoKG52ptSYV9yarJCpYvt6ozTlfuQLAOBKf0kYzOqCpa9VGKXJuTvV1bVqRQIRZZfWVms/V6RFGVVvp2cru375mPa+lp6ricr+IMdFd6XorLbqftGKeKmhKGN9x42ZjmSg9YfbqQvisOi03NwUomKVDm22AB4lEsl7XslUrVQsfTRGFi4be+8yJREZ6y1ERNHJ65KlmtJSlZOpLKNTUmNDxUREoffPX5hIVG0wdllpcENsPcfLsZVGxKRmr1NW/NXu9pmpek/e0qR7ZLLwsbEv2O1NHDtjsZyKC5V6IiJTlbKI5FlJscgXAMCVfpIwmFTFuTqSZ36wdn50qN01SxwUOeOtdWvjyVi6saJz84BJX5q9bCslr8vLiu7pKicOi81cm5NAtFXnYiImdwSFRhCRoa7+6jcBAD2TRUQTKTU1rnNzfcnv4uOfyS3SOJltOSw5r+LjNNqaFhsek17g8ja3iIhIZ9fje2hAbD3HS7FtmyVJU/nP97KS7TpE6UsyH4zPeNvp3igyISOeKvLLtER65dYiks+O7TrjCABAm36SMNTothLJZ89wWvUPi09NIKqq0Ha6guZlPVcqW1GwNtnNccwikYRI2m1rcQ9MdTVEFBHmcmpXAOgLQZGxCUQb3yxwnE/exE2JYFZtydlljJqnULbOm1ya7bCBsVOz/lqp2Z8rK05NfGnodabvBmLrOf0rtmbV1pxSY1TaOqX2iMFQazDs7Ly3sMS0FNKtL1FpVUWVJE8Z6vkCy7L1DY1nfq47oddXn6w9odef/rmuvqGRZVlvFw2gX+gfCUO1toKIYiIjnL8cOjZGTlRa4dAZKCrnrUyXjQvqgsz8iurWGZfMJm1RTk4xSVOiXeyiJ2a9Ki8ru5iki+93o9EZAK5FaOLibDlpcp/JULT10DCbtCUvpaVtVJuJ6o01RqLIuPjIoG5bFyVhY6VkvKZ2xcEHsfWcfhXb+roaI1FkfJyrvQXFp2RKjXmvvpCvotiMhCGdL5gtlpOGU/858H35N//76pvv9v7vu6+++e7Lb/73nwPfnzScMg+5xjIAJ/rBcxjUCtnMXCJKjHL5bJsIebyUdIW/HRu205AVTURE0mTFugzXVzi1an1prrE0x36ZLDV/Xu/6aCqfi5Y9d01bAICrII5Of2tFRfrbFblPxOZ2LJbGriAiCo1KjCdl4TORhfbv0ahrzDNCxWbVW7Gp6+26eKdEXOVtgkEKsfWc/hTb0OiEeCorzLiz097Umhpzcmu/X3HsjCx5Xo5OR3Fru04yOHRcMZt/PFb949GaFqu1faHNZrOYmwxnfj5b98vt4yNuHzfWV4wvfxjS+kcLA0kjUhQ5CS77+ohj569dGC/rWBCV/cHabudFik5dl5uWECVr3Xps6or8is/fm3rV10RZ1LVuAQB6QRydWaT8uP1TLI2IS8v9WFnENSqGzVbszEmOkBKRLCox7U9K9c6ceElp6kY1UT1J4mMjpNyb4hcqKl6Z6nqay6EJsfWcfhTbsFRF6Stte0tIW/u5uvSVeMmu1AJ1+yqR0UlSIkpMiR+y32w2m017rPrgkeoWq1UaMuye6IlpM6Y9PfuxtBnT7omeKA0Z1mK1HjxSra2usdls3i4sgDcxnuift/ilV4lo/Zt/7PMtD1buRwyx7S3E1nMQW89BbD0HsW2nL02PfU6Sf/C9vsr8BlzEjOfO7a74usVqHS0bFX/3JAGfb/9qi9Va8c23JwynBHz+9Ph7pcOHe6ucAF7XT1oYAAAA4Loxm7Tbc19TUkqiy+eiDgHfag9xbQtdswUiEvD58XdP4toZvjt02CslBOgn+sEYBgAAALh+1Irw5FwioqjshfFDOF+guvPniWj86PCu2QJHwOePvyXceP7Cz79cuL5FA+hf0MIAAAAw1MiiUrLz/1WUFTmkx/I2N1uJaIxsVDfr3DLqJiJqaWm5TmUC6JfQwgAAADCkRGfVVmV5uxD9ATeMUyzq7hFNYrGIiDDoGYY4tDAAAAAAOMdjGG8XAcD70MIAAP3OibLMd0s7fmWY1vncHn0+L2F0j2989MW/dr/W0PXtB5kbD3Za0h5bol8tfOPZSUO5PzsAALiAhAEA+h2Bb0hICBERy7KM3e09cU9XLIFvSEhIj2sNXcKA1sBSl9iybIAQTc7XqLnhxIGvdAEPTJsQ6O2iAAD0JXyxAkC/IxCHhITcN+cPd43s9RuHhYT44rrmyp1zX7+z9Z+Xjuz622c1VxNkcKnp9A//qaGHH/J2OQAA+hi+WAGg3xGIQ0KGXU1DgafkwgIAACAASURBVEA8/OreOPTwfPyHIVZ9jCcMGBbCoqUGAAYdfFkAQL8jEAcPc1WXbT6j/vwbPcMQESv0l94QPvbWcTf4tb9xWHCw3RubL9T8ePC4/uJl8hsWdmPEGPmoIH7rCye1h4+f/bnBzPiHhIWPGz9mZIDzedgHK54wYJiTIJsN/yv7jn499dcBpzXfHTE08CLuefAO/vGSf+vk980YN6xttQvHOi2xNp45fvToyZ8uXmFEAaE3jrkt8pZhPtfzaPqDC8c+3adlhg2jH8o+PcgyzE2/TviNTNwRq1HNP3x/8HidNTTq/2JvqP/fF9+yd029e1Tb9DzmU98ov2MmJf6GW2JtOHO8+thJ/YXLJAoIHTnmVvnooRdRAOg/kDAAQL8jEIcEB58+uO8018meZdkRE2IjpUIiIh9p+ISQhrMsETEMY208c/gg+UwaFyIgIuKLg0NCxG01/8tntD8YGkg0bJiIiG1oYlufzWSuO6Q5/Esz+fgNG+bLMNR49th3jS2//lVYwBC6NcyIAkKGDRM7Zkk8kX9wMNnqjh7SX/bxGzZs+I0SPlnEwcHBnVYViIe1v9nWoD+oPt5AjDgkWMQSNdXrf/jOHBl923DhdTua/oAvDgkJ4UaQMwxD5N/a0iAQBwcHM436IycvNAmDg4WyYYHEmP2HDSOh3ew7PGFAcDD5MERcRDXHGxhGNGyYkGWp6aL+x+/M8ugJQyyiANB/IGEAgH6HLw4ODmbtl/j7tNflBcPHT44bz/2bbbpQe0hvunLFSoF8IhKIgu1bGPi8oOCbwybcEmJfz2q5ePYMe1Pkr0eG+HEVNrap4Wztibpf6kcGBA+dSyLPxy8oqEXkeMA8H//gYNOF+uDbYu4LFjIsSwxRiyg4OLjTqnxRUFCQSEBE7OVfzpwPHD9RHioR8RkiYq1XLhqO689evDw81I+GEEnY5NjAk7paujnyFvsTiS8KDg6+dMEsi75H6s9nWZYhavHxDw4mH7sElefjHxxMQl5rRAPGdY7oqRM//TzkIgoA/cfQ+XYEgAGDLwyUSEJuuiXI+eOUbM2XG0wXGxqarAwRSSSS9ooXXyQJDBS23Qr3C4m4yXy++Yq5xUcsaLuZa21qZiV+bIPxdEPbY5uISCCRsIx1KF0SGR//oCBG5NjCwPj4SSRs4I03BwsZIuKmUeKLJBJJp1W5hIFPRM3NFh+JwHz+zE/n27fBMP5B/sRaiYZWNy8ueq3NBO34IolE4jtcJvXnU2vjg5MVO5Y0N1tEQQLL+dP683Zb8ZX4DcWIAkA/MXS+HQFgwOALJYEBQudVI5ul0dRotpLIVyJqq/GL2jIGvjBQ0pEwkMBfGiZuMl9pvHiOFfgH+osFPGIZJlAS2NrTidoqcETEutjhIMXzEQcGMF2OmecjDgj0DRR1qvPyhZJASadV+cIA/wAhn4glnp9E0jZJa/tUrSzLCgVD73FXPB9xQCDj07lnG18oCZSIfTuNQGAE4sAAhxYG38AA1odHrJXn6x9A9mdma2x9fIZQlzkA6F+QMABAv8P38Q8IEDitv9tsrMA3IMhH6MPn+hO1mC0tPD7T9sYAf/9Ob2T4Qt8AoW+ArdnS1NTME/sIhJIAhnxEQv7Qq8/aY/givwAfny4tDHxxQADxHaq8Pv7+/p2W8QQB3F+I8fH19/cRCMUCVGbbo9d5Id/H3+GkJOIJuqzIFwUEEJ8hRuAbEODDF4qRHgBA/4GEAQD6HUYgdjXfJ8/hpc6run4jz0ck5u7x8oVdRvoOSXyhr7M4OAtP17DyfMSt4ezmbzUEuRc9Zysy7UscT3EAAO/DHQwAAAAAAHAJCQMAAAAAALiEhAEAAAAAAFxCwgAAAAAAAC5hZBX0Mcmj71y3fdV/uvy67QsAAABgaEILAwAAAAAAuISEAQAAAAAAXELCAAAAAAAALiFhAAAAAAAAlzDoGbyBZYmIZRgiYsjGEsMQscQQEbFExP2LOv8LAAAAALwACQN4BUvUwpAPsTaxrZ4lG/GEFvLlM9RCAmIZhlgihmVYb5cTAAAAYKhDwgDe4SdoGRlgEZN1lG9jpMxHf77p2LkrLIn0l0UXmnxYYmwMjyGWQRMDAAAAgFchYQAv4FFzRODFB0Ya/a1N/j6W6ePE+0+2TPBhL1t9v7ty839P+VjIl2tmQLoAAAAA4F0Y9AxewCcKYSwPyprmRwsk7EWrtcmPLsyMbJ51JxvKnBUyzQwxfBvDY5EvAAAAAHgZWhjAC1iGsfJ5fMYsZJvONPttPxzo02y9/QaLmC7xSGhjfFiWIcZGLEPEIGkAAAAA8CK0MIAXMEQ8lmVYno1hzl3hVxwT1RjFLSQgIpYYluETEZHNhlwBAAAAwNvQwgB9jW39D8vYiNqaCFgiYlmGGJYYYliGFZCNTy0+dPEBeSjv0Kk7RjGBQlNjU4CAWnisjWEZIgExPCKW5d5MRMQwLMsyLEMsSzxkEwAAAADXARIG6GMMEbEMy7A2hiWyMayAiHjEsEQsN+sRy7AMKxL5Mn7DmppNd0jMt98tZKiJsfKvUJC/ZDhrYFni88jKI5blcg7WxjJ8Ih6RlWV5DFlZ9FQCAAAAuC6QMEAfY8nKIx6PZVgbn2sNIGLaGhYYhoghsrE+Pxh9Nn0fGOIbYSMBn2V5LNkYfqPV7z96/hUSE9lsDGtr7bxkI2IZshGxDMPyWGKIxyObtw8UAAAAYEhAwgB9zNqeHBCXHVhZlrXxbEQMyzAssSyxNoZ/qjn4k+M+VhrG8hm+jWVYodXGCvjMFdanhScSMjZiWZZYYohlWZYRcP2ZWGKJabEyAj5rYzECBwAAAMDzUOWCvsYIbNYWYlsYm41hbQzZGIZlbS0Mw7UJ2BjGxjAsEWNmgqyCEJYENpaaWX4L49vEingM48O22KzNPJ6AYVkhj8jaYiM+SzwBWcnaxFCLjYjYFiKrdw8UAAAAYChACwP0MRGxYiHLY68wjMDKMlZbs5Xli32FFrPFSiKRDxFZLS3EChgfIn7TuVGBlhuHiS+YzutNQhIFsCxjZW024vPZFh9fZuzN0pCQ4Xv+oxPwWH+2kcdrZm38Rh7jx7vSzAi9fawAAAAAgx8SBuhjIUJmxiP38FoafAQCczP/bN0vl80tE2671Vh3+nD1Welw3xtukJw6YwnwZUffLPvx61233+hjvXzGL9S38pj5iYW/PX3KKBIJ93//Y1j4aD8Rb4RE6Ovv+7XqfyK+7bZRAbbmS1KJ74ET524KHX7SaPb2sQIAAAAMfuiSBH0swKfFdumSwHplZIjfFdOlQCHdFh4qHz1yVIgw/q5bfzXh5mNH9GzzpUm3ycbcEBx+g19LS+PFeovVRtJhYhFj/eXnM0J+811R4/W1tVcaGmQ3SFkbe3OI/42BrIDfVGe8MDKIwvwv+QlamluavH2sAAAAAIMfWhigj42LHOM/LCTIf/jJsz9byNd44eLh2sMXLjGXL9WHDBeazl36pZEVWMz7j5y2tfz8i/5S9C2BgSFMY5NYf8Gq+vH0MX3DhZafDacMY2+9o4nHfKOtPVRTO+HOiceOfHe28covLX5HzlwOlN580njlEiv29rECAAAADH5IGKCPHTj2c6XqcKCf0NJka7zC4/uwVmr5Uf8tw7awtsMsI2ghhuEJqs/W22ws3+Z/2mSSBjLGBvZc0zCd8juGx7A1Z4UC3g+1KoZlGLbFxuOx7C+MzcoK+DZeSJX+koC5bGEFTTw/bx8rAAAAwOCHhAH62JkLV/iMv+WyzcbySeRjZZtsDL+ZZXgkYHgMy9p4PgJrC0uMiM9raiLB6RY/4/kmC8O38UVENmJYPiO+0mxj+AwxNmIEVmIZnoBh+CxZWUZg5fnwWJblETrUAQAAAFwHSBigj7Es30YMw/BZhmWZZh7ZeMRjW5/YxjIMw1qtxDAstfBsjA+RlZhmEvOJJWqxcVOvssTn8VhibQxDxPKIWLKxDBExDGtjWG5ThGe3AQAAAFwHuEcLfYzHEkMsERHDEmtjWAHPxuexRGRjycYSscRjWCKmpYVhGOIzxLTwGCsJGJbhsQyPSxBa1ySWeMT6MMSwREQ8HstjiNt6214AAAAAwJPQwgB9jGGaidi2RoDWZcR2pBFEPIYYYqmFZ2VsDN/GEL+ZIR6xDDEClogY1kY2lhiWWCIbQ2QjGzE2Ynksl48w1L4LAAAAAPAoJAzQ5/jc/1qzBYZYshERQ7y2Cr6NGOIR8VgeSzYbjxjiEUPEEENs6zoMj6HWpQz3MstniNpSBS5XQMIAAAAA4HFIGKDPdanHO6vYM27U+Zm2lxm79ZAlAAAAAFxPGMMAAAAAAAAuIWEAAAAAAACX0CUJ+lj9p8u9XQQAAAAA6DMebGG4WF/vuY0PJlcRKMTWTYit5yC2noPYeg5i6zkIFMAg5sGEYevOUlw+enSxvn7rztLevguxdQdi6zmIrecgtp6D2HrO1cUWAAYKD3ZJ+vHIsey3/p/ntj+UIbaeg9h6DmLrOYit5yC2AAAeaWEIkgR6YrODm5tBQ2yvAmLrOYit5yC2noPYeg6CBjAoeSRhGD96tCc2O7i5GTTE9iogtp6D2HoOYus5iK3nIGgAg5JHEobHHp7i7+fniS0PVv5+fo89PMWdNRHb3kJsPQex9RzE1nMQW89xP7YAMLDwc3Jy+nyjYpHoNxPvrG+4dOnKZYulqc+3P5gESQLvvO22Z9MeD5ZI3FkfsXUfYus5iK3nILaeg9h6Tm9j20+otYeI6NeRE/pkNYBBjGFZ1ttlAAAAALje/r79EyJ6evZjfbIawCCGJz0DAAAAAIBLSBgAAAAAAMAlJAwAAAAAAOASEgYAAAAAAHAJCQMAAAAAALiEhAEAAAAAAFxCwgAAAAAAAC4hYQAAAAAAAJeQMAAAAAAAgEtIGAAAAAAAwCUkDAAAAAAA4BISBgAAAAAAcEngoe1erK//5IvyoydOmOobPLQLgO4FSQLHjx792MNTgiUSN9+iPXbs71uLLE0WjxYMoBuBAf63RUTgvIWB5SrOWwAYQDzSwnCxvv71v6zf//1BZAvgRab6hv3fH3z9L+sv1te7s7722LG/bipErQu8q6Hx0v7vD7751w04b2EA6e15CwADi0daGD75ovzS5cu33zpu3sxk3GwAb7lYX791Z+mPR4598kX5wsdn9bj+37cWERHOW/C09jPzrl/dufDxWa5+xXkL/UrfnrcAMLB4pIXh6IkTRIRvL/CuYIlk3sxkajshe8Tdo8V5C57mcGa6+vVwTY07W8N5C9dH3563ADCweCRh4Hoi4dsLvI47CXvVNQ7nLVwHDmem018bGi/1doMAHtXn5y0ADBSYJQkAAAAAAFxCwgAAAAAAAC4hYQAAAAAAAJeQMAAAAAAAgEtIGAAAAAAAwCUkDAAAAAAA4BISBgAAAAAAcAkJAwAAAAAAuISEAQAAAAAAXOovCQPjtu7X77rNa98XgIO60nRZuKz9J720ztslcodaYVdmWXh6yYAoNfSdfnbemtRF+a8+nxqXp/ZqMa6eQzxlA/ZAAAB61F8SBoBBxqRcKpv0psrs5CV1nkwWLpM97Vhjb6t/KNRd6yLOfhR29ROTfu+Wl9LiJslk4TLZpLjU51/drrrq6mBrauFQodRXvJp2j+N+YRCwP/GuoxrVCzkFxaoaoi7ZrLOfLp+X68BUXfLqk3FR4TJZeFTckyu3VOidfaABAAa//pUwsN3qfk1uuX3LgKvlvd1Xb5jUhSvTHoiShctk9ySlv7Tl6utsMABkl9YaDLWGguTQLi/plVuLyJi3vdLk+WKYq4sy4++dn721osZIRETGGlVxwbInomOe36PvWC06q9ZgqDWo1yVezU5MexUvFFQY+qTA4F3dnLeDm6laVaJ4PinfvcRIr1ya+GBWQSX3qTLWVBZm/zY2NU/dnjOEJhcYag2G2tJsD5UXAKDf6F8JwwCnL/ldfPKqwtZam0Gj3JqdeleSQo17UkOPVplfSURUtFWp72ldp9rqIoZONZIVpXYLDVnRRERmVW7qC6VGksavKFIfMRhqDYYj6tI3UmVEhuKMzDxtn5x/Zl1FoZGIUvMPtu4XoO+0ZrOGTjltomJ/x0LD32dca36jLox/Iiu3WGNxZ2WzasuqIgORNEmhOmIw1Far/5EZRaR5+9VC7TWWAwBg4OmPCYM7Ywlcvcq1D3Qd7XAt+3KTvig7a5cxap5CeZCrtGkrPsiMlWpyn1nrtF8KDF5m1S6FjvtnZb7Ss9ULbeFrBUYi+eKC/MzYUDEREYlDo9PeK/pTPBFp3s6v6ItGjhqdiogoIT4yqA+2BtDPmTV78oxEFJu9YkaYmIjEofEZGQlEpNlehYwBAIac/pgwDExa5cYKilub9+aM1hqVOGhs4kv5b6SSMa+kykREpFb01DHXsSNva59ik7YkL5Prnh7z6FKFsppLQJx1c+feYdZXbFn5ZAzXnT3tpS1qp1VG056lDv3Uzao3J8kSClq/Dk3VexTPJ8WEy2ThMUnPK/ZU223F8VgUaiJtQYJsUqdu0PqiNFn40j0mJ8c+mPvBmyq2rzcSpWaviCfSKXZ5MmFUVyh0RBSbMS9a3PmVsIS0VCKiotKqa+4YZ1aXFOuIKD4hOsxusbYgoeNv6tAHz+nZ7jjYuk5VuDL90Zi2cRedz7G6knQnb7c7cUzVe/KWJt0jaz/P99r1MG8dKPL4q4o/tg7tiHogdWme/R7qSp52OlbVpM5Lsv9c1Km2rHya+yC0/UyKSx1q95lN1XvylqZy/S27/rGI1HlRLk+G9k0oFUsf54YExCQ9r1BddVGUiqXcaRMek/T0ys57snt1Ulzq84oSrYm4q+XMXG6N3Jk9j/uvN3Ld7yQiUfuy0LAoIiJdVTW6mgLAUDNQEwb78Qbdtwxc25gEt+mrVTpKTIkN67w4KG52OpFS527Xb6cV+7rKtVlvl7Z1dCrKfSY1p4ebxrrSF7ILKw1ERMaaiq3Zyb/Nd1K7CYqfvViqLK5o7zNj1uwtMspnx0QSUV3FyrQHM3KLNQZut8W52cU6u4qvkwJEJmTEG/P3dFSP9apdFTQvOXaI3ZPWlxUWEVFKYlpKaiKRcf32PrnH73xfNRVGIqL4sWFdXguKjI0hIiqtuZaRB2ZT9V7FM+l5OqKo7GVJnXYTIY/t+IXrg/dI5h43K1NmteLxxNRVhUpN64mqKs7NeDA+s9S9Plz6kswH4zPeLuLezZ3n8+9NdewBWFXw/9m739g2zntf8F+53YrXPjWLbYdvznDVgjrthXhuDkg0gGYbQFSDijoBRCWtRjEgqsGKjLEiq4uYMSDTvrBpA/ZIW0fOhUN64ZBauKKAVFSPKwrImipyPcK2GF3kgNztCYnNKXlagdN9wWl7StXupXtPrH0x/CuREiVb1h//PjASceaZ4TPkM8P5zfNPmBZLjdClyKTT8sbWjQTz8YDdNpmovBbPWU95w0uJmg9RyUhrTTVsOSKy98+9YXFORqTyR7npyzJ0VPWNKRWGhcr67L23rZbTQmSldCWbj4m7yEkhGfy+xXJaKH3xcmIp7D1lLXctSIbslbVKRpoXfMuZXbzPSYYFAKw9qnzP+Tz14SGEPK8Oa8Bw4ChyDDCwm+7aNK06QEHlN8d7d1PD9LJcNoNSO/W7lZW6Tt53PZZcleVVOf3LiKtDCS/F8xu63BVbt6vNy82Wt7wzH6flVVleTYvXrUjMSXUiBg3X5+5YjkrFH/VCYjmidDmtRqAgBc+GE4xNuBtPr8ryajJ20+Xt48rPsHNypnws0fHSUr3VPqBElhPF+7GsFF1mXH2VeKHq2I9wO/hkbFoEYO/jtDrO1gMgEl7aXUeG7SmK2lKIZeusbG09+UQ7j42Z2bZ248vDQoblx4PiB+4NtRga7nL5C03/Mib0AEp0ajEJAGZ3cVWxJJfbo4f6dQBy9846hBUFJlepoCZj120MlOiYa0N0W11sSiU8GRxzRxVUNv9lbKqPATa1AOxwzHxcaSJoApAQHO82qvPJSxM10QKQk+bDCoBOX1Rtarga9/c8yYd6GOXv3/KEEwBjm/ooqXaSmRk1AUp0zFd+SK+1TGwuDP6l4neZjXid8zLA8tdjyU9leVVOf+znd5yTgjRp9y0rMNmDH5WKzU27CYo06ZiSCkAuvZIAgIFgfFXteOD1dJmhXi1LF9VSiQpt0StC08HxACAJkwtqxVVO9E/N7jjHhBByNBy1gKH53gt74dGjJ2t7IssxwLr53k/Xyxviwpt9nW1s+wt8IAUo2zzeNA5YH817+W+b2LZ2y9kYkHpUdwOj1dklRlbU29lUfF6xDlj0AFLxgAL+qjBsVlvFa42284PGbXOqtQy4cOueGjHkEjGRcfZyG1rKHHVJaS4FwG41aQGdZYAHIE7vcUeGvSbL8ZRSrwjlpMgltZFJ+wtW7xLQZIONZHRqUQE44fr57mLHC62R93o7AST8y9t9WklpLgGA8V4sba41Do57LUClBaCKNRvVm0KNtt16/vI4A0CZj9d75pyXJuz8rUTtQp2ugwGAtWz+Cc/uwysnhmcVAPxVYbBdCwAaXfeomweAWHSlHAxvURiKUTQzekPgjVqNug99+45zEgtOKwDjGvf1tpeKjc3rHgCgBJYSBZzUGRgAyIhSMg9odBb3sHGrXTZsCKrt9dy0MYCy6Oa+wbJtrPmNQLFwsLoni8QJIeTwOWoBw75hWSuQkpWNy/P5LMCgtd42G2UzIgCW2fhjlI26LK9tahSxhULcf6qq/cBW9NYhXlJvZ+NSUOH5Lh2AnBwH0M40akuUTS+j7s+mhut3d4TmlvNATlqMdYxajmxFQn2l7s4j/WrFirbTygNI+Rf2piNDa2sHACzJ9cqGojbDbrL4bWa9GZdX08kP/Y5OZBa91g2NedQ2RWdDpUYmO5CT4ykAkLwvV9+rcZ4VAFBS2a1DjlxGSgGAuSZk1berDaS2iKZZ1gwASnLTG2Tvn7fzt2C/43fVrjCPhIU+A5MKDb/YzraxbJvZvdTMIR4hshwDAKulo+qCoDVaegAgpl70CnH/q+aGhSGXVr8wW5fpiZ4fFHOiBE61VxUbo3NeXZtbg4Z7K+zrYpAIu18xmr7t8kfju+5voLcFxLuCvUsNQViD+n8wrp4nOwpCCDmEDmLA0PysCGodQnWaRn8/+XttQ9fOdUCantnQPDq7FAoDNpOhiV1kpUUJsHGGDT9GyeiVqGJyBdXGAE20iMgtB4UEY7saLQ6yeXerUcK1XYMuZU5KIr4SVEr9DXSsAUB2rcE9blaKrgB9m3IKAEbriCWyJOVzUnSp2B3iOVLs7gxM8+3q3cwLzggAKIH5Oh0ZnrwVfKkXgZje3OgpmxRTAGDtqNdeqVkarbH/8u0pOwMkhEvz6cruF6eEFQUwue5I6dXaxmnbql/hVdKhe6YTBKxl7593Dc/CficwYdFvjJI1xuFxr63rST7Do+nRWuXv5Ow5IQEwFu8HWxWG1ta9vNNmTrYC0BidP5Lid/3ePgMyUWHMZn09uOXQwjUjum5oLak1D0/8aDmxKsur4kQXAMDk7n/eak0JIeRgBgyHk9E6YkEq4Lowl1RvDAv5ZPSc66wIk29w+x+YfDoiCMvAgI3bcK+Uz2UVoIPj2pvtO6zIaaCd6yw2J9qGhusfhX/Rf28alf4GBs7OIHzBO5fMFwCgkJP812I5Nadzk4II8H0bc6rS99j5+Uh4PhpTu0M8T4rdneuaD5dnZGAYDgCWpHTNfUwhuRIDgI7W5msENKZeFwNACi5uiFUL8dmgCIBx9Xc+ca9zbffwaAeAxGK8dBC55LIIAD1Op0WvAYDCo6YrGnQGMwMA3NTPa+7Viv9c29RLlTbPKtXvmE2rnWg319GVFDKpOAAwRn112b3lHp6F64PwhGVzz3GgIF16zRlaflSa5uL568PAsFYAiMXl6lEPktIKUGyYmEuvpABgwOPm6hWGkzo13hITT9Y0r3jmdPg+rFdsrnWXCrpGZ+53v7csfuDqAJQV38zKkw47kI16XNMKYPJetT9nVzVCCAEOWsCweVaERjMkVNctbP33k79Xk/S84O9j5HmP9QWWbWPZbxitY+EEw3kvbvsDk1t402g5G1Vg8o30bry50xq5HmB22Fisfze7l4BEPNP4mZnB1N9R3djjNQGAlGnY79bY42y/JQTAd5dr2rXd7os2Ro54XjG2t7FsW7v5lBBYTuZzC44XLJ5FBSaf09rgNlRrGRyJCZMxS9/GMaOOulJD7drp1eRPIw4AEIOlDqD6DmsHAIQ9Z6vCy4jHMwsApgFuB3ckGm543AIgNenyRso7S9+bGHbcSgGM7eLwU3keajT1MwBWyl3kSz2q5WQmDwD5ZCQ4rS5Rtg8cDJyzA4AkXPBLpbFQC1nJf3mhqe7hRovbBCDlmwwWhwzOx4MXBAkA4+qtbjCypsiVAN537ZYCoGPUUvsJm1wfhM83GMwrvzwXUoAur1Ce5uJ5o1f77iM0OXU/VwCAfHLugjcCAMVGjMUYNxVP1i0MGlPvKAMgdeXcuWj5IUQ2jR3Sc3wXgJTvwrmF4m5QyCcXJuYqgUj+vj9wXx3xVcsWBw8rDnVUbMAHKZXeUQPBvHTNNRZVwNhuBtzG57MQEEKedwcrYDjk9P3vidGrdkuxyavJOiREPoxsHFmmAdbE++6GnXVuFXX916O+HhYAY7DYr0aluz7LyWhwqWHTXI3ZEbjp4BgArGnAG/xIDA6Z0mejDWc+0OtNQMdoTU17TftdxsANeIMjZq2a0wFf9E69nJben+2wALy95/mKFwrSgj8FgHF21j4gL98t3Sp1ZDDaJ8Y5BlAWq8LLs1EFYAeCAcfOnmDqeWFmyATIkbNWNapsf8HivCUpYCwXw1O2p/QtdJh5BoDoeUmdu0Nr7rEzAFIB/gWWbWONr3hjasqUmNz2bxVYFQAAIABJREFUrl9jdlz1cgyUZYF/qdgevf0lXpj2zTTV2cNov+jlGGDZZ1M/wBdsvmUFMHlve2oCpJVSAjWAB5hO78RQ9Sds8t5tGC3kog7j6QiAji7jc1CaBdumiS8c0Ryg67/otzFAIlDsyPGC1bOoACx/29OrBaDjBuwMgGWftX5h0HBDAs8CSITHrMZvsGwb2/6iu2F1XEP6watqTsLu4rMMtv0Fq/uWJxgr1iFkl0LC5LBF/dJf8sQAMHa+UwcARm7QBADiBUt75ei2lpMCdsupQAKM7XrkqZ1NhBBy2Hx+vzNQtLvOA2pVQKNt1eWb0+zltAxas30ibJ+ov9LsllfdNa9XZfV1//ty/xaJtWbn+yvOqnXh/+KsSVraT4mm3XY5YrtcWXBtsfdagywXctK0P4IO96b+Blrz8MSPhmsPpj+0uimnLlmu6iiaTy74Z0UMzdTcg2089qMnL84HFAAd7k0dvTWmLp65FVCUwNyym7NqAY3ZFYl1LkRmw3PLUkYBGANn4mxDbtvmNvTb03dfW4z3zUxNz4lqz3jWZO0atI/aunexs0Y0nOeOoFzwl8a/h9YyEb2jn3p3JpKQwRi4rkFHHyvd8oUy2WQmj+3eWmN2Rz7kFuZnwvNi8SPoNHN99uGOpgJsjdkd+dA8825wbjmWkIuH7HxreGM7uQ6Ljc3HlxIyGEOnZXBomLeZq5KYvHfDbvM2WWW7HN6+57sdir4/8JHRNusPqV+W+nWP2ntL7SS1Fl/ktt5/q3Fh0Pfe+FC0zvr9s5GEDDAGSx/XOh2OPWFOANbEcT0Od6ndHdPlFoYQXBIzSlWpKK40Ou9EceVSUJ1ehjE0bLxWVljLyY9O9nmFtyoHSwghz6GDEjD8Zf0vKDYEWgdaAPWevqX0cpMvVBb+Bf+9+Nf6Or7Q0lLe2/o6WlrUlJU0Te2/mOYL+MLTObyDKhd1mMdiAJi+oO0p3BHF/W02AQBM3qvP23Rt2t53ZPmd+us03PnE6vkNC3Xmfre5v7koanNMuJGOG57ghpva2W7fTmMcvvHT4RtVS/QW9w2Lu3pJr6X/8obNtogVdeZ+l7nfVX8ldHWi09oE3PC17Y6Z5X3vNxptX9f//uKmhTXHrrOFZNvmrTaF94dcvcPcRNve67rR2+jLgqbd6r5h3bIwFPdQleRS/Wcr2+Rny5xo1FLR6PmI1ux8Z9HZ4Dytt7v2/muRI/Z1E0LILhyUgEHz5X9XvoX/3e9/j/X1r3zlK+W1v/vd7wCoS373u9+hpeX3/+33aGn58pe/DODB+sNiuvV1nGgpLWnB+jrQoi5p/R81AH7/+99jff3LX/lKS2k/xaBig1Kax3/4bI+Pe/8xBot1xO2x1+/BvHOsaWDYPWovjZJOCCGEEEIOt4MSMOA4Sl2N1x88fgCs40SlMuDB4wfrAI5jHfjT4wdqt+aWlpYWNTx4/KC8m5ZywKDGH+toOVGKCtbXH3z2J7S0tBwHWlqq05T+V6l5aDmB+jUbR4vOFkps+2RxB8zu1ZWj3fColmBrEwBYb8ZDtmc6EOiulOt/yHPucJXbg6tcQ0sIIUfeQQkYPvlNEsWuBS1fM34VaGk5cWwd65/80ydowQM8xPq6mubh+gOg5T/87d+uA5/8+hOs46vGr2Idn3zyCbD+yb98Aqx/zfjVUoxQDEX+6Z8+Ada/9rdfK27V0qJuVY4Rqisb1tfxyb988jwEDIQQQgghhGztoAQMDx4/LPdgwPEW9c69BZV6gBZgfb14C7++DhxvaWlpefD4IYCWE8dQ3TAJwIljLetAC1pK7ZwePH6IFuDEsRbgwfqfsV7cqlpL1R8P1v+8V4dKDr+m2nwfONt3hDhKNvTFJzis5fbgos+TEPL8ODgBw4PSHfs6ThwrtxPiXuZKSao7KBfTcC9zQMvPfvEzQA0e1r/znR5gHccBtPzsZ0tAy3e+8x1g/cH6Q6yv/+wXP6vs8zgA/OxnPwPwne98p5xe3T/38v8MrH/2f/3lWX0AhBByqBVy6VQylZRWxEQK/M3QII1BSgghR8VBCRgerj8sd3rGCbSgBbW9CsorUao5KKdptG1x+QkALQ/WH1R2caIyHlMpTYtam1Hadr3lRMvejb1KCCH7pCBdbudTU9KPa+/ns3P8Sx7TXfn8NrNs15NPL7zrE6ZFuWrZyURuUE8dJAgh5Ig4KBO3PXj88OHjP3936HuvDX0v/JPZmZ/MzvxkNvyTsPrf8E/C4eIfs+raluPHcPzYzE9mwz+ZfW3oe98d+l71tjh+rOX4sQeP//zw8Z9bjh9rOX5MTfDw8Z8fPP5z3TQ4ju8Ofe+1oddeG3rtu0Pfw3G0HN/xh5NP3/O/3dfZxrJtnX1v+++p043G/Wwb6y/NmpYTL/HfLE0YlE8uBFxd32TZNrbz1TP+WHn+0dzCmyz75kJlVqHcgqM8zVDtDgEA2YUfuNTUuaiDbeMvBS7Zv23atFsA+XS0uMr0bfulaLo43RHi/uoJm77VdyZwvzj7ViF7P3zO/i1W3eRcOF7aRH0vR00uK9mO+9tYNlCby6jLVZkpKSeFzvR9a/OxA7l7Zy5vnL4rG3H4kyCEPJlMcgVYiUi1k+tlV6ISkGg8H3wjhWTQ/rLFPS3KYAydVvuo4L8TFT9O+qk7NSGEHCEHJmBY//OfHj/AiRacaPnT4welfw9L/334YL343wfrDx+oKY/jweMHf3r8AMehbljeVl37p8cPHpTXHgdOtDxYf/inxw/U/5bTP1h/iBMtOHGs9N9jlZc7kRPP2V92CuqUQJAT84J3PrVp0tqseCskKaVNlqfck9GMom4QEU7zPjG/cYvtFeIBl3vxUdUSKTQZEjNKebeeaLaU0m4ZK65SMmJozGIPJOvMrCsnIpPDjlASAFJRz4Ww+vBQyYjhCzZ7aDd37oW43zUWLeUyu/ADK38lUvqwIsJp3h0p3awoGXH6Wrj6TQpScDKWlLedlpUQsqVcNp4CIEVXqmODXHxJBCAl0ju7ABUk4Q2fqDCW8Uj808Tyj0MT54b7LeZ2nZaGVSaEkKPkwDRJ+uzBOvDD934IrD98/LDYEKl2pNPqORNajreU+y380H+9nOjh4wdAyw/f+yHW1x8+foj19R++98Pytg8+e1De6Q/f+99q0tfY1BhqWwUpeDacYGzCbR9v1mmQT0b9SQNX86tZyCcXBWGFsd2OBaw6ALpO3nfdw/NGLVDIS1On+MBS3Gvp3smUZ4VkyOmYTADWqoWc6wO/h9NpUMgno943PNErM8M95zk5cmkywfRNha8OGrVAPh4cs/kmg+LQjV71LcejsssMANk510uetZMnAcBs8Yx3WEe6dRqgkJ4bs3jmpaTDuKN53grJoPO0UM5lNuJ1r3BTHwo2o1YDoJC9/65r+Kz/fs9EtxbZTFxBwjd9j3+nmK/soj+kAAlZ/dwIIbskx6MAAHEpnuNLbYZyUnQJALCUkq/t4Pqjnpimi+Gw4/meCZsQQo66fQsYvvqLjifZ/K+/3wbgP3/if0rZqe8/I7BhyW++laqfNBUPKOBvC8Nm9ddWa7Sdr/4JFV5jBcDQ5Zr6udStL8URul7eMCO8eU5cShSb/7JrlZqCJbe5rWZUm+qYQJWNeuyLnO9qq/tC9eKTRoNOAwAarXHQdzEWHROTmfOGjJgANzU+aCzm0ex8y+VbDkgpoVftWz5pYyeLu+BGIn5ebeRs5HuyoQv83LKUKdaNPKqqzoi5X2RrctmzOZcLnjcWuItC65gXAJBLLotQ4Hkl6qlJJ6fkiW4tlFQMAOanwkMWt1mDghScFAEgk83CfCA6Uubvn3thOFx8wRg6LYMjbru1vXSnlVt40+xeqt5Anc/O0duuqbe2pBywATlpZupWMLacUQDWxA+POO224vfWePR3b3TVXdn+3eDcciwhgzFwlgGHe6i3veZOMJ8Vo/7ZObXsVaVpOF1D1bD9OSk85Z+OiWruBoadI/Z+Y+XoHS+6a/LHmvght3uEZvPbf9lMovjXkhjP96sReT4lFb8vJZ7Owlh1juXT98K3/DPzaiGxWEcc7oHyBUytl+DdfWw65p+aDEYzCmPgLEMer6M0EWSpMHjvyu7q3hH5uP8NP3s7VD0Ld92CXSx1jfZT2bhOgtIOy+dF/v554/BscW3d8yKfvhe+Faq61gFgTSNC6FL3Fs8q8tn70Vth9XQDY+C6Bh2j9t52bXPnQk4KTwXnxVii0geEMXCem5FhI4B8WowGS+cpa7JaR7weWynLcT/7mgBY/R+HGs1nTgghT8VBaZJ02OXkOIB2Zptnc5nlgOdsuNwGKBt1WV7zhpcS8pZbNVKI+11X4Lvp5k5ulUzHmoHUo0eQ5RhwsrW1ah1jtAKysrZ5K2maV5skFeJ+/mWnMF/9C7rDXI75cDHg7iznUs4s1k3KtAJANp1Ax6jXwaSEd6PZ4lNM3nfRiqW4XKf51H7Qtps7yy+UzEpEON2gcVeRnJgXnKc895pqVFWIB/rMp7zh5eJHLiciwpjV8oOFJhuYF+J+/hXeO1u8A1EyUmTSaXnZVdm+kJ77gYV7o1L2lIwUmfTObW5DV3fvr5r5C2GxnLt5wf2KxRVtnDs5EZl08mebO3qyh/LphFT6OyIm1PZH+fhSKfhFrPocy0ZdlkozS7VF4jB3yh8vJpGTS0AXk5m0Wk4L0WJDRylyhTe/Wk5TNxdx/xs2IdE4wV7RtpvKw+6Vzos3/JXzNhm017nWyQm5zhWypJCOuCwvDZdPNygZqX571OLOas+F/P3zVv5COFb7I6BkpOKjo2TEVXWeyolYw3akhBCyl/athmHDo3p1muf19fXy3+rL6uXVyZpJv0Xi6oV1N9/wvtvSsQYA2bUCUP8hqveu7DYk5y7YPYs+YdEa5vVAMnolqphcwevu3nZt8cFz9TY9/vj7/dUP6qpXZlNznltJ591Avx65LX96sxkJ6GhtBctagbXq2oGCHI8BLlYHyEDVE+5Cdm6M89wSkw4mOy1UNbVCPMDaJqt3X/1wa9MhyMm5s/7kSDRg0yNX7gDNsD0A/NL7/XWqCwpycgXtI7zTIIXOCsHYSUyKposxp0n0Qcwq4A5EFYN+8MfyYPHvQlYUHG+EEpMz0tBETXuO8ueZl66d4gOpaGTF12vT9b8v9wOVqoaqigUAedHnmEwAjO16WOCNWhRy4pTjjUBi0e3tMod5fXn0900PUAEAuXue04KkwDQ6E3qrW6cB8mrBi7rHzO0/dRpRSE6f8SwqgMl+c8JrM2qBQk4KTed5TlM1XUOxqqF2PuD8/SsOIQEwtqk7wqBRi0Lu/ruO4VuJ6JjXYgpXj7xTftabl67xpwKpxYh0sZeeg+4rObUEAPyIIzkdCqsNIAspcRaAwzESCk1DSmXAGQEgGXSNRRVUClI+Oed9wxNNCI53zdI5TpPLZgAsBwSY7DdDXptRi0I25nOdDicSwqVZy2Lddkp56dobfKDeJUuWY0D5dNiTicn1fETmi38XsveF08OhhDCzYp+waAEkl/0JAOD9H99QC+qmy91GhWTozNmoApiG/BPj/cVzaTqYH6hpj9rwXMhJkVkFAHcxGnSYtdhUQWfkvaPZtT6P1ajVIC9N8PytVGJSTLmMuxjOihBCdo1qGJ4SA2dnEL7gnUvmCwBQyEn+a7HaJ6pa4+BVgVdbDwPI57IK0MFx7Tvps1ASvjBjvDlV744bwNqaoj6BKuQkv3dSBNNvNkJn4DogCZNzyby67v7UZAjgzYYG76HgERQ5Axg4zqzbTXOSWe9MR2DKtiGXemOXCUs+IVL8sJBPLkzMFTs5Z5ISYGR0+j6Pt0MJnXaGYPcMGMGyVkjxzC46he+JfPpe8Lyj71ss29bOvRFKAUA4ldl6I8bAbFkZBKiPexUAPT4fr7by0egsnvOjDABxOrZtf/Pk4lRUATqFG+e6i9+Z1jg47uUAJPxiEshLM5MJAJbrgYlSMyeNjnOf693+Zj4fj80qAKwXfYOl3HW/dd7FABCDS1vmjjHotj16sqdy2aQCoMM4MDjYAcyKqQIKiXshgBntdZqsAFKJrHrZSq7MJQAw3sulgqQ1DnrHLQCUWwtS1YnIjJ73FQuSRm/1eYYAIDEv1SkNjaMFoPBIAdRnG40Jr1WP5HZvh320gXz6Xuic49VOto1tf2l4w3nLsOpN+Nqa0uR+89KskADQNRW41l85l1zntzmXyueCTmdkACAv5x/VrzXQdp+73G+s7US+8TOKuV8sfiymb9vPhSWqyiOEPHUHpdPzoaftdl+0xcYinlcilXb5Qx1uq64mGtAaLT2ILLnNAb3sMnI9CM8OG2erEjDxTKG/iXtzxnYz4DY3Sid5X2n3Vie+zZsBGHnvkH941mNdrOTRdNHZW85iVR8GAKZxSwcM6OvApNfSVrU/SOmsu5nOBEyfP+Cqk8v2gcveeZtw1ho9W17W4esbNBqRV9IpWN0soDHb3+KF0xHT6HC3FoDeDCxkZFh2E189XdnYGf50ZPuGZDWfJ2u9GvJw2361mZRaHkzVg9hrDB1mIIZUdf1QXblsIgUAKxu+MpWSlHOA2kcEnGHnlTWZlNp4xczW5M5oApY25k7tt1PEWoXbTRw92VPFHs+c0WBkRzjf2dC9hAfLUYBx9nB6xIEYFuPye7065NIrKQAwsWzVDvQGDhABpaqvFWxdpqovVmPstGK2XlnN3j83NhyGfebmyeGxjd3DACWbAoB2lmnuWBKRSWdkyRv7wG2sevuaUrcxA/fOnHJucd7qbL6ZxCPvdMz7inHzyVM3E2qNDTrbtz6XGp8LZscdITk2FZ0eNk833Ly6dwdjsHmu2xv1MVcyYviCGFsJxt5rIv4nhJCmUQ3DU6O3BcS7gr3LwABgDNyANzhi3nRvq7eO+izFX2Bd//Wor4cFwBgs9qtR6a7PcjIaXNr+8ZDtZjSw8bF9Nc4+wpvUHXfyvg9ipcGFtN3XxOhFdRUYg817W4zUbTbAmviL0bDLqIHGPBLwj3CMunA8KH4UtJvSnsV4na026PNH32tQBaIxu++I/hGLgVFzwvHjXqsRAORUDDCoN8taq9PXafcMqDlk2J7K48/9VJBmLkRkgOmbiv0yLa/K8sf+zf3RN5Hji3PSjoe537GtQwojo8Mj7K43yhOR49H5Z3D0ZCvFHs+dRlYDfSdvAaJL/nvzCjrcFjPAGmwAkEg3+T3p9I3qJjfLy+VoYaKbrRfz5+KxFQAdNbHoJt67srwqy6ty/I6jA0BCmFlpsjagIM16IzLA2KY+TKZXZXk17t84QoO++y2vu8/QXMgC7O5cqj0XNMZh77jNwm61RTVlLRlPbejMZfV/rH4sSfGqFYCyOBWlWWsIIU8V1TA8TVrz8MSPhic2LDW75dVKw36N2Rn+hbO8gfP9FWdV0vB/Kb4qNXMv0fWHVksLzO5AbfPVcqP2kpPc6I2JSzfq59FxY9GxeVW55fommvb+S5H+S5UFEz/tnaj/vrqqbJvd723IZdUhANC2918KV+9WZXQlZFfllfPH5Y9Tv/Ez2S+ZeEQBAOdIabypR4/qd4rc0CdkKTT8Lpd8p3fLKhLW0AcsAplcHiilLGQSMQDoZLa7ldG1mxgsKejcNJVvWc5gA6KAlGmunqg2d+q2aaUmd/ElAOBqc1dut13Izrlf8sSmh6c6kzes+19B9Lwq9Xg2tesB6DlbF8TpQAjoGOWMAHR6I4OoIsUz+UF9qSDJigKUb+GzGREAwOpOAjCYB4B5RJcSXq5ce5SPL8cAoKemaiIwNgyTK3LnPKdF3Zvs7HIkBqiNJ5uhs/T3I5TaUNlRf5QkVSY+rwDAiLPxeZudG7N6l2Ea8ofH+43abfswlM7WlXTWtdW5tMW5UJAu2U6HFMbi/WDKwek0mwdWqlxpC7mYz3o6HDnrMnYsOet8UNr2Hpv1QqyZukhCCNkRqmEgZKda1fviuDotbiF3fzqoDj2TXWvwsLPcZGI5s11DJh03YGcAzE8JsazaHyYb812bBgDLwPZdvg2dzg4AK4I3IGWLzyELWcl/qTyKkY7jhxgA4qTXX0pSyCcXLgc3Tq9dL3fqtpF3hXul3N27ci0EABa+s0F9UukPcdujJ3uo2H7G2qGWXz3XZwEAcM6eYiWeoRMAYikZgLHLbQKQ8gmheGk0paB3UgLAjPaaNAC0lgEXAyjTLk+k2DEqGxP88wAY+5ClpqagHC3Uk0/OCZMiANOopcm+vHnp3oKa6ZNb9XmoVjxvizUohZwYDK4AAOR88bxNxoLLAOM6f7EySvCWSmfrctXpVsgno5canUubzoW8OB9SAMu44ObqtUXN3bv09kxp15rWkycZAA3jgUJ2ORoDtusJQgghO0Y1DITskJEbNMGXQOwsx56tWRNbTvksVQ31a/uEADCNWLZtxaG1uIUB0TmfCp/mwlXLmT6/wG9fIaAxOybGRcekJE7yXPW7M/nenvOcBoC2e3TKnhoOJ0ThFFfd4Jvv5LltagC03aMCv+yMpMLOl2pyZ7spbKjR2NSa3OTsar4NC3nasum4AgBmtvg96bt4K8RYF18KQ3X6DgaLipJIZ2HUG+2Xx2OOSUm8YjNeqdqPyRt6q1jINZwnNJ5wTErRmv5IMA1Nuav7Gpm80TvuzQ00VZWn+Cbv5aFt6hc2FiqTd7CzyTorIzdgwpUEljxcW+0EMEti6mI3l1LnNAB6uI6mO9toLe6poeTwbGLj6TbA8VylLrHBuVCekqXD0lH31M7ff9cbmldC87VdKkxeS808Rhsnw2H63FaaSY8Q8lRRDcNRo7OF5FWaxGdPGZ13YlNDxQ4YrMlqvzozc9XKAq2ZdINxkhhDJ++9LYZdxiZuRfS978TE216+s9TFo5P33hbFRh1CNtKYXZHYXb93gCu2xWYMXI9duD5cuQ3Sd0/8NB65areais1GWBPHX5zxNHPvpe+98aEYHOe5cgeUAW/wI3GrTjXFNGF3M0dP9oY6hjJgM5SbCuks/ACsA5byN8cYOAClCU80Zlck9oFg7ymWEtZktV+NxH9aPdpCKU1XTVkNX+uulIYto4UitX/UB43Hcai3iXVIiN7ZwSZGRzh23V45b4eEmTvChvOWMdiEoUYVIXXpu68txqs+JbAmbsA381aDndQ5F1jLiNdW//5eax6dEoaspTO5eLWRPmh4JjEGjh8PRq43ea0ghJBmtTQ/1UDzRs9fAnDr2uUd5OOQz8NADqzmS+Muyi0hu7ahvG39svn9ELKnnla5PSDen/sHAG8OfvepJCPkCKMaBkIIIYQQQkhDFDAQQgghhBBCGqKAgRBCCCGEENIQBQxPS9zfxrJvLqjTiuWiDrbNUXyhrgrES8vZ2n/+OIC4n21jzwSCZ17tZNtY07ft58Lx0giduYU3K3tWFeL+vkC8+Ecb6yiPmFmI+19l+wLxBsNjVnICALn7l143VfacTy9ctnd9k2XbTF3fv7SQzm/YtCbb5a0K2fvhc/ZvsZuyTQghhBBCjgIKGA6QyKQvkpABKBkxfMFmb3Tfn13wnBYSAACN2XF53BQb8y1kARTi754T4L080tTAIdnlQGilNIVSIe5/w+KeFjMKACWzHHK/bPcntx2WH0hFPRfCooxKtkPP1xSj2dilmcZHnI/PBS+f4b/tb2Jm7OdZ7l5gJkmxJiGEEHIgUcDwTOlsIXlVllejXgDjUXlVllfL05KCvy4mV2V5VU7/fMZlQmJyqlxzUJG9f27MHa1Mlaoxj1z2mmLuKwtpaercrVbvRUcT4UIhn5wTJiWmLxh/v18HpOcvCQnGdj2mZiB512dBQpgWy7dw+bUs4I2uyvJq3N9TtSezxTM+E/9Ulldl+VNxqgeJeen5iRiyUZftdGit8aSqmRWPbzoiNRhs9RkpxP2vm9hvnbmX2z5tMzvjv8l2vv1UdlbxKOG1vuFvVDVGCCGEkH1EAcMB0m5oV4fu1ui7z1/0MhDjmdqHroW4f8yzNuJ3VS/UmB1XvaYlt+VUoHV8ohIu5BYcpRZENc+3J21sW7txLMpel6T3enUAkEsuJ9Dp9fLF6U21ZqdnFJiXUqUbODkTRw/L1Mm1ke95FLnAd32TZb9h8Sw1noT0yCkk/a6xqNLh4jq2T7yPCokFYUWBHIms7OAmv5BL3gufs28MDAqJRUFSIM9HpKcZMejMfVYkBMfZpxyHEEIIIeTJUcBwULGsGVBqnl1nF8467vWEpmz6DVMCaYy24U4A3GBP0zNjZcTAWU+42OhIlpeAk62tVeuZDisg59bUV0lpPsX1mDdPBlSI+/mXncK8lFE2rTvistFJIQHwb+1ktqn9oDH1ezsZsDzf2fx8frnYBavzQljcWHuiMfV5OQbsAM891ckB9TaPrwPKotcvUS0DIYQQcrBQwHBAFTLJOMCcLN/DK+KEK9gRirjq3J1mo4KwwrKs5D0brDQH0vWHVmV5VZZX5UqzJ6hNoZKx6zZGkXyTaqMnlu0B1qprBgpyIgYY9DoAKEhz/hTv6NkcL+TEaSHB2IS78fSqLK/K0fEnP/TDoSDNCMsA7LZmZkfeXxqz+8cJ+Rc3ep/GLb7G7I78o7zyzlPZWTUjN9ABKKFbdRriEUIIIWQfUcBwgGSVvPpwNZ9c8E0GFFi5jtLN6JJPkJ2BetECsgu+sSh7MSTe9poSvnOBZroqa428IAwAy7F4DoCuvbMDK4IQUfudFnLi1LVpYMBsAFCIhyaj3E1Pb50bY0XOAAaOM+sO9kP2py4vLQYUAD2csfZjyafv+d/mu77Jsm1s56tn/Ct1tk3H/OpwWGxbZ9+b52ZqGvdUrf1mF/+2f6GmL3A+K86ce7Ovs608LNX9rLq+OIyVY0a8539bTWDqC8XjgcrYVqWWaXF/G8u2sfxl/6Xvd5lK2QjGygNjxf1tZvcSAGDJbVY3D8TLG1ZG96rO8+vqrkx6pzERAAAgAElEQVRdr5/xx6rH2MotvMmybY6FZHzmvDoMV/0BtYymfgbAcjD2/HSCIYQQQg6Dz+93Bo6WJbe5zV1+5X6RdW+ReJPwaWO46qVp3GMtP8U1eUPX+zc/4QeycxfcMZMv5jBqYJy4eM965VyoK+LevmmS1thlxXzM/aJfv+o2D3jtt4bDZ63Rs5X39430anMLjhfdMQBjXHSsenO3+U3E37ea+zow6bW0eatWSemsu07rpaOkkBJnAYAxtVc/aM/GzvCnI3LppZyo/F3aMBk8bfctK5UkS+HEUiw6HppxmTVAMmS3XkkUVyoZaV5IG7h+o7netuqwVLl2U7ezErTEvG/Ein8yVs+AGbMND0KaFqSabIQXxqN1q7C2lL1/3jU8W8ozlMxKRFiJBPv80feqS2zM/UoMlURi+IIYS82I17oreWcNHBBFKpbKOo1HuwARQgghhwnVMBwg1iGHxcAAYE1Wx00x7Crd9TPe6J26DeULyYDLs2yZuuk0AgCMjgmfKSFcCDUz2oy+x+3rYosvtN0TH0V9AyYWABhDnzf4UaS4061ozCMB/winZpofD4ofBe2mtGfxqA8imkmqt9rm6n7g2Tnv6YgMsANTsV+m5VVZ/jTuH6jerCBN2n3LCkz24EdpeVWWV5Oxm3YTFGnSMSUVgFx6JQEAA8H4qiyvpuN3vJ4uc822MLnuSOnSaFrecS+/4Wsy2YM/T8ursvyPE91amF2y/LHfWu8gOkZm4up+fikGR00AEpPnwkkAZnd5LKwev5pGdpkBs3tVjt+s2Vle9HtmEwBjK47xlY7fcZkAZdHti9Z2YK40XYvPjJoAKLNCpLoyQadTD0VKpGmEVUIIIeTgoBqGp8XsXpWbrk+on9g8cNl97fKmxbr+axvSVjY3uhblmiGTjM6fys4m31djdv5opZJYa3a+s+h8p85m3ru1vSCAXNRhXlR30t5/KdJ/qbJq4qe9Ew0zcFQ8epTatCy5FBQBMK4bVweLoZ5GpzdUpcjFgtMKwLjGfb3tagqt0eZ1L4ed80pgKeHhTDoDAyjIiFKS6zdqdRb3cM22sFwPnLcUn75r9N3umm8fABzjvl59U5UEepNRrR7RaNt73zrvmucDSsq/nHQat48Uy4ckzoYVAAOCwKtjfGl0Frd7IOCcR2xRytqqKhlGnMNm9Q113UNO6y13DKm4nINxU28IZYuBagkhhBDyrFENAyFPRS69kgKAvm5To9t1WY4BgBI41V41bbbROa+uza1Bw70V9nUxSITdrxhN33b5o/FczbacrXPrtjpWs2FX3Uk0BqMJABQ5t5On+7K8BADWruquHFpjlxUAluSGQ2eVOvM/L0PwEkIIIYcZBQyEPFWtrbvs/60OiaUxOn8kxe/6vX0GZKLCmM36erCqG/vJ1sY7OEAere13DgghhBDy1ByUgGF9fX19fb36b/Vl9fLql82kb3Jh3c03vO+eM7s3Dn56QOj6Q/UyprOF5Pf7n/bAmocHy27qFXBSp/YHWY43HOOHYTgA6PB9WBzutuZfpfuvRmfud7+3LH7g6gCUFd/MSr60bUxM7U3z/kImmQCADoNuJ8PEMmwPAMQSclWvmXxyRQKAHpatv9V2TPrnt2gRQgghB89BCRgIOUx07WYGAOKVRjcaU4+LAZDynTu/kFQHyC3kspmqrfQc3wUg5btwrpQChXxyYWKuEmPk7/sD99U+v1q2XW1+tPboUWlbRC64/VK2uG0uPnN5ZtdjkK4pcr6chyvXAgoA02Cn2oGh9aTanTsRT24Voei5PisATF+bEnMFAMgnI17vPADwA5ad3ffncuqx2Ay7DDQIIYQQsheo0zMhu2AwDzC4pSipbLnTroYbFgaiznk5Meu21h/MVD941S++5o4mwu5XqkfQBW+y3rBqAWSXQsKkKExWrWPs6gzNg1eD0ilnRBaFU5xQtdrVwxu53TSDkq7YjFeqFzCWixP2YodnrbnHzsyGFSU0/EIIAOCNrtapA9PZfP6luHsxEXjDHKhazg4EPdYdTmmnZCQAsFg6qIKBEEIIOUCohoGQXdBwfe4OAItSptIWR9/7Tky87eXVwWnBGLoc9p7a7fT9gY/E4DjPGYrjsbImjh8PukvTRTNdbmHIUlzJmqxDQuTDiWJbJX3vjQ/F4EW7tbh/sCar/erUcMcuO010dNmspXF0uQGv/0Mx7KjM36G1+CI3HZZKPht1n9D3vyeKt718p5qUMXTy3tti7J3enc6kkE2JCoABu5XmYCCEEEIOEqphIGRXjDZ3j8+9FL2X8HKVB/zadqv7htV9o5Lu8sZBZrXtva4bvZuGQ1VpdNzwNW74WoM31bb3OiZ6HfVWmd3yaoNxfXX9odX+zYv1A76QbYtn+Zp22+WwbeM4vzpbSLZtypbVfcPaaFRhXf/78sa3r5OlrLQoAR3eIcsOKyYIIYQQsreohoGQ3dH1X/TbGCU02dQ0eWRr2aggLMM0PuHY6UzThBBCCNljFDAQslv6/qnbXlNCkDbP4kZ2JhdfjKLPH3BRuEAIIYQcONQkiZDd05jd4Q9bY/udjSPgZFcwat9xtwdCCCGEPAMUMBDyRLRG5+B+52GHzO5VuVGHg32i67b37nceCCGEEFIfNUkihBBCCCGENEQBAyGEEEIIIaQhChgIIYQQQgghDVHAQAghhBBCCGmIAgZCCCGEEEJIQxQwEEIIIYQQQhqigIEQQgghhBDSEAUMhBBCCCGEkIYoYCCEEEIIIYQ0RAEDIYQQQgghpCEKGAghhBBCCCENUcBACCGEEEIIaYgCBkIIIYQQQkhDFDAQQgghhBBCGqKAgRBCCCGEENIQBQyEEEIIIYSQhihgIIQQQgghhDREAQMhhBBCCCGkIQoYCCGEEEIIIQ1RwEAIIYQQQghpiAIGQgghhBBCSEMUMBBCCCGEEEIaooCBEEIIIYQQ0hAFDIQQQgghhJCGKGAghBBCCCGENLSHAcMf19b2bueENGMXhZDKLXkGNhSzrV/uYoeE7IWnXm4JIYfFHgYMs3ejdPkg++iPa2uzd6M73YrKLdlrG0rm1i+bROWW7LW9KLeEkMPi83u3608+/ZV34p292z8he4HKLXmWRs9f2uJl86jckmfpaZVbQshhsSc1DNqTX9yL3RKyO1QgyWH0xb86sd9ZIGTHqNwSciTtScDw9a99bS92S8juNFkgW7/Qutc5IaR5/95gaCYZlVtyoDRZbgkhh8ueBAzf/fvvnDh+fC/2TMhOnTh+/Lt//51mUr45xO91Zghp0hf/6gSVW3LoNF9uCSGHy54EDF86efI//cfRF//uBWoKQvaR9uQXX/y7F/7Tfxz90smTzaQ3/s3f/OB/sdPzWrK/vvhXJ178uxfO/+B/pXJLDpGdlltCyOHSsr6+vt95IIQQQgh51t6f+wcAbw5+96kkI+QIo4nbCCGEEEIIIQ1RwEAIIYQQQghpiAIGQgghhBBCSEMUMBBCCCGEEEIaooCBEEIIIYQQ0hAFDIQQQgghhJCGKGAghBBCCCGENEQBAyGEEEIIIaQhChgIIYQQQgghDVHAQAghhBBCCGmIAgZCCCGEEEJIQxQwEEIIIYQQQhr6/B7tN/mrX70/G3n0l0d7tH9CtvXFvzrx7w2G7/79d7508mSTm1C5JfuOyi05jHZRbgkhh8ie1DAkf/Wr9/6PMP16kf31pwcPP/5/fnntvf/9j2trzaSncksOAiq35DDaabk9RB6vr+93FgjZf3tSw/D+bATA337jb4Zes9HDBrJ3/ri2Nns3+smnv3rx714Yef17jV7+w//5s5HXv7ft3qjckmeDyi05jJ5uuT0gWlpa1tfXC48eaVpbG6UpFB4BOHaMmnCT59qenADqsy769SJ77UsnTw69ZgPwz7/+9RYv/99Mppm9UbklzwaVW3IYPd1ye0B8/vOfA/Av8m+3SPOb3/5/AD7/+b1qwk3IobCHETP9epFnQC1m+bU/bfHyTw8e7nSHhOwpKrfkMHrq5XbffflLXwLwz79e/bfPPqub4N8+++yff7MK4Ctf0j7TnBFywFAVGyGEEEKeR19v03/u2OeUP/yr+F//cXPM8G+ffSb+139U/vCvnzv2ufb/id2XHBJyQFAVGyGEEEKeR587dqyj/Wuf/Crza/m3D/78569/te1r+r/+d62t/+3Ro19nf/vPv1lV/vCvLS0tHe1f+xz1YSDPNwoYCCGEEPKc+sqXtP/h64bkr36t/OFflT/86y/i/3f12s8d+5zxb772ZS21RyLPOwoYCCGEEPL8+rJW+5L5hXT2t7/74x//8pf/vr6+3tLS8oUv/A9f+dKX2vV/TeMjEQIKGAghhBDynDt27NjX2/Rfb9Pvd0YIOaAobiaEEEIIIYQ0RAEDIYQQQgghpCEKGAghhBBCCCENUcBACCGEEEIIaYgCBkJ2LBd1sG1s+Z8jmtvX7OTjkeClt/muQHxfs7F7Gz5P9tAeCCGEEHIk7fMoSbmowzwWA7zRVbe5vLSQnDnrmlrMKD3++Pv9un3M35ES97fZhK2T9Pjj7/ej+KXUYb0ZD9l0AJBP35v1+2cjCRkAa+rkekfcdmu7Nu5nX9vmTSo7OXLql+c9l5HO+kIAxtH8t7x/X0B27vtcbODIloEDK9f4vC7z3pWfZcElhBByWBzEYVXT8+e8i5n9zgVpLC9deoMPJcqv5cRKJLFmtFjbn7O5bZ5xYHBw5NOSGJsPtg4tOnd2/Nl7b/OeZVgHapbqbCHZhqaiHUIIIYQ8cwcwYMjGFxMAOi7GlhzG/c7MUWJ2r8ru0ovS40ar/+PQhqfNpeY1De+G47OuUAJgbP67U/16DQr55LJ/7pHVCMDsllcrb7Lwptm9tO+PtJ8rzX7LTyQetpwSAHiHdrJVIT13we6Zl59ePsgOlKIyVencHI/Krucy5iWEELITBy9gyKfjKwBgMVG0cDDlsgkFAAac/XoNAGi0Ruv5y/ubKXKw5dMLwll3OLF9SkIIIYQcNAeu03N2ORwGwLi6O6qWJoM9lT6RnX1vnpuRyt1McwtvsjU9Jut1ncyn7/nf5ru+ybJtbOerjnNhqaqbav09+Ctb56TwOfu3TcV3f9u/kMxXb+1oY9k29kwgeObVzno5RDzAsm0s++bChr6x2ajLVN2/M5++FzjDF9+o+K/z1Uv3t+xSm8/enznv6PsWy7ax7De7+Lf999L5rTZ4Uq0nGQDAfHAhu5fvc1RVf8v1vq94oKoAfKvPcb66KJV2EfOfeb3LVCqQ0q6zEvM3KrQ1a7/ZxZeKfS7qKHdTEV5T8+nYWLI3iodfdocTrHXEzu0yq+TZKV6vXr/kv2xXr5mmb/NnArXldKtrcuWqWHUVLXdtr17W+PJV2kOdf7UX0pw0c+776rnAdr56xh+tvTqr1/a3/cG3+zrbNl//4/4G77LfIxkQQsjBcpAChkI2HjnnGosBjO3iMKepWmUwVt1nyImlsPeU1RVr9oKejZ2xvuwU5qWMom4fC1/gza/644VmchX3v2rmL4RFdWPIiXnB/YrFFd14sxyZ9KldgCs53JSmJldRl20sqlQWJINvWJyTkWIuS+SEvNY4c+mIy/LSsHc2VnxnJSPNC975VDNHtltars/BAFCi7lOO4KabWbKV7P1z1d+ykpHmBefLNcXJ0GGtpJcTsVkv/4qrKjbL3nvbajktRFZKxXk+Ju4iJ4Vk8PsWy2lhQ6HlA8XTIhmyV9YqGWle8C3vumdR68kRv/jLldAod3K3uyDP2kpImBbL5TQy6bS8UXXNfLJrMoCncfkqxAN95lPe8HL56hwRxqyWH2x6lDEv+ObLBT0WvsBbN6chhBDS2AEJGARbG8t+g7Odja112YW7YsCmr1mv4S6vyrL679Nk7KoVUKLvRpMAoOt/X10V9/cAAMajxZQuM4BC0u86HZHB2K7HkquyvCqnP55xmYCE4Lhyv+bRbnnDVVleVUcLyd+/4hASAGOb+jApr8ryp/GZUROgRMe8c7U/ONarYnH/P48KfUzdNCWFdGRDtAAkRX8CAPib8WIe7nq3/tQKydCZs1EFMA35Y79UP5x4ZNwljNREW7sl2Bo8b9Nw3sh1ngUgx3ynzKbXz2x+Bk7qyd+/5QmrxemjDcXJV35qqrVMlAth+pcxoQdQov6lpLo2G/E652WA5a/Hkp+q5dnP7zgnBWnS7ltWYLIHP0rLq7K8mozdtJugSJOOKakA5NIrCQAYCMZXZXk1Hb/j9XSZoTaFL5VM7101n9t2kDAOX+p/3nrEH3odjpmPi5dc8bbLBCAhON6VinfzW12Tm9Lk5atUxmR5VY6O1+whL/ockwlUru3p+B2XCVAW3d5I7ZW3RxCLbyFFr9qYShqzu7jzqFqmraXLL43iRQgh1Q5IwFCmZDJyWqnzSD0nzV1S2xR9w2i9EAOAlJTe/jY1L80KCQBDU1O8Ub1j0ei6PeMOAMpsZJsb3Xw8NqsAsF70Dapba3Tdb513MQDE4FLNj6O5o3hHpNGbhy/6rAAgiqnNb1BIRzz82dpoAQDDqn0P19aU5loUlQ6taypwrb98bJzrfO+e/9Jp2vkbKx9Hp0YsLKCsRLynzH0T0g4aQm1sb7Btm5YjISeGZxUA/FVhsL1UnEbdPADEoivlW5ycFLmktjhqf8HqXQKA1Ipa2JOxaREAM3pD4I1atQuJTt++45zEgtMKwLjGfb3t6u2Z1mjzugcAKIGlRAEndQYGADKilMwDGp3FPbxNr6KNrTv8NJvCocaajeqVRKNtt56/PM4AUObj5Wqm3V6TVU9++crHl8IKgB6fjy9dnS2e86MMAHE6VnN1NhkrV2e7z9cDAOJy8nm46hBCyFNxQDo9e6OrbnMhK836zlyJhU7blJvRqkqGQjww7JiUNt5hN0VOLQEAZofbZzevlTIKsMXvUyYVBgCY2apEGoPRBCwh9ehRww11ejMQq/MGhWTIab+SNF4MWlec6r1gaZN+3534owuh2AWr8UITR1Y+tM52/TYpd2e7MUN15sFL4cHR+9fGPIEVJXHLJXSKExZ6jNyYLMcAwGrpqPqUtEZLDyJLiMkKoEch7j9lExp1Ds6lpRQA2LpMT1SJVMyJEjjVHqizNrcGDfdW2Jey+5bD7lfCPoPN+ZaTt5npoetzi2XNQAxKMpuDUdfsNVl4jW0wTu6TX74yKfWSbtLXXJ07zEBsm6uzCVgCVra5/BNCCCk7SDUMGj3nCIUumgAlesVfaS2UjU5NSgpgGp2RPm2qrU6VR9jqN83MMk+S451aixejhXDQYd7cmFtv8XhHbYZms7T1oT0ruu7zd0KuDgBKeCnebCWDrj9U1fqriTYtR9mjqhq15Ow5IQEwFu8HUrpeMwxVa+vTaHTWCHOyFYDG6PyRFL/r9/YZkIkKYzbr68HkVq3Ly607qhv1kaPoia7JqoNx+SKEENKcgxQwAACMA24egBIWSz3fcilRBACrc6RbHcaz8Kj5mmTW0AcAGImka+9mmrpPZQ3qwOXp6lZChUx8CQA4pvGtfTatDlzDVd/+L3mdV5Lc9UjQYax7u5eNuK0XohnW7lf7S2zzG1w6tJX0Pvfe05i7uwAAylrjp3oEYFgrAMTictV9dz4prQCAlWWBXHolBQADHjdXKuzV91UndSwAQEw031a8bk4YDgA6fB9uPilk+Vp3qQZEozP3u99bFj9wdQDKim9mZU8H4CIHViGTigMAY9TrdnBNru6BEL9Z1Zv/KVy+SnvI5GquzokYAHRueXVeAQB0Nv1whhBCnnsHLmCA1mzpAYDoUkK9q2ptVZ/FZ5OZPADkk5HpkLpE2f4Zlc7cYwWA6Wu+aDKv7rGQT0YvBaUmhuLQcfwQAyDyrnAvWwCAQvbelWshALDwnTV16Wk5V9x9VvJfEEQA4G2d1REJY7semeLbGzwcVpunM65xX6lJ73aZG7AzAJYFb0DK7vTQnkR24czbM1K2+HHmk3Mz8wBg6jI+x/UETdBzth4ACE1O3VcLSz45d8EbAQCe79IBaG0FAKTiyVJhD04DAGRFAaAx9Y4yAFJXzp0rledCLpveeU74LgAp34VzC1WnxcLEXCUQyd/3B+6rQ1xq2WK7kTW1oUdrqzrosZRK73FRI/tnTZHVO/FCPhn1XbulAOgYtRif9JqsevLLV2kP81NCrHR1jvmuTQOAZYCruTpnspWrc8ArLAMA38fR9YoQQpp0QPowVNOZeyxYEpVpvn3aG111m01WOxMOK6nAKWNte+uUmMo6jdu0gNXZfMHlpHM+ER6zhqtXdBmt3OB2zWe13aMCv+yMpMLOl6q3Zmw3hQ0bR8bMkbHqBSx/29Orrd4kunH0p4q4v80mAICV62i2tYnW4p4aSg7PJsRJnpusWjHA8VzvE3cmEGxtG5sfW2/GQzZdcskfmU9F5msqQJgu38TAjjvfHlENP7r+i/5Ywh1NBIZfrC7L5aKi4wbszGJYWfZZX/DVbJ8Sk1mnUa/hhgR+0RmRN5XnndEPXvWLr7mjibD7lZrd8CbrDasWQHYpJEyKQnW5Yuy8GgAbuUETfAmIFyztFypHt/vskANoxWerLYRMp3diyAhA+2TXZNWTX760FrcwIDrnU+HTXM3Vuc8v8LV5mHeb593VC9iBoMdKHa4IIaRZB6+GAdDzwsyIpVJbrO2euDvjHTCxAMAYOnnv7Rn/CMeAyaaamaJM3/tOTLoj2HvUPQCsiRvw+t+yNPWzpu+98aEYHOeLjYsYAzfgDX60aeBXwNJTSsOarEPCzM9jN6zlNFtHC+VUBtvVYW4Hv2L67muL8Q82HJpv5q2d7GPn2B6vMGQttbZiTZ2897Yo/shZv6EVqabvD3y0uThViorW4ovc9vKlws4NeIN3/I5OBkzpaW6pQBa/csZgGbFb677XjnICsCaOHw+6O4tlh+lyC0OW8pdsHRIiH06U2ioZnXeivoFSqWMMDE2vcPR0WGw9VVfdm9HYj93m4pBaT3hNVj355Uvf+05MvO3lO0unk3oteq9/46W2y1pKw5p67MIdKfZO796MFUEIIUdTy/r6+lPf6ej5SwBuXbv81Pd8EOUWHC+6Y4D3LvXy3B8bytvWL5vfzxZyUYd5LLb9QFJkZ0r1bONRdRKVo+3Zl9smxQOsbRLo8cffP+yDEeQW3jS7l56XEvVsPK1ye0Ckf7PafOL2r7btXU4IOeAOYg0DIYQQQggh5ICggIGQXStOhl09DTbZhVzUwbaxbLEbDyGEEEIOFgoYCCGEEEIIIQ0dwFGSdiEfD/mERdhv31Cb3CZDfb4Vo+PixLPo16brD6327/3bkP+/vbuPauu880X/Bb8gv0JwNm2ardJeSNMjnXGPdJ0OSpNBxA1y0kE4reVkjfHNLIvkjKXxWgnJWlj2Wgn2urHMXJdmHVfyGQc8dRGT1GLGRT6TInpzLN/bXDErc6W7eq90Jg00pdp9iXZfIjcvwjbm/iEJJNAWwoAN9vezWMvW3lvPfgQ/bT3f/aZlpMrcI5lvdSduI/x9Lit6myTZbnUnFkdV82sSt85ERAt3exxhKC9DJBj2dveHEgDig72nwsEhlPHOLUREREREC3N7BAZodzlaBIQ7zdpqUXyg1SND99LeBt5lm5ZWPORzPb+zTqwWxWqxbqf1YM9g8TeVJCIiIloRbpPAkL4veFONAEA0Wk8GPFbtre4T3dYSwWM79eYDTm9YSk2Qwn7P0VbjdosrxK8/JiIiotvH7RIYAKgb7N+9FB6TpLc9R8y1PLpASyl27oDFHQZ0La43I9KYJI1Jkbe6bXUC5KDz2bZB3jaJiIiIbhe3UWAgulkS/q62SwBMrpPHm7XpcFpeu+PQWbdVAGSfoz90SztIREREtGhucWAIuUWxWhSfGZjaIRsPvGzZJorVrqwBV2LE73r+yXpdtShW1zU9c7A3mLX/Nj5grRbFatE1Y4SWCLl2Wgeyd/TGQwPu5y2P6MTZ7US6G6tFMf0zaxUA4oO26qbuyOxXkLh4SNfYMz1j9itKiflsOjcHkbeHeKDfCwD7Wk0zbsOlMuzerwEgnwmmaiJdD/l+ZlRs5rsIcn6mv+GhUInGB55RWEu65BIXD01P1D1ied7Nay2IiIioWMvtCEPE+2JPUM6eEht8wWR81ukdHpUBQAoPeRxP6ZvcBc8TT4RcT5ud4awJwWNND5jtnd5gqplUO6cCsdTsGq1hetnUKkw2f9aYXx4NItzx6swYgIi3q0+OjsYLj75iPpv5gE8uuAytGMnR0BAAmHQ1qlkzazQGAJBDI4t7VtKcJVpIea1u+tnyaNDb2Wp82hXhpRZERERUhGUWGEZCARmAoesndj0AJCNuW2u/BMHclT5TfCR01qYDwp3WjoDCKD0RPJabFhAfdBxwhwGh3uF9Z0Qak6SxiP+kzfmcOb2DWGU4MialzkSX3o34XzEBsu9V39SBg9hoSAYw1OEKZg+y4gOvdoQBDEUlxZeUHPEyLdxeLsdTf269WDV7pqosz0Q0ukJTBfaOy5SvVUnyA0C7TxqTpDGfY2a7BUq0qvm11KyQqxFZjUiSTZ96ttrilTJPH/lJr1UDhJ29wzzKQERERHNbRoEhGbt47EVHEBCarMbUQD4R7O0MA2g50bU7faa4qsrYdmgfANnTH8yzfzURPPa0xR3OmRa50OWTAcHqPm03VKV2CpdrzYf26qd3EMeD515+wVK/TRTv15oO+wEgGpzaSSxH/al/ezo9UykiGXR1DKUmR2L5d/UmR7xtlheZFmhOyXEZADRlZUpLFC7ROSRGBnsOWnfWidVi7UN7e6IA4ImOLrzfREREdNtbHt/0PGTXV9sBQKgxtzva9u1I76SV0uN0z9O1ntnPGh6VgZzdubGLBw/s9aCl9+TmvQfcmanxWDgKADp9njNIACAZcu+1dgaVh/WxkTAACIIgh129ActxY96pmbIAACAASURBVDkQ8XT2yBqNJhqNwheS3Dtm7llORnpaW45GtC91m4ZbHUOFfwW0cpRtFgAAISkO/cy/euJy6jQ35YF/fnIsCgC1opBv7pwlWlBs8PmnWr3KR8GIiIiIClhGRxjyGEehEZIuZ2yVkKbSwvEGMeeuquPjBdcS83V1BmVAt783+K4kjUnS+dzzQZJSZBiAyXHCYYTs6fSEkkj4uzvC0O2y760DgFEpltvo5VA6LXi6rXp+5fRtpbxWXwcA/vDorKsAktFhPwBo9Op8pyYpiof8wwA0eU9zmrtEC0kG+xxeCanz+kayz1wiIiIiKsLyCAyNrlDqNvbiqK+z1fjsufToW6wxAwCsb4xMnYE9/fNac/bYyn1grwc279njDTNuXIOqWp0AAOHI7PEdgHg0EAAAU+u+BrUKAJLjued5jEaCACCq68z2fQKizq6+c65XvRCsh/aYajUA4A9LOW0POVqPRgwnvN1Wbf6jGrSCqQ27jABwYSA44yqAmL/7lAzAuM80ry8OjF3y+gEIzfp8T5u7RAsZDfXLALCvdbe2XAUA4+OX59M5IiIiurMtj8AAIHUb+5NdRgCXnL7U3SCr9KZGAOjp7BiIJFIj8mQiMnCkOzh76K+zec8eMuT7wjZtvV0HQHYfOzrdTCzoetkXA1BWljoAEIuMJgAgEfGe6UlNkWUAiEuhKIBGvahSGfY7zQICR9vcUZheshtUKjF1V5xoLPdgiGA+4e2y1DIt3JbUTXarAMietmePXYxnKirU+/xTdj8AnaOtaWZsLSAROefsDADQ7Tfq8y0wZ4kWVpY6EhceiQFAMh7o7h4GAEgJXvVMREREc1pGgQEA1AZzHQDZ+UTqKxSqml/qtohA2GN/XFtbLYrVYu1Wk/1Mh+tC7ilAOodPIS0AgLbl+EtGAQj32U1ba8VqUayuNTzl7DnljwDlOlOLACDqfkorVoviVlPmeoNoIBpD6paqAGrUagBVOxztRgDQdbSZqwAIogYAhkNZN7YXzCd9bqaF25jK4DjtMAiQh917H8hU1BMOrwToWnpP2vVF/+1DblH7eJtPBnSOI3vyH5aYs0QL0hp26QBgqM1QLYrVtfqnU9c8A0OBKO+sSkRERHNZZoEBanN7h1HMnrDjO28Ge19pMenSU0WdwdLuaqvP2oOrc/jO2vVKaQEAVFqrJ/BWt2OXoSa1t1WoMTRau14xawGUNxw/3+vYlVqBUFNncZzude0zCBBi0ZEEYiNhGYBJk75iQt3U5tAI1vaW1OBOJaZukB8aTV9UKphP+tzmeexgppVIpbd73/K72i3TJVVncZz0hX44+6S4uYg6S3t34A3lmDFHic5Ba/X4T7QYU/0UdaY9zt6zTpMIlI2O8D5JRERENJdbfJckvU2SbDlTVPpWz9utOZPK1Q0txxtaFJqoau754ex27dKYfca08tod9m/vmDk1Rd1g/3aD/dtZU0wNzS+n/9v8mtSc20X7j7Lu26re7R3bPb1mW9iNGapmtkC3h3Jts+07zbZCi8yucFQ194w1F1oAAPT2MSmnVguW6HTT+SutXGs57rEcz57U8PbeQv0mIiIiylhuRxiIiIiIiGgZYWAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgmreQWxSrRfGZgXhmSjzwsmWbKFa7QtNLxYOegy2P6MRqUayua3rBNRBJ5LQScem2HbyYOy01o3uneDCQPSM++LdiU09k9qKJwEHdY92pGZGeRrFaFDMPM0sMPl8titXi8/5E3p4DIVe1KFaLVl9mWqS7sVoU0z91Tc8c7A3GMVN84JmpZaZ+rOl24wPWalGsFrN/HTlCrpzlU9Ny+5avqzP7LLpDABAbsG0TxWqxyR2a+q3FfDZdtShWN7lCSYVOEBERUVEYGIgWLuJ9sScoZ01Ihlw79ZbDnsBoaqoU7nfaHzfafLGpReJSRJY9zr6Z49lEoNcVRmhUypomjw4jfLRr1tg54n3VI0dH4gkA0Da2GgFEXQPB6SYTw34vAMG2u7682FdTozVMP5DCQx7HUyabP9+4fZlQN3edduiAcKe5xR1KAsmQy3bAJ0Mwn3Tb9apb3T8iIqKVjYGBaMFGQgEZgKHrJ3Y9ACQuHrU6w4Bg7nozIo1J0ruh3v06QPYdcJzLRAYp7AMQ7ezKChFAMuTp9MhANBybHqHHRkIyAH/HqWB2uoj7ujrCAPzRVLhQm1p2AZDd/VOHJ+KBfi8AYd8OQ/HDZpXhyJgkpX7ejfhfMQGy71Vf7gEOSRoCAMd5SRqTpPOOoltfEiq99Ui7DkC409rmdrU96wwDQpOzw6y+tR0jIiK6DTAwEC1IMnbx2IuOICA0WY2p0Wki5O+TAZhe6titLQcAVVXDc4dsAoBA91Bq4B2LjaYaCDhPTZ+XFLvQ5YwCAIZHp49YyBF/6t8zxzxTw/Zk0HU0PTkipcJFuXGXTQDQ7w+mWowFvEMANPZ6/bxeVDx47uUXLPXbRPF+remwHwCiwZHsYwzJ8TgAaMrKCrXjfCJzttLXmp53D47kOf9qLkN2faqFbfUtRwaUW1DpbW5XIwDZ1+n0yYDO0XNiR9X8V0hEREQzMDAQ3aghu75arH1or1uqMbd3e6eGp6NRDwBAL2aNV1U1Wh0ARMfHASAphYYACIIAua/Lm4oBiYuuzgA0Gg0AOTSSOfIQGw0jvWzY1ZdOF5G+Yz1yalH4wunzl1SGZrsGgNczFAMQG/YFANS3mrR5ep658MDszJmXDLktpqfaevqDozIUybEoANSKQnG/Kyns7Ww1Pu2K5JyA5bc/MH0JhLmzYAvyaOCMfVYL2dTNL7lM6f/rnCd4LhIREdHiYGAguhXSA25L1wmrgHDHqwNxINLv9MhCy367AQD8kfR4PSlFgwBM7V2Oesh9Tk8oicRg99EwdLvtewwAMBrLhAutaZ8RQOCMP4JYsD8AwLTLOI/zcmK+rs6gDOj29wbfVTzdKB72BwFo9OqC+/DTJyyNSaGzVg2AsLN3eJ5HGRpdoVQLp1sEAGHnubBiYoiF/ZmrrMPnhnixMxER0eJgYCC6UY2u0JgUeavbJo76OluNz2YuTxBrzACAETlrcJwcDQ0BgEEQACRGQ0EAdbW1xlZHPTDU4fL2dh2Not5hN+u1dQAQHk21NxoZBgBRNJj3WwVEna96zp3q8kKwtreYajQAMBSSMqNjdWOLBUDUNeD2dQ8DsFjqZw3qM6NwaUySxnzZgSAeDQQAwNS6r0GtAqZOPsoRC/T7AQhNeu2seXlVGZubAQDy5fGsySbXO1PdkHztBVswNVsAAJJ8Of8SsYGOAz4ZEEURQLjT2hG4gVOgiIiIaCYGBqIFKa/dcehklxHAJacvtX+7ymDZIwDwvuocjCUBIBkbPHqsBwCMljo1ACnqBwBdrRpqc7tDB7nnRYcfGsdzZjUEtQYAglEpCSAeC0UBmPSiSmWwO5sEXOpoOxVFY4fdoFKJqTsaRWNTpw+VG3fvFwDZ3emMAsL+3caib48EoKxsMwAgFhlNAEAi4j3Tk5oip1eRiHidzksAdMVfGpEIDg4AAITNBS96KNTCxQAAQBQ255mdDLkO2P0AdB09b3tdTQIge150DMTyLEtERETzwsBAtGBqg7kOgOx8IvXFAuUN+50WEYh6Wh+qFatF8X5Da18YEMwnnbvVAOKxqAzApBEAqLTWQ/sEAMIeR4teBahEjQEAhiOjAOTRIADUqNUAqna0O4wAoOt4rrkKmAoXodGpvekqQ5Ndk/6/YKnXzetM/nKdqUUAEHU/pRWrRXGryTGUmhMNRGNAyFWtNb3okwFd+5GWuY4vTF30rH3KHQWgc+yum098wfTlFtMt5HlBydCZl1O3pXKdbNVC3dzeYRYA2Wc/fI6RgYiIaIEYGIgWTm1u7zCK2RN2fOfNQHe7xVAjAIBQY9jl6H4r4E7f5VMKXQCAGjH1UGXY32GC0bG/ITWaFkQNAERH4gnERkMygEatkFlVW7tG2HcoPVhXianzl3K+t0Fr2J1KDBp78zxupwoAKG84fr7XsUsnpvpdZ3Gc7nXtMwgQYtH0PYpEncVxOuC1zeeiYlFn2uP0nV3AhciZFrSzWoj726ydYUDnON3VnPqNZr6ZAZfabG5ezEBERLQgq291B4hWHr1Nkmw5U1T6Vs/brTmTymt32L6zI3exqQYOjUmHsidUNfeMNU+3ZjgijR1JPzD3SObcVdmGwtMP1bt/IO2e2b4giEAUhn0zb480u+eA3j4m2bMnqBvs326wfztriqmh+eX0f2cunGlDGsuanPty8pixfL6+5etq/j5XmdzhMfeMJVR6+4VZqyAiIqIbwCMMRLeZZDwS8Icxdb0EERER0ULwCAPR7SPus+oPpL7NTTC+4uDXHBMREdHCMTAQ3V5Enam+2bLPsqN2npcXExEREeXDwEB0+6iaecEDERER0ULxGgYiIiIiIlLEwEBERERERIoYGIiIiIiISBEDAxERERERKWJgICIiIiIiRQwMRPMT6WkUq0Xxse5I9tTE4PPVolgtPu9PZCbFQz7X80/W66pFsVqs22k96AnGc1oKuapFceaPKwQg0t1YLYrVjTPX8YIoVoviC4MJIOSe/VzR6stdAxEREdGCMTAQzY+2sdUIIOoaCCanJiaG/V4Agm13fTkAJILHdurNB5ze4VEZACCF/Z7DrkCsyHWYWusBRF0XstcR9PcDEGy7jPyGBSIiIrppGBiI5kltatkFQHb3BzJHE+KBfi8AYd8OgwpAfPCwzR0GBKPjjdDImCSNSZE3XbZX2nK+ejkeCwGAyfWOJI1JoZOmnHXssQCQT52bXsclrxeA0JpaR1qjKzQmSZmfHnPVEr1oIiIiumMxMBDNV7lxl00A0O8PpkbzsYB3CIDGXq8HgIiv64IMCNaT3XZDVWp0X65tPtSiV2U3Mz5+GQCEzWX51lG/2yYA8PqHM+vo9wPQ7Dfql+ZVEREREeXFwEA0bypDs10DwOsZigGIDfsCAOpbTVoAiEuhKADo9TWqAo0kpUgQgKCuynuCkcrQvF8DwNvnjwGIBX2XABhbG7WL+UqIiIiI5sLAQHQDtKZ9RgCBM/4IYsH+AADTLmP6hKPx8WKaiIZ9ANCoEZXWkbpY4lK3P4LYsDcAoNFiVCssTURERLQ0GBiIboS6scUCIOoacPu6hwFYLPXp6weqavQCAIQio0nF5yeDg2dkAKY6reIVzOmLJaKuCy7fmSAAyy4jr1EgIiKim2z1re4A0cpUvn3/f2kZ//HlX/2PaG2TWf/o/u1TA39t87cPRPp/Aent8/+mbv6KuH4NcPX3P7sYuPw/f2vbFgBXExH//ynVmZvLH7Z9PR0Byu79qrmpDLjvrux1/OfvtowPXZYikRqzWde4/5HpcHHXfc3mpklsvTffFRBEREREi4aBgejGrPnSV82a//vN3wLAxoe3fnHN9Czx4T0tv/z+v4xcjvzwdOSHAIDJycmSkns2PrjtwY0/7fvfzkUnJysrP/9nlh3a9ennlK7dWFlZCahW56zjz82af/uX30yWlJRsfPgr2etYrbqrshLYuJZHCYmIiGhJMTAQ3ah77nvw/sqL8UkIDbrssTyw5p4H//q5L4/89J1Q5P3YHz8GNlSK93xB89Wv3AN8XLapUn1fdY2+7uGt90wfHsgEhnW578l7auu+VHlJBoSG/5SzjtWqu+66i4GBiIiIlhwDA9EN23jX5yq3XMNn6r6U59KCssraB0y1D8yavuF+83P3z158w/3NbXkmY9Nd91beNVFyz4NfEnKm3/PACy/MbpyIiIhosTEwEN2YiWRC/v2VuyoqBO3nNi7VOsYT8h+uVlZWVmmWbB1EREREBTEwEM3bFTkS/B+/KykpwfrP1Gz9j+L6uZ9yI+sYjv6+pARYX/XFrX9271Ksg4iIiGhuDAxE81a6ZkNF1dryTXfddfdd5WWrlm4dZeWbK+66+67NS7QOIiIiorkxMBDN2+qKL3ylYunXsXWp10FEREQ0N95hhYiIiIiIFDEwEBERERGRIgYGIiIiIiJSxMBARERERESKGBiIiIiIiEjREgaGDy9fXrrGiVJmlFnhhzfQINFSYN3SSrTodUtEK8USBoa+8z5uPmhJfXj5ct95X5EPi8S6paXGuqWVaCnqlohWipLJyclFb3T/oZcXvU2ihTh17Micy7Buablh3dJKVEzdLhMjvxgrfuHaL1QvXU+Iljlew0C3v00bN9zqLhDNG+uWViLWLdFtaUkCQ9nasqVolujGfLmmppjFWLe0rLBuaSUqsm6JaGVZksDwzB7LUjRLdAM2bdzwzcceLWZJ1i0tH6xbWomKr1siWlmW5BoGAJH33nutzzt+ZXwpGicqxqaNG75cU/PNxx6t2Ly5yKewbumWY93SSnQDdbsc8BoGoiItVWAgIiIiWs4YGIiKxIueiYiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKRo9RK1G3nvvdf6vONXxpeofaI5bdq44cs1Nd987NGKzZuLfArrlm451i2tRDdQt0S0gpRMTk4ueqOR99777j94Fr1ZohuwaeOGQ3/7N8V8hrFuaflg3dJKVHzdLhMjvxgrfuHaL1QvXU+IlrklOcLwWp8XwH+8/749T5hX0IaDVpwPL1/uO+/7/95974GvbN335LeUHv7zj36878lvzdka65ZuDtYtrUSLW7dEtLIsyTUMqSPj/PSipVaxefOeJ8wAfvb++wUe/vvoaDGtsW7p5mDd0kq0uHVLRCvLEl70zE8vuglSZZa4/KcCD//00cfzbZBoSbFuaSVa9LolopWCd0kiIiIiIiJFDAxERER0JyopKVn0JYluSwwMREREdCdau6bYW78UvyTRbYmBgYiIiO5EG9avX/QliW5LDAxERER0J6rYvHnVqrkHQqtWlfK+AnSHY2AgIiKiO1FpaelnBaHw9QklJSWfFYTSUo6X6I7GNwARERHdodapVPd+9jNrVue/RGHN6tX3fvYz61Sqm9wrouWGF/EQERHRnUtVVvb5ez/3p48+/uiTT65cuTJx/fqq0tK1a9duXL9+08YNvD8SERgYiIiI6A5XUlKyedPGzZs23uqOEC1TPCWJiIiIiIgU3eIjDHGfVX/Arzi70RV6rbnqJvaHaN7iA9YH7DOK2HQy1GNm5dIyMsfGFgDgOC/Z9TenO0REtJLwCAPRgiRHQ3OMwoiIiIhWsmVyDYPDN5a9Yys+8IzePnTrukNUtNFoEIDmJf+QVQuEXNVm563uEtFsVeYeyTz1KLONbfdJNh5TICKiOfAIA9FCxEaGowAMmppb3RMiIiKiJbGyAkPIVS2KM39cofTcxMVD09N1j1iedw+OJKafOuuJqR/rQHyq/XjQc9C6s06sFsVt9ZYXXFnPR8gtitV1Vk8kmduZqdUnI73Wr001GB94RhSrRdEdQo5EyN1k9cVBt4dEJDAEwKSvKXiX7niw95C16Wv5KjMl4tJtO3gxMfuZke6d4sFAzozEyKDrhaa6dJ23HPRcjCWn54bcolgtis9k1XWmVnMLLx7yuZ5/sl5XLYrVYt1O60FPMI453ymZwn7B1Z3pw/Rzpzrd0zj9xK81WQ/15sxOryLrrRcfsOa+m/IskxIbsG2bXgqJkUH385ZHdNldrdv58kW+wxYqHvQcbEn/YuuaXnANRLKKMPP3yv4rP+8eHJmuw4Jb46kqffJl15GW+m15l1HahOZ0QHFbOrui0v0KuXbOKqrMvMEXUrU9mPN+i3Q3VotidWN3ZKrx0MB01dU1PXMwt74R91lnv4OsvnhRq5j9u53+mOPHChHdMisrMBRWXqszTD2QR4Pezlbj065IssBTsiRDridNlsMef1hKP7/f2brdaPPFshaS/Id7g3lGdQASwT6HXyq8jkTI3WLuDBfXIVoBEuGAF0CdSa98hXMy5LI8bnH0TVeWt7PVuN02kFVZcSkiyx5nX2hGtSYCva4wQqPThRXz2YzbW539qcYgjwY8h/cannLNfOYc/Q4e26k3H3B6h0dlAIAU9nsOuwKxOZ43rd/ZkemDFPZ7DltMfzv9gmo00+9ESGF/n8PyuG1w4eOZ2IDtCbtPnnoc6X7a2NrpDY7K2UtJYenygld1R0uGXDv1lsOewFR19Dvtj8/YGOaSwt7OVsuLU3/k4rbGwz3OM+mVTC0zv0qel0TI9bTZqbgBLjfusgkA+j3+rBcaGT4XBVDfatICQCJ4rOkBs3266qTwkMdxqsi3TlGrmCd+rBDRzbCiAkM8FgIAk+sdSRqTQidNM+arLV5pTEr9jPyk16oBws7e4QQA6O3pWecdyGpEGutprgIQH3zR6hyWobP1vjMijUnSWMR/wixA9h2wpXYs6W2R7l0A/MFovg+0ZDQ4BMDS/dMehfs6JYLHuVm/zSSCFzwADLsMaqVF4oNtzzqDMnT7e0PvStKYJP3U39UkQPbZD0zvspTCPgDRzq6cIVky5On0yEA0HEuPwyLdtgM+GdOtRd7sMgtA2Gl9NVj0QCs+eNjmDgOC0fFGaGQs1Y7L9kqbWT3nOyWj0Rn4qSSNSdK7Qd8rZgGQL9gd3nTvVYYj0+/En/qdjYDs67oQmd2V4iVHzuWmBSAScIUBwHIylNtnWojExaNWZxgQzF1vRqQxSXo31LtfB8i+A45zueNix/n0Xznyhk0DyBe8U7vaC22Np2isvanqejcSOG3TYb6VPK+XFTxWKC0AgMrQbNcACHQPTdVqKHAqCsC0y6gGEB90HHCHAaHe4Z36pDhpcz5nzt4CSJIfANp90pgkjfkc81pFxtTvVhqTpDGlm1fxY4WIbpIVFRjGxy8DgLC5TGGBxMhgT/qcotqH9vZEAcATHZ275Yiv64IMGJwnDjVUpc4tKddaHI46AGHXpdSWvdzQ1CJAdnd25BydB5KJyMDRY24Zwr7dxvL8PQseb7Gc4mb99pII+vsBGC11inkhcqHLJwN1zu8cnK6s3e0OA4CwK5AeM8Ri6SINOE9Nn5cUu9DljAIAMscBIsPnwgAEx5FMa+Xa3Y52IwD51IDCsa/ZfUpVu2A92W03THWq+VCLvuBpVbl02tpUqavU+paOjkYACFyKZIaL8aD35dT5TrVbTY4hAIgOj9zwMYbkyLm2p9py0gIAQUyNoi5flot86TS3RMjfJwMwvdSxW1sOAKqqhucO2QTkDnPzEWqqNk+1U8TWWNRrUylUVV5rOnSkXQAg94dyFuo0T5/11BO8wRJKBI89bXHPvQHWmvYZAUT7g6nXmQwOdssALJb6Kky9nQWr+3TWW8d8aG/OWyc5LgOApizvB9Ucq5jfq+LHChHdLMvkLklFSUqRIABBXZV3UB4bfP6pVu8cJwXlF5dCUQAIOraLs3dRytFYHNoqoNzY4Xnlsu1Vj/1xjz0z1/mE6AQA0biv2/myId+QK3bxkG1vH1rOujY/bXffSAdpOYr0d3kB7GoxKR9fiIWjADDsMFbnqayIFIe2CkkpNARAEARZ7uvy7mlo1QKJi67OADQaTTQalUMjMWjV8dQF1tCJYlYr6hoDEADky+NZU4fs+mo78slUu36O6y7moUqtA4bSwaYqGXI9bXUOy3M/rzjJSHfr0x0RTUd3Y7D1cNY9bKuaO86Gxg/3+A+btIcXa213vNGoBwCgF7PGr6oarQ4YQnQ8u8imtn4AANHkPN2W3gLe0NZYFPWAH3IkvcGdQQp7j1oC4W7/d3fMb2Qdu3jwwF4PWnpPbt57YI4NsLqxxYKAN+oaCLZoDQhf8sqAsD+1JyjzdtYVfuvIsSgA1IrC/Fcxn1fFjxUiuolW0hGGaNgHAI0aMc/MZLDP4ZXSh9FHxiRpLORqLLrp3E/BmTRVmc8nlajRazfn+xgQyjaL0zvXpl2e2qy7jxvV8/tEoOUscbH3VBQQbLsKfdAXriytUAVMDTAsXSesAsIdrw7EgUi/0yMLLfvtBgDwRxZt+D1XnxYsdqHLOSwDOtvZYOp8J1/7jbd2OZxOC57TrfpZbzC1sc2x31yTf2BGN5cU8vUHY8BCt8YzpE/sifhfMgKQL/TM40obICFNpYXjDWIRG+By4+79AiC7+wOJZHjwlAwIrY3pHFTUWyce8g8D0OQkrqJXURR+rBTtd3/4w29leXJyculWMTk5+du4/IcPP1y6VRAtBysnMCSDg2dkAKY6bb7t42ioXwaAfa27teUqYOoEpmJU1egFADB0/ST7tNHMT+Y+5XG/zfhEh2+zyfVmZCRzZqrjvDTyU39X/bjvqNl4aNZ9bk7Z9/bB9obnuFFxLzStQMnQKadHBho7Wgt90FfV6gQAqOsKzq6rsfS36iZGQ0EAdbW1xlZHPTDU4fL2dh2Not5hN+u1dQAQHo1NtybJ2fEhNhoAAOQG1kZXaHpFOWdRZ6o9FBldrHPFYyPDAIC6GgHxyKUAADS2thrVKmDqDI0b4nc82xGp6/KebtXmPXjntZsO+0bFFlfqbHtew7BwYk3q2xpGss/zSo6GhgDAIOSEs6nz7Ed+0mWCHDyzt8ufuNGtcXI0GgIAQavOM9Iu1zaajQAQlOdTTu4Dez2wec8ebyh2A6wyNNk1APo9njMDPQA0dmP6EyDzBgwXeuvELnn9AIRmveIVzAVWURx+rBTho48/cf3D94/9F/ffuf7+79ynfzuvuinar377gfPkqb9z//3/+up3T32/L5lc2t0xRLfQCgkMyfjFV4+5ZUBoaVE40bMs9UEWHknt4ooHurtTgxgpMff5zTWGVg2AoPOwZ7l2sAAAGstJREFUK5i5RWUyFnQdyb6TzYj/jE+GpuOV483pT8E0Vbl29yvfsQqQ+5zemaf46mxveA4ZuA/otpIM9bx8KgoYu15SuMQ9o6auVQNg2Olw51TWy1lXN0tRPwDoatVQm9sdOsg9Lzr80DieM6shqDUAEIxKSUBbb9cBiHY4e0Kpqk6Euh2dQQDC/h26IndRao12HZC5Gic51aecap/LaCw+9Uy3w3kJACxNhiqUlaVyixQZTQBAIuLtPpOaciOf2EJTl/fE7tr8Ly3iPxMABFt7R3Pe3Qh0A6oMlj0CAO+rzsFUySZjg0eP9QAFLteZ+vsERiUUvzW+LEupx8lExNdx7JQMQLPfmG+knYwN+wPArMwyF53Ne3aeG2CtqbUeQMDZ6QFg3Dd976L0G1B2Hzua89aZejsnIuecnQEAuv0FI4DyKorDj5W5/fObg6Njv0z9/wNZdn2v9zcfLPKdZ2O//o37rOd3f/hD6uF7P3///CC/cZZuWyvhGob4gPUBux8ABPNL9ob8G0mtYZcOR8MYajNUt+XMGQpEX2qY43CvSm99xRF41hm85LQ8lP1FvUKi0XTIoJr+Bl/NbkPeTbtKY2xET1+043Fx/LyUuaWFznHeY9dzs35bCblFc2fqv4G2h8S2fMv4D+jFAybXOz3Neuvx9oC1MxjotBg6s5YQEjsaDxlUAOKxqAzApBEAqLTWQ/u6LWdkYY8jdRGyqDEAQQxHRmHQaluOtPutncHAUbP2aFZrOkfPc8Wf0qBteaUj8HRHIOyxP+7Jmq4p29XcWuTIpd+u78+5RkLc1d1mKgegb2wR+jxy1G3ZmntmdTQQibVqpwecfvsD4ozLLJxPiM5GV+i1dAwTmly+7zYr7ESd+lJtk0GzWBdjEIDyhv1Oy6VWb9TT+lB2eQjmk87duX+MnGsYAEDXWl8DqIrdGg93mLd2ZM8X6hzH9+SWYKdZzHrjCE1WoxoocuCnc/jO3sAGWG3aY8ElLwDAaM7OSNqW4y8FWo4Gwn12U1/WMzRlu82t41NbBp3jyJ7CbyTlVcyNHytFifzsveyHH3/8ifv7nr/Zu+fez35mUdqP/frX//X7//hpMudgU/S995SWJ1rpVsgRBgg19S3O8wG3WXHDqrV6/CdajKnTmUWdaY+z96zTJAJloyNF3CdJpbd73/S52i2G9AnRQk2dqeWVrr3ZYxHRaG03K3wOlDfs77bknEzNzToBUOltXv95l2PXdGUZGlucJ6YqSwpdAIAaMVXbKsP+DhOMjv3paCyIGgCIjsQTmdbecLY06lJX8og6U8sr3tAP7fO5wxFU2lbPW4Hu3Gq3njiuVNx51JssdZk3W2OL82zQ/+0dqRdQbjzuO+uwpDoo1Bh2ObrPuqx1AoRY+qBDcQqmhamFasyv7OWe1kWm3vGdN7PKI/VHfKvQ5jezjMeuVaH4rbHGaG7MFEqdxXHS5/+BYiULNQZLe7f3RNFXPN9gWgCA8jpzS+p/M29poNJaPYG3unPfztauVzJvHVFnae8OvDH3+1F5FYXxY6VY61Qz/wYff/zJqbOeX/32twtvfEz61anv981ICwDK1q5deONEy1PJUlwMtP/QywBOHTuy6C0TzTaj3go/LL4dJakjDKaToR6zwtAlfUzM5HpH6Us5Vq74wDN6+xDQ7pu6tmcR27Y+YPdnHWG4vd3kul1W0ofplu/fOn38yvrGyJH5XI28zFaxJBarbpfaf387+N9+/Nbs6evWrdv/v+wR7/nsDbf8i5h0uu/1vJcrfPPxHQ99ddsNt0y0nK2UIwxERERLL5mIBQYHAQi2oi8MWn6ruOM1PFj38J8/MHv6p59+eur7fbFf/+bGmn0/Fvt7T/600PA1A9MC3cZWwjUMRERESy/rCiVdy4mCt0BbxqsgACUlJTt3NJaUlP4fw/86Y9ann3566vuev9m75/P3fm5ebf78l7HXPK+PX7kye9b2h7/2je0NN95domWPgYGIiChNqDEY6y279+82LNnJUjdhFYR0Znh0VWnpxf8rOGNWMjn+X3v7/nPLX1WL9xbZ2ujYL1/re/3KlauzZz36Fw899ohxod0lWt4YGIjmR2+TJFvBJaqae8aab1JvbrYq4/4Oy+UBTH3ZdKS76WhQu6/j+Hyu3FRo+zb+vVGOud9Et4jeJoWXuGM3YRWUralxO0pw8e08meHvPf/4zJ6nvqiee9s18oux1/reuHo1T1porH94R0P94vSVaBnjNQxENA/lZYgMh71nvKEEgPhgnys87EdZnm85JyJaDpoe3b794a/Nnp5Mjp/uff3nv5zjG2jee/8XSmnhsUeMTAt0h2BgIKL50FocewSEneatolitb+2ToevYa+R9Holo+frG9oZH/+Kh2dPHr1x5zfP6zzNf8Tbbu6M/7/7HH+RNC49vN+Ztk+i2xMBARPNS3nDM19turhEAiMZ9rsDZYr/tjYjoVnnsEWNj/cOzp49fuXK67/XRfJnh30dGe14/lzctfOPrj3z9YaYFuoPwGgYimi91g83dYHPPvSAR0bKxo6F+1apVP/rvgRnTr1y5etrzeutfPXnfF78wNfHfR0bPvOG9du3a7HaaGrc3PGhY2r4SLTM8wkBERER3hEf/4qHHt+e5o9HVq1e7//EHP/v5+6mH0Z+N9Lx+Lm9aMJseZVqgO9AtDgwhtyhWi+IzA/Gsaa5qUawWrb7MtEh3Y7Uopn/qmp452BuMz2opPvDM1DJTP9Z0u/EBa7UoVouuUO6TEiHXzvQycZ815yn5elJEbzPdcM9YU043pl8a4oN/Kzb1RGYvmwgc1D3WPTUj36oBIOaz6fKui5ZS+s+R72dGjWXqKuenuNpOl1ahpyMx4nc9/2S9Lu9bIz5grRZ1T758MZbbmekqil88YtHllmtiZND1gqV+myhWi3U7rQc9uS3mL+9EyN2U1SsiouXr6w8/9I2vPzJ7+tWrV3teP/fu6M8j7/7sH37gnZiYmLlEScnOHY1Gw5/fjF4SLTMr4QhDjTYry0vhIY/jKZPNv+DRSSLketrsDC+0mYWRR4cRPto1Mwcg4n3VI0dH4olCT475bOYDPnkJu0dLbEG1HRt8wWR81ukdHpWnn65vcoeSWQvJwz3OoTyJFAAiPueZYHb9xPzPm7a3OvuDmRb9nsMW/U5XToszJULuFnPnLX4jEREVb/tDDzY1bp89PZUZvnfun/KmhW8+ZvqLuq/ejP4RLT8rITCoDEfGJCn1827E/4oJkH2v+nIHQZI0BACO85I0JknnHXO0mQgeu/VpAYiNhGQA/o5TwewhWdzX1REG4I9KSs9MjniZFm61RldoqjLfcZnyLSJJfgBo90ljkjTmm1mXhWpbb0/PSj/LdDKUWrLHXAUkI25ba78Ewdz1ZkQak6SxkdBZmw4Id1o7AgkAqGruebNDA0QvRfLeNTAWDUQBzUt+yaYHkIy4bM96JQjmE/7ImCSNSSPv9Np0QNhpPXpRIbomgseZFoho5Wl40GA2PTp7+rVr1/KmhW89bnroq9tuRs+IlqWVEBiAePDcy6nTJO7Xmg77ASAaHMneD5scjwOApqysiOYSwWNPW9y5g5yyzUL6f+OL0eNOc/oEkq81Pd+T5wyqNDniT/175phnKgAlg66j6ckRKe9TkyPeNsuLTAvLX3JcBgrW5dy1nVci2NsZBtByomu3NnVLU1WVse3QPgCypz9TclrDbh1wyelwB+M5RwmSsaDL0RkAjK2N2nSLfc4wgD1dXZapFhva2q0A5D5vviJOBI+3WE4xLRDRimQ0/HnzjkdRUjLHciUllr987GsPMC3QHW153CVpyK6vtivMS4bce62dwTkGx3IsCgC1olB4OSB28eCBvR609J7cvPfA9G1eyoVaDRCFv/tC0GgzlAPJRCL/XtVCvZ1FCnuPWgLhbv93d1TN7stoGAAEQZDDrr6LlmMN5UCk71iPrNFootEofGHJbZrxvGSkp7XlaET7UrdpuNUxVGxH6FYoXJfF1XZeUjSVKT1P13pmzx0elYEqANC2nuyNHXb0dFr0nZm5Q3Z9NQAINWbnWedudabFVC317a3tm91icKrFjNjFQ7a9fWg569r8tJ33SyKilai+7s9Xla765x/5MTmZf4mSkt1Nj9fpdTe3X0TLzrI/whDzdXUGZUC3vzf4ruLpRvGwPwhAo1fPHpVnSUhTaeF4g5j7VVNac1uTACDcadFWi2K1WLt1740Pg9KnoET8LxkByBd6AnlOCklK0SAAU3uXox5yn9MTSiIx2H00DN1u+x4DAIzGcp93OZROC55uq55frrvcxUP+YQAavZivLour7fzGUShm6LICiqDW19SK+ZYqE4XN04c+Creoz4k8l6fSgvu4Uc3vbCOileuhr2771uOmvMcZSkpKnjL/JdMCEZZLYMg+Fzz3PO94NBAAAFPrvga1Cpg6+ShHLNDvByA06Qt/gZT7wF4PbN6zxxvUs2dW7Tjh7W636FJjK1Fn2GXKc+u1gr2dpVzbaDYCQFDOMxobjQwDgCgazPutAqLOVz3nTnV5IVjbW0w1GgAYCknZZ5IMOVqPRgwnvN1WrargK6XlIHbJ6wcgNOety+JqW4FYYwYAWN8YkaarMfPzWnM6oCQjrqeM9jOR2nZv8F0pdNIEpAp4JHjWpo722LdbMrfiEmuaAAD7vCOzGxzrac6OPKfse/tge8Nz3JjnjUREtLJ87YFtu77x2IzMUFJS8lRz01d1X7lVvSJaVpZHYFBWVpbajR6LjCYAIBHxnulJTckMwRMRr9N5CYDOXq+fozmdzXv2kEFpj6iqdoftOxfelqQxSXr7gvfb9gXfaTkZG/YHAMAgzD4nJR4LRQGY9KJKZbA7mwRc6mg7FUVjh92gUomp++dEYzlJQzCf8HZZapkWlr9E5JyzMwBAt9+Yty6LqG1lVXpTIwD0dHYMRBKpUJlMRAaOdGdfPp8c7nWGgV1Ol82gzikaldp4qKvdCIQ7zgymLpHWN5oA4MyxDl9Wi76Xc1pM09ne8Ci/kYiIVpgHt+n/6glz2dq1qYcqVVnLt3Y+8J+23tpeES0fy+MaBmXlOlOL4PHIUfdT2twThKKBaKxVK7uqzU4AgK79SEvh4ws6h++sXX9zBjmdZrFz+pHQZDWqgRm7j+XRIADUqNUAqna0O4wX2gLQdTzXXAVAUGuAIIKh0cTu9Ekfgvmkz23mPt0VIOQWzakC0DmO7Mlfl3PVduE/dFXzS92BaKs37LE/nnMVg1FjMljUAOI+q/6AH0BLU/6hvVpj1CAQ7W/VXnaFXmuuMnd0X4q09oc9B0w5LdZrTYbdWb3ROc57btYbiYjoJtm29c+2/ocvx3/3+8nJ65+5W1i7ds2t7hHRMrLcjzCgvOH4+V7HrtSJQkJNncVxute1zyBAiEVHUhclizqL43TAa9MX2u9+M9NCFqHGYGnv9p7Ie8VzSAbQqE0fe1Cb29o1wr5D6dijErV1ABAaTd1alWlhpRF1lvbuwBt2xbosorYLUe/4zpvB3ldaTOmz6CDqDJZ2V1t9dpEINU3OvXUKda9tOf6SMevyBvWOb/uDZ50tjVkt7nK4njMyLRDRnWDtmjXiPZ9Vf+5zTAtEM5RMKt0ZYAH2H3oZwKljRxa9ZaLZZtRb4YfFt0O0pFi3tBItVt0S0cqy7I8wEBERERHRrcPAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQtyTc9C1sql6JZorxm1Fvhh8W3Q7SkWLe0Ei1W3RLRyrIkgeGLojj3QkSLZEa9FX5YfDtES4p1SyvRYtUtEa0sSxIY7r3nM0vRLFFeM+qt8MPi2yngg7D7n4aBLz761zvuW5+ZFjqVnvZY7XoA+N1Pz3l/8rv03E2f+eLnv7z1Ae3n1ue29Ml7g9/78fszmv/io08/dt964JP3fnT2x+8Ddd+06bO7Nv5B6F9Cm3Y8dt96fDLyo+/9+P3pp+TrSRG9zXSj7ls23axfQqYb0y8Nn7z/4++FPrP7W1vvnrHs+C8vvf6vd/2lJT0j36oB4E8jQ//0p6/89ex13Uluft0SLdxi1S0RrSxLEhg2bdiwFM0S5TWj3go/LL6dAlavu/vuu4FNZVnXAK1ef/fddwObp6bddc99d0+Ppyf+9EHk7f/98oONhntVWS2Vlm26++6Zo+5MG6Vlm++++25gffbb9Mrv//0nl0Ym7q0rzV5kc1ZXZvakiN5murEu3wYhzzqujCfvnnj33V9+6e7PZ78afDj23gfrsfHqFWCt0qrxcSx4Mfzh+j9bko3PCnLz65Zo4RarboloZVmawLCRmwy6eWbUW+GHxbdTwJp1W7ZsyR2lZ6ZtWpuZtkrQWXbrUv+/fu2j30T/9V35k1/LH92r3jj9rCuT41u2bEHttu3Vm4HLY2/928j0+Lq0bNOWLVuAdWsyi1/7cOT//X9+VbJly5b0MqVrU4tkD8ln9qSI3paWbd6yZTx7TVky3Zh+acnxKxu2bNmQ/GXsQ/G+iukY8cEvYyVbtmz59EomMMxa9fVPfhMNv/fJhi1bNuRd153k5tct0cItVt0S0cqyJIFh43puMujmmVFvhR8W304Bq9dVVlYCG9dm77NXVVZW5o7cr330hw/+8IfLl/+UvAYAlZWVwLWr17LedpOlqysrK7Fu/ZqcNjLD+LWbKisnAFVq+YmPfv3z9/+0qrKyElPLrFp/V2XlBLBprXJPiuht6dqNlZUTwB9Hw38EAKzdsEX43OeEjauzujH90q5PTKR68XH8959WCOtSr+UjWU5PnpxIv8jcVU+O/+GXP//g6obKyg1QOJpxJ7n5dUu0cItVt0S0sizJZ/aG9euWolmivGbUW+GHxbdTwKqyiooKAB/GfvHh9NSKigpgw5oSAMDkeOKDD/746QRWqTZWZJ22s2FtSVZDE1hVUVGBjRtS4/1VqlQb6WVK1m6oqACgWgVc+/T3sjy+6fNfvrf0t/KHU8usKiuvqrh2Bfj002T5WlUpMHm9ZG1OT4rpbcnaDRUV2R0DJj6Wf43Se4X1qzLdmGrw2vXSiooKrFq1amLi008+vb5uXSlw5U+Xr2ysqlp75coVTF6fSG1b0qtev7YEk1cuxz+4XCr8T/evT37wu0+AslVF/rZvVze/bokWbrHqlohWliUJDOvXqeZeiGiRzKi3wg+Lb6eA1WUVFeX5Z61ZUwoA169evV62qbxslWrjxnVrSgFMJP94+dOp+SmT11FWXlG2an168Ly6rKK8YnqZ0jXryyvWAGtLrn7yabJ042fEDevXTCYryqfXg7WbqoTrH12ZxPVPE3/8NN1ueUVWK0X0FqVr1ldUrAHWbb5LtQqYnBj/+PInV4GJietYlenGdNdXlVWUl63ZsHHtlY8+vnr1ysQ6VenVqxPrKras37D2ysefXMOakutA6dSq16y+Pv7xJxNllffcvbGs9EppRcUaoOxOP8Jw8+uWaOEWq26JaGUpmZycXPRGr01MAFi96k7fg0g3x4x6K/yw+HYKmLx+5eo1oHT12tWl+adNXrty9XrOEpMTV65OzHjO9WtXrl1Hyeo1a0pL8rWbmg8AKF21ZvWqkvzrnpy8fn1iYuL6JFBSWloKTFzPXvfcvZ1a0+o1a1M9yZmQ/n9m4cnrV69em8SqNWtXYeLq1YnJ0tWrSyauTWDVmjWrkHqZq9asXVUytRoAKCldvXp1aUm+dd2hbn7dEi3cYtUtEa0sSxIYiIiIiIjo9lA69yJERERERHSnYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREihgYiIiIiIhIEQMDEREREREpYmAgIiIiIiJFDAxERERERKSIgYGIiIiIiBQxMBARERERkSIGBiIiIiIiUsTAQEREREREiv5/3vpDFJ3MvzoAAAAASUVORK5CYII\u003d",
+                "mime_type": "image/png"
+              }
+            ],
+            "line": 38,
+            "name": "в логе ПН сервера присутствует строка \"POST параметры: [token \u003d \u0027170323124206546938003371720400100011007865\u0027 , codeATM \u003d \u0027222212\u0027 , atmRegionCode \u003d \u002717401\u0027 , atmTB \u003d \u002742\u0027 , atmOSB \u003d \u00278611\u0027 ]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST параметры: [token \u003d \u0027170323124206546938003371720400100011007865\u0027 , codeATM \u003d \u0027222212\u0027 , atmRegionCode \u003d \u002717401\u0027 , atmTB \u003d \u002742\u0027 , atmOSB \u003d \u00278611\u0027 ]",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          },
+          {
+            "line": 9,
+            "name": "@testcase_1084_161765"
+          },
+          {
+            "line": 10,
+            "name": "@testcase_1168_161771"
+          }
+        ]
+      }
+    ],
+    "name": "Платежи наличными",
+    "description": "",
+    "id": "платежи-наличными",
+    "keyword": "Функционал",
+    "uri": "Touch/Платежи наличными/Авторизация/1084. Авторизация в гостевом блоке (успешно).feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@TOUCH"
+      },
+      {
+        "line": 4,
+        "name": "@ПН"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: ru"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4244007936,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Форма платежи и переводы",
+        "description": "",
+        "id": "платежи-наличными;форма-платежи-и-переводы",
+        "after": [
+          {
+            "result": {
+              "duration": 1020926472,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 8240510153,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "страница \u0027Платежи наличными\u0027 открыта",
+            "match": {
+              "location": "OpenPageSteps.openedCashPayPage()"
+            },
+            "keyword": "Пусть "
+          },
+          {
+            "result": {
+              "duration": 917405657,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "шаблон \"atm_cash_menu\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_cash_menu",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 127195215,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 13,
+                "value": "# Запрос справочника поставщиков"
+              }
+            ],
+            "line": 14,
+            "name": "элемент с текстом \"Платежи наличными\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Платежи наличными",
+                  "offset": 19
+                }
+              ],
+              "location": "CheckDisplaySteps.elementShouldBeDisplayed(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 46511251,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "элемент с текстом \"ЕИРЦ\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ЕИРЦ",
+                  "offset": 19
+                }
+              ],
+              "location": "CheckDisplaySteps.elementShouldBeDisplayed(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 206181248,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "в логе ПН сервера присутствует строка \"REQUEST: chooseProvider\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "REQUEST: chooseProvider",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 23831585,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "в логе ПН сервера присутствует строка \"private/dictionary/servicesPayments.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "private/dictionary/servicesPayments.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 23981821,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "в логе ПН сервера присутствует строка \"POST параметры: [regionGuid \u003d \u002745000\u0027 ]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST параметры: [regionGuid \u003d \u002745000\u0027 ]",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 25566909,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 19,
+                "value": "# Запрос популярных поставщиков"
+              }
+            ],
+            "line": 20,
+            "name": "в логе ПН сервера присутствует строка \"REQUEST: choosePopular\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "REQUEST: choosePopular",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 26255545,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "в логе ПН сервера присутствует строка \"private/dictionary/popularPayments.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "private/dictionary/popularPayments.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 25018250,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "в логе ПН сервера присутствует строка \"POST параметры: [regionGuid \u003d \u002745000\u0027 , paginationSize \u003d \u00276\u0027 , type \u003d \u0027provider\u0027 ]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST параметры: [regionGuid \u003d \u002745000\u0027 , paginationSize \u003d \u00276\u0027 , type \u003d \u0027provider\u0027 ]",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          },
+          {
+            "line": 9,
+            "name": "@testcase_1171_161766"
+          }
+        ]
+      }
+    ],
+    "name": "Платежи наличными",
+    "description": "",
+    "id": "платежи-наличными",
+    "keyword": "Функционал",
+    "uri": "Touch/Платежи наличными/Выбор поставщика/1171.Форма платежи и переводы.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@TOUCH"
+      },
+      {
+        "line": 4,
+        "name": "@ПН"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: ru"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3075209950,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Выбор категории",
+        "description": "",
+        "id": "платежи-наличными;выбор-категории",
+        "after": [
+          {
+            "result": {
+              "duration": 942413980,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 2388451492,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "страница \u0027Платежи наличными\u0027 открыта",
+            "match": {
+              "location": "OpenPageSteps.openedCashPayPage()"
+            },
+            "keyword": "Пусть "
+          },
+          {
+            "result": {
+              "duration": 1530465130,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "пользователь нажимает кнопку \"Платежи наличными\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Платежи наличными",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 2181882410,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "шаблон \"atm_menu_inner\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_menu_inner",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 55026053,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "элемент \"title\" с текстом \"Платежи наличными\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "title",
+                  "offset": 9
+                },
+                {
+                  "val": "Платежи наличными",
+                  "offset": 27
+                }
+              ],
+              "location": "CheckDisplaySteps.elementShouldBeDisplayed(String,String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 54154751,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "элемент \"caption\" с текстом \"Выберите поставщика\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "caption",
+                  "offset": 9
+                },
+                {
+                  "val": "Выберите поставщика",
+                  "offset": 29
+                }
+              ],
+              "location": "CheckDisplaySteps.elementShouldBeDisplayed(String,String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 33836503,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "элемент с текстом \"Завершить обслуживание\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Завершить обслуживание",
+                  "offset": 19
+                }
+              ],
+              "location": "CheckDisplaySteps.elementShouldBeDisplayed(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 186455009,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "в логе ПН сервера присутствует строка \"ЕРИБ REQUEST: chooseProvider\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ЕРИБ REQUEST: chooseProvider",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 24035760,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "в логе ПН сервера присутствует строка \"private/dictionary/servicesPayments.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "private/dictionary/servicesPayments.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 25613237,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "в логе ПН сервера присутствует строка \"POST параметры: [id \u003d \u0027CASHPAY\u0027 , regionGuid \u003d \u002745000\u0027 , paginationSize \u003d \u0027200\u0027 ]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST параметры: [id \u003d \u0027CASHPAY\u0027 , regionGuid \u003d \u002745000\u0027 , paginationSize \u003d \u0027200\u0027 ]",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          },
+          {
+            "line": 9,
+            "name": "@testcase_1172_161767"
+          }
+        ]
+      }
+    ],
+    "name": "Платежи наличными",
+    "description": "",
+    "id": "платежи-наличными",
+    "keyword": "Функционал",
+    "uri": "Touch/Платежи наличными/Выбор поставщика/1172.Выбор категории.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@TOUCH"
+      },
+      {
+        "line": 4,
+        "name": "@ПН"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: ru"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3377131182,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Выбран ПУ, у ПУ 1 услуга (Наличный расчет)",
+        "description": "",
+        "id": "платежи-наличными;выбран-пу,-у-пу-1-услуга-(наличный-расчет)",
+        "after": [
+          {
+            "result": {
+              "duration": 1384426558,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 2882698846,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "страница \u0027Платежи наличными\u0027 открыта",
+            "match": {
+              "location": "OpenPageSteps.openedCashPayPage()"
+            },
+            "keyword": "Пусть "
+          },
+          {
+            "result": {
+              "duration": 998895733,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "пользователь нажимает кнопку \"Платежи наличными\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Платежи наличными",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 980780062,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 13,
+                "value": "#автоматический выбор услуги с isPUForCash\u003dtrue,puTypeSum\u003d0 наименование совпадает"
+              }
+            ],
+            "line": 14,
+            "name": "пользователь нажимает кнопку \"1 одноименная услуга\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 одноименная услуга",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 699576493,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "шаблон \"atm_total\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_total",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 196731608,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "в логе ПН сервера присутствует строка \"ЕРИБ REQUEST: initCashPayment\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ЕРИБ REQUEST: initCashPayment",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 229917860,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 17,
+                "value": "#автоматический выбор услуги с isPUForCash\u003dfalse, puTypeSum\u003d1, наименование совпадает, провайдер в описании услуги называется не правильно"
+              }
+            ],
+            "line": 18,
+            "name": "пользователь нажимает кнопку \"Назад\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Назад",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 1173517844,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "пользователь нажимает кнопку \"Платежи наличными\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Платежи наличными",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 739875125,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "пользователь нажимает кнопку \"1 одноименная услуга безнал\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 одноименная услуга безнал",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 977379899,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "шаблон \"atm_attention\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_attention",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 129406065,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "пользователь нажимает кнопку \"Далее\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Далее",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 655479276,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "шаблон \"atm_total\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_total",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 229288789,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "в логе ПН сервера присутствует строка \"ЕРИБ REQUEST: initCashPayment\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ЕРИБ REQUEST: initCashPayment",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          },
+          {
+            "line": 9,
+            "name": "@testcase_1173_161768"
+          }
+        ]
+      }
+    ],
+    "name": "Платежи наличными",
+    "description": "",
+    "id": "платежи-наличными",
+    "keyword": "Функционал",
+    "uri": "Touch/Платежи наличными/Выбор поставщика/1173.Выбран ПУ, у ПУ 1 услуга.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@TOUCH"
+      },
+      {
+        "line": 4,
+        "name": "@ПН"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: ru"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2955727397,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Оплата сотовых операторов",
+        "description": "",
+        "id": "платежи-наличными;оплата-сотовых-операторов",
+        "after": [
+          {
+            "result": {
+              "duration": 2530550506,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 1450098182,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "страница \u0027Платежи наличными\u0027 открыта",
+            "match": {
+              "location": "OpenPageSteps.openedCashPayPage()"
+            },
+            "keyword": "Пусть "
+          },
+          {
+            "result": {
+              "duration": 837672416,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "пользователь нажимает кнопку \"МТС\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "МТС",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 4997767309,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "пользователь ожидает \"5\" секунд",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 22
+                }
+              ],
+              "location": "UserActionSteps.userWaitsForTimeout(int)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 230319923,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 14,
+                "value": "# То в логе ПН сервера присутствует строка \"payments/servicesPayments/edit.do\""
+              }
+            ],
+            "line": 15,
+            "name": "в логе ПН сервера присутствует строка \"POST параметры: [billing \u003d \u0027mob\u0027 , service \u003d \u0027100\u0027 , provider \u003d \u0027200\u0027 , serviceGuid \u003d \u0027100_guid\u0027 , providerGuid \u003d \u0027200_guid\u0027 , operation \u003d \u0027init\u0027 ]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST параметры: [billing \u003d \u0027mob\u0027 , service \u003d \u0027100\u0027 , provider \u003d \u0027200\u0027 , serviceGuid \u003d \u0027100_guid\u0027 , providerGuid \u003d \u0027200_guid\u0027 , operation \u003d \u0027init\u0027 ]",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 547698909,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "пользователь вводит \"3693693693\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3693693693",
+                  "offset": 21
+                }
+              ],
+              "location": "UserActionSteps.userInsertsIntoFieldTouch(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 178295279,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "пользователь нажимает кнопку \"Далее\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Далее",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 85369074,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "пользователь вводит \"500\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 21
+                }
+              ],
+              "location": "UserActionSteps.userInsertsIntoFieldTouch(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 2013565244,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "пользователь ожидает \"2\" секунд",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 22
+                }
+              ],
+              "location": "UserActionSteps.userWaitsForTimeout(int)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 137204103,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "пользователь нажимает кнопку \"Далее\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Далее",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 671837782,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "шаблон \"atm_total\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_total",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 233391486,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "в логе ПН сервера присутствует строка \"servicesPayments/edit.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "servicesPayments/edit.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 109842637,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 23,
+                "value": "# И в логе ПН сервера присутствует строка \"POST параметры: [billing \u003d \u0027mob\u0027 , service \u003d \u0027100\u0027 , provider \u003d \u0027200\u0027 , serviceGuid \u003d \u0027100_guid\u0027 , providerGuid \u003d \u0027200_guid\u0027 , field(RecIdentifier) \u003d \u00273462346234\u0027 , field(amount) \u003d \u00272346.00\u0027 , operation \u003d \u0027next\u0027 , transactionToken \u003d \u0027timeout123456\u0027 , operationUID \u003d \u0027AAfecf5401c685dcb2306de97889ead1\u0027 ]\""
+              }
+            ],
+            "line": 24,
+            "name": "пользователь нажимает кнопку \"Оплатить наличными\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Оплатить наличными",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 788940718,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#   То в логе ПН сервера присутствует строка \"ATM template: ATM_INPUT\""
+              }
+            ],
+            "line": 26,
+            "name": "пользователь вводит \"3693693693\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3693693693",
+                  "offset": 21
+                }
+              ],
+              "location": "UserActionSteps.userInsertsIntoFieldTouch(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 93974878,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "пользователь нажимает кнопку \"Далее\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Далее",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 2363111591,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "пользователь нажимает кнопку \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 122361192,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "пользователь нажимает кнопку \"Оплатить\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Оплатить",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 4996162366,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "пользователь ожидает \"5\" секунд",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 22
+                }
+              ],
+              "location": "UserActionSteps.userWaitsForTimeout(int)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 245060581,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat siriustest.steps.UserActionSteps.serverLogShouldContainStringPN(UserActionSteps.java:62)\r\n\tat ✽.То в логе ПН сервера присутствует строка \"PackOfPayments/confirm.do\"(Touch/Платежи наличными/ПУ для платежей наличными/1227.Оплата сотовых операторов.feature:31)\r\n",
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "в логе ПН сервера присутствует строка \"PackOfPayments/confirm.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PackOfPayments/confirm.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 32,
+                "value": "#   И в логе ПН сервера присутствует строка \"POST параметры: [bundleId \u003d \u00271\u0027 , rrn \u003d \u0027723861912781\u0027 , dateSV \u003d \u002711.07.2017T17:30:21\u0027 , stan \u003d \u00272200900\u0027 , phoneClientNumber \u003d \u00273452345673\u0027 , mainId \u003d \u00274101776\u0027 , operation \u003d \u0027confirm\u0027 , transactionToken \u003d \u0027rpjsbMobile\u0027 , cashSum \u003d \u0027500.00\u0027 ]\""
+              }
+            ],
+            "line": 33,
+            "name": "пользователь нажимает кнопку \"Напечатать чек\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Напечатать чек",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "в логе ПН сервера присутствует строка \"payments/printCheck.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "payments/printCheck.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 35,
+                "value": "#     И в логе ПН сервера присутствует строка \"POST параметры: [id \u003d \u00274101776\u0027 ]\""
+              },
+              {
+                "line": 36,
+                "value": "#    И в логе ПН сервера присутствует строка \"REQUEST: choosePopular\""
+              }
+            ],
+            "line": 37,
+            "name": "пользователь нажимает кнопку \"ОК\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ОК",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "embeddings": [
+              {
+                "data": "iVBORw0KGgoAAAANSUhEUgAABBAAAALLCAIAAADPLuZxAAAgAElEQVR4nOzdb2xVZaIv/qdehXocBGeE3RlRqozXosxYR8+lykSqNx7LHW+sx5tYnETqL7lD58VATQ5aM5iQ4ISqJ7E6Lyye5FImOVKTw6HmOoc65kglBylzdChn+FMHgaooLeBQQIcNw6G/F3vvdrfdT/9RB/F+PuFFWXvttZ7152mf71rPs1ZeT9fcAABAyrR/C4d+OA4Lga+Li853AQAAgK8ugQEAAIgSGAAAgCiBAQAAiBIYhnW6ceHmvETq37sliw80f3S+SzSs9w5kCtz3r2LD6dwzf3S0euHvSx/YXlKxr3HP2WGXndxzuLpiZ92OsS8h43Tjws15L57I/PdEbWJz+fpMId87kJfYXPveSJZztmPH0cY1+yof2D6y+b++dnxaMvv9pkPju9Cs8/+27eVLP23ac6b/DGealna0JPt/ZWlHa78p/Q/uyNeY2JwX+WLyvQNVvdOTf2pctrMwsTkv8W7ZssPtycGz958/dsZGl3Om9eX3i2aPfHr60+Zl7zf2Oxy55o/V1uFq8ehr4qDyjGC/RR06Vrd4e+q7JQv3NQ48KxihYavGqOoOX7rkeweKE7uz6tHZlmW/LVh6tPs8lgn+IgSGkfn593u65vZ0Fdd+97P5lZ+2ne/iDOPW6T1dczP/bt/y88vC1ETlHRNyzXq25VfHyld9r2X9zS1LL6p9YM/Qzc3kewdKf/iHpmnTymePcQnjq2PDvtLZW0qXHmmdOLnq2Zuqb/3LrXoI3e99Wjn/09bzXYycxli21Pn/bzctv/VE1Q931u7Iaox+9Fn9rz5p2Ni/vXjok+qXT4yq/Zl7jV1ze7rmNj0w8NRNHvqsZuGHnen/nW35+x0LPr6ypWtuzx9uKH3vD6V/fyw59Py5z9joctpe3nn75slNm+f2dM2uPLy/9Kl04yA2PYQQwpm2NXvm/0O/Vnvu+WO1dchaPPqaOLg8w++3qI8OV9zd0T7/hvauuT1dP2j6yYSGB9qq3rpQM8O5VNivcmXny5B/a0HtIyeqX8xUlh2dNf8wqW7pFVPOb7HgyycwjMrFpXO/FXYea/8LtonP1bGj9b/44ubFBWWTc358UemywtL8EELIv/VbFYePNL4Xv5SVPFaz8MPwyI0tL04tHNsSxlX3Wx+UPPWflevndGy4vq7iWyXXX5z/l1nxcJIfHVvzu5HfaRk/s7/TuuOG8mlDzXJOZcu/uLji2rqyz59s7AsDbc0H3whhzYZjAy6wbf3Fvrr3vpydkEx2hgkFh3v//6e2pj/fO39yYQhh8qTS+aFrz+nuoeaPnbGR5SSPNTx1auXigqLJIYT8ip98J/zqUMuh+PQQQvJPTWtOTJk9qX+x4/P3itXWAdNHWxNzlmfY/RZ1pvmX+9t/cl3d/Pz8EEK4qGDu9IYVl61afKDlnDLieXMuleK8VXbOm4vLll5b8g8d9TtCCKcbn9sfVlxdMeRvXfh6EBhGI3m6ef2RRPm00r7fDmda13xQdtvmvMTmwvl76t5LXWM7UZvYXLp0X8Xc3/afnpk/Nb3ig/r3zgy+49y/r8XnDUt3Fs3u7ZNwIHUpK7nj09LZ71bGehll6djQuSZMW/7QN0ayfd0hTJkYOyXOtr68/4Wrr61/7orCyBzDLWGMOjd/Wjn/3bzE5oK5O6vX/ynTJvm84ekvahqur7z+4hzf6d+dI717k39qXJbame+WLP609Vhq1gH7v++/w+7k7vc6qyrezUtszrttZ1Xj56mCda7f/e2qP4bw4e2JzXnpO9cnahO7G987Wl3xbl7it0WLu9qTIbmnq3Lub/Nm/67i5RNDttJO1CY2ly77tH7ZntIHdlc93ZVpYqY7dHW8ta/sts15iz97f/3urDPkRG1iZ8Pmo9UVvytIbC6Y+379jrORso3WhMJbQ/g407JMHmt88Yv7y69MvNrZNKCr3iOTu5/7tC1n76CRnL0fHKtfurt08b6Gt5L9l5FsajpV0O/P818Vl1/yRtOxjhBCONP5QUhcP2HKUPP3k3XGRpaz88QLYXLR1ZkvXD2xJBxp/zg+PYTOD/6zeOGgahKfv1estvafPuqamLs8w+y3uEPHGn4VKuZOys7nBXOnPXT4UOvO0Jk+D/v+9XUUzFUrI7U7taLD5Tl6pmVX2LNtL+8szPxWjC1q6PMtVim693xWt3R36cIPahqPZe5NnWlbk+pRtrlw/gdNh8Zcoc60Nab+arxbtqwr++5ErpWGEEL3Owcq57+bl/htUV9ns+gvrlTPtMplHVULd1ctfb/s6YFhnnM1beryFeGx5w63bz5Q/fGMukdG9OcVLnQCw8j84j/yEpvzZvx77amrml/4VkF66tnWF3eWvzOp7l/n9nTNbVt2aeP/6Out0T3xirrN/62n6/bWpZdkpp9tebrt9saLq9f/t56uuW3LJrXvGNSeSh7r39di16OHvtW0eW5P19yD9d8cfbk/b3q5++afx24vZDvbsf7Thh/MqLojV/s7hJA80fiLL+Zd86fait+Xzt+eq8fzcEsYozNtG09XrLmtp2tu+7OXtVT9oT7VafujL5omF5ROPFxdkWoivJ+VylK+ufb3c3u6vr8y/d/TTUt2VB+e1vzu3J6u4vrZR2+vOJCzOTtiZ9t3nCl/8Qc9XXN7/vnKziW7qt86E0IoeGDWwfpvhjBjS9fcnq5ZmStPf6x++XTVqtt6un5QP+1g5a+6mj+Y3LD5vx1tLOh+anfNcH05usOl5cuub1l/w/I7Ttbc/fv63m7r73W1Trym+d25R1dccUN6vX1fqvnlF+Uv/qCza07zwjM/rfioJRkr26gk298JiVvzU1Ug+d5nz4Srqp8tqJza3fhO/7159beWLz1T8/LnY9jH+ZOnrf5ZQdVzs5p+dlnz4v/IauqdbX3x4+47Jve/lXRR6d/d+NLEj0sqDjRvOLB8z4ymv+udIef8vQacsbmX0/nRiRAu64sc0/KLQuhMno1NDyEUzJ40uCk/xPwZsdraf/roa2LO8gy534b08clXw6TCq/tPnDahOPy59aPTBQ/M6uma2/MvMzIVcG5Nv46CA2plpHb3SZ2rvfMP8EXzi3+u/tfpJSNaVG45K0XH+veLHuhMzp/RuCJR+M6eb88/0JYM4b3OssfP1vzL3J6uuR0bvls+bWwV6mzbiztvWROq/vn2nq7bGh/I7w0GuVcaQgihe+IVtRtu6+n6QWP5n6t/+Pu6ITYt+Xntol3dFbMani6sf3Fa8ldHiu6apLfMuCt+5LqVH+8vXXSkfFlByVfk1jZ8yQSGkUn3qL69cf4XVbe935i6mPrR4eW/mFC3IlE0OYQQpsz9Tu3//vzJNenLOYW3XlYQQggXFdw9ffkjnz+55lj3js7qX178/HOFZdNCCGHK7ETdwgFXJpLNG08kB/a1mFI0qLmfP/s7LTtua5ifc1hC1uI2H6ndOaW6fNJwv9BO1Ca2XPv3ofbF7xTHZv3gRGMIU8qmNzZ+r2XD92rC/tIln3WOagljdHHZsswem/utivBFy57TIYRw+M9vTzyy/O/PVq66radrbtuKidlpLYcdR5Y3XVr786mF+SGEi4sfmb7kdx/WvzNUS324nXxRycLpZdNCx45jLR9fXHTHn1ftODnE0krKriiaHEK4uOimiVuf+nPB/PwQwpTZ36y4489Ng3Njf4W3XlaQH9Ln0vzjP23MdJ+9emr53ItDCFMm56jIJQ+lboVdXFx25bzDh1o/GHolI5A809b4Yc3Gb9Tcnerccqb51YOJiitKJk8u/8klb7z8xwFje/JvvWb58Q/rBh2U4XbshPIX0zeOplyfqFk84dXnjqSW3LF+T8XxaRXXDCrXB8ebdk6qXTGt4OMvuvPPJE+lp8fmDyHkPGNjyxlgSggdh3KcObHpMQPmj9XWgdPHryaOcHu/TJHanXLoVOsdlxTEvhrOtDV+Wj/3qswojuiiRvjbss9HXVVVxypWzaq5+68KrplU9ez1Sz7+cPmG08nkmRDOeS8d+mz5L049sey68msuCiFMuXVy+ZArTX2Y+WtycXHFzPqHPn+sMT7a5IPuut99s+zWi0MIYfKksrLwwntfnFuJySV/UvnCiV2Hr6wY5wtk8NUlMIzKRQV3X1NbfqT6V8eSIXTu7H4j/HHB93pvmm+56x9COH520K/yi4tuvTy8d/Ldj09sD1NKZudacAghnG1bc6wg1aU47a9KH/nGG2s6mw+NrY/smeZXP+l6qKA8d4Mp26SarrkHV0ys/+Hva2P9zk+FrvDNiltTbZCLSh+Y1tV0pPXQaJYwZn3PY/mPJzPTOj86ETaeLf95onhyCCEU3F1QXfZ53Vt/6vs0XFqYdcGvc8+x7eGKot5dkT+xpCz0ttRfq/r3zEHsW8Wwujd3lM5+t+yXn7XtPNFxbGzbdlH+5aEr9Ix4/ouLbr08vPNFe+p/0y4aUTrLv2hK+HM4l4ZO+g5bW9U7l9X/2/eqU+fwR5/Vv3pJ9fzJ+SGU3D395p2HWgZe+Lyo5O+uCZGOSSNUMHVi2Hk2GULyvQMVVWeWPzL4Kvjn9Yv3h7+bUXn9hOKfzGq869hdFZ+2DTV/yuAzNvdyBjp2piOEomsGtT5j02MGzh+rrYOmj1tNHNn2jp/BtTKE3LU7Pf/HX3TdlJ8zMLxW9e95ia3VO6a1rsoaxRFf1OjKubP7jXBl+a2ZP475l5bcGl77+FT+3IKGR87+9IfbqzaM/YRO7jnxWvhm6eyBf3ljKx20gIuL78j6DTDYqdDVf0Ii5I25tEQdOlzzeJjzg4O1TRfmwB0YPYFhtC7Kn9Y7GvJs5mZ01r9V3xr8F677+H+G9PzRqxHJHUc770oU919X8eLv7f7JmdrvbclLbP521R9HV9KPPqt/9ZInHhrp0xsK7r6m9n9//uTLRztzfjwxJEIIfY2vi0MYGI2GWcLYHPqs4u4djdOuaf2wX8+EgmsuDWFSYV/r6qIQelveZ9vf+2Moz9kNo0/yeN/P99f/deYIxjo/DHLss+q//WTKiu+3r7qu+iffKb96+G+Mi+7j/xkm/5e/dB+D9B2221pfnF5+ffqXRlvzwTduml6W6nAy+/LKm76obRp04TN/UvXisPxXQ4/TGInTTS9+uDV0P/rXfbnutap/L19/Ouzort15ecUd6QZ0SXnBvN8daN4Rnz9LvzM293JCwTWTQjjR0dsiP3WmM1xWMDE6PWaY+WO1dfD08aqJke0d3ncvWxT+2Drgsa2Hkq3hkpLrh8hLuWplpHan59985P5bL82Z9+6v/+ueP9xceXhP+YuZPm9DLWqUkmdDOHjXjN4rQf++oDn1QX7Zczcf/fdrihp3FC7sHFsMTp46G8JF+YPPk+hKcxniN8B3L1s09Y/Nqf6Zx040N3+j+u6/GktBGcqZ5uf2d/z8upbnru1esn9Mg8HgwiMwjNaZ7o9DmHZxfggF10++ORxpHf5P7JmOHV+EOy774fWTbw5H2/bkmmXnkaZTV5QN7mux49PKp/6z8l/njGEMQ8c7R964aXrF3JEf4ovyp6X+buVy9WXl4VRn5jdjMnk6hEumDPyzN+QSxqTzvSOvHr6qbtkVBQMaDldfdn840dE30PZs8ni4OT8vhBCSJ5qbwv1lk7KTW8H1k2/Onv/YFy3vhPLZ59B96oOTa8I3K+bmhxBC8mTbX+gVEGc6dnzRO4TgfEoea3zxi7Bz/y3p9s32x3aGrsajrYNaUfm3fqcmefiZMa/n1JlwxyUFYULFmuxk/v2VIdxf/9dND0wI4aJBe2NC/lDzZ8s+Y3MuJ4SrJ94fTrRl2sfJPSdem3plyez49Jgh54/V1hzTx60mRrZ3WJMnlT9ySWNTv6G0HW8deu2m6WVDbH6uWhmt3SGEY0cb/mFa5d3xBDL5G5U/m578xcepp8cOtahRKrhmUiJ8e+OH/a8ELU4/Y2rKNVdUr7mx5vjeyl99PoaFT/nupHvD8bZB/QOHXmmWM+3vHc/5GyB9OCZfUdd4bedTuyuf7qhafGjK2htqBt3N4BwlN39UueGbtQsn5c8uqPvZqernvISB/yf4VTIqZzveOrD8V99YWTF5Sghh9pXLy08/trSj+VAIISQPHa15uu8XR/fhU90hhHCmrXFv1avfeL5icv7sK5eXn1z+1Ketx86GEJIffdb7LOfOyyf13YzOWl1r44f5y2ZUzh54X2IEz5lJtrzafXPF5cUDpg74YvLz+mWHO9I/n2hqCvfOT/9FHzjn5MlVP8+r/eXhjhBCMtn48sE5Py8onTyaJYzJlMsnJsLJ9o9CCGc73/qsKYTX3vkiGUKY9q3q/32y5hdd7cdCCKFj/Yc1e65cXv6NEM60vtzxzLQZNQO6LM/+Zk35idr0NdczLWsOrBlufPYw5Z96yb3hVNueMyGcaX356JSKy8M7f0rth1SSbNo8bo+l73cuvXVlXbSbzfAGl21shyn53tGGw9PW/yGrcfOHooWHB72QIYQQLir5yXUrf5D13WHWeKZ5TVdmIO/nTWtOPvSToR4HFL47qeKm471DrjveOfL2D6aVDtVyjZyxseVMu6LqkfDMy4c7QgjHTtQ9ffDeZVeWhPj0mKHmz11bc08ffU0c7X4b7gBdXPaza0s37Klq/FN3CCGc7Xyro2LJmZXPFQwqf6/ctTJau8PZ1l9+3L7i2+VDP63hu5eVhvTV9Piihj/DB1aKW6fVlx+p+fujnckQUr/YX+x/6+zYn3u7IOao7Ds6h1rdNVOX/zyv9un0U9q693zROoKVdrz3RWdIbdqB5Ru+WfvI5PwwsbAstDanHnJ1uvnpfZlMfrr55RNlz167/O8K69fMqru771fFuPxCJiQ/r3v6YMmKa8omhxAuKvnZjPINH45/R1z46hEYRibVhzvxbtnLZyr/5aaadON+Qvmq4o0P/Hn5/9icl9hctPDIlDsu7b1T3P3WpxVzf5uX2Fre9F9q//Wm6tnp+Rvv/qL6v2/JS/y2+PGjRXMvyw8hlP/XxsU5xiV3rn//ruZp1XeMqXH40bGGdy6rvGO4x73lf6NyYahb+PvSB35fuuCj5M9uaayIre6i4sU3tZSdqH7g96UL9rfe/f3mxd/IH90Scknv2L5OI+n//o8P0wWce03zs2H5X2/Ou+33NR9/q75+2g0bOpsOhRAuKn36B023dpfP3ZyX+G3Zq5fUrb++fFpofXFrxTuT1q76zqAnV+RXvDC7JnxaOntzXqKt5oOpWxqnn9P47GsS9Wsvb120tWDu3ra7r6n5u8KVpz5sTN1nmF3Q8OylTYu25iU2F708lsuQA0wJyaZle0of2N9w6pvNm2+IjOIdmfEp25nmVz8JP5vW73k+k6+o/Nklg1/IEEII+ZOqn54x4rsiFxdd/eflC96vfnlf5QMfd/xk9jDDVfMn1TQUFTXtKVvaUbN4Z+U7V2xp/E685Ro/Y6PLubhsxey1Vx8pTWzOm7un7YHvZ87w2PTodkXnj9XW3NPHqSaOdr9lu2Zq41s3lLyzpzixOS/xu/Kmi2v+rfe3Yg6xWhmr3a0vbrn9l19sfWr7gF8OA1/lnj+pcsWUlso9jYeG+EUxAgMrxYTyVd9ffvmh0ts25yV+W7z4s8LUL+o9XaknZefN3dt2x39tTD1Mc3CFmpg3Jf/Umj2xMUMXlSy+qWVhaFj8+9KFH9S+dybzJyOy0hDCTd+unn208rbNeYl3S18+W73+hsprQggTKlbcWHHsw2sTmwvnf9g+f/oTfas48diC7demejfdtrP6LZ3sx1NH04dPhmuX996rnHxFzbJLnlnW+VV/nSucs7yerrnnuwxfPydqE//RmqP/A4yWc4n/57S+uLn26gHn/InaxH+EfxnwkNavqI71uytPXdsyqksnX1JJGndfu+SSDX/47gierE1/0/4tHPrhOCwEvi48EQzOuxO1OZ/rUvZfD645/20OYDT+1Nw0cfmq81Vzz7Zt+Cx567dKpl0UkqfbPzgdbppcIC0A50xggPNuUk3X3JrcH534y5YEOBdnW9d0Fq64rvR85YXkme5Dx+oWfvja706FqZfeO/87W9YPMbYEYKR0SQIAyKJLEvRn0DMAABAlMAAAAFF5PT0957sMAADAV5Q7DAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDGs6RREAACAASURBVAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMAABAlMAAAABECQwAAECUwAAAAEQJDAAAQJTAAAAARAkMcMHqbm2oq64sLapo7OybmGypKSotr6ppaOlMnr+iAQBfG3k9PT3nuwzAmHQ2ln97wWshhMRDq5vrK4unhNDdUlt215NbQwg3P7+trbr4fBcRALjgCQxw4Uq2VBfe9UJXro/uX3uwqaLgL10gOF9aa/NufzL148otPTUl57c0AF8vuiRxvnU2lueNVG3r+S7tV0t+aW3TyjmDp89ZtKFOWgAAxoXAABey/JKa1oMbX1p07w2JEEJI3HDvopc27G+pLys83yUDAL4mLj7fBQDOUUFpVX1pVf35LgYA8PXkDgNfIfevPdgz2MG195/vggEA/D9LYAAAAKIEBi50na2NtZWlJYWpYdGFJaWV1TleQdBam5eXl1dQVFHf1u+j3iHX5dnvMgihu7Wuoqhg4EDrztbGuqry0tQHeXkFRaXlVXWNrf2+mXPFQ4/iTrbUpJc4sBhpbXXF6c+L69r6FTv2jZBsb6goyDlKPDlgK9L7rLm9eyQlHrTOMeyT0YmUp6CotLI2vp7ujub6vmKlStXU1p1jb7Q1NdRUlZdmb0Fl7aBZs/b4CIfedzSW5+XlFdS0xF+H0VZXkpeXV9Xcb11Z2xtZU3dLTUnfMRjJUwMGLSh11LJrTW1j6yhe3NFXyEHn3xAfhRC6O5obqiv7HZf63lNvREvpq5qRUz8kQv6INwSAEcnRAwT+krJ6HA3bJWnllv4f7V+7cEbuE3vG/S9tO5k155aVmU8ST2w8mWPh/dZ9dMOixOB1Ht2wKFKNZixcvz+yeX0rziWz8C0rM+u7d/XgJW17/uYBnw6z005uWTkvkWuHHd34xLzEwEKk3fz8thGUeMA6x7RPRmfo8iTmrdxycsA3jmY2P8fcSzb0K1Xfrh1mwUOchbFyPzFwZw0sZvosy+z4wduba03716fO+d7FjqTLXvaCTu5eHas1iXtXbjk6so3rLeSgzYt/NMTZN2fR2t0nR7KU7K3t/8n+3k+iexyAMXKHgQtWR2NFyYI1H+b+8MPXflpW2diR45OuZ1rbhllysq15VY6XG0wpKpkXWduaB6oacq1spErKatIN1zfqmgYWr62lYXvqp3srSod/+lF3a23p7U++PXgDOhoriu56JscHIYQQFi6vHMNr3r7EfTIyXW8/WVWfvceSrbVlOTc/NfcL8ytqW/uupBeXV98bXXD58iHuDgynoz19Vf+12sacJ1xHU13qLNve2jHS+zEdjRUlD8TO+ZFIttaWlT4aW0LXG0/eXpa9e8ZRR1Nlcfzs27pqQWnu+tpfZ2vTa5GP3FUA+PIIDFyguptrq19Ntz7mLFq77Wjq+uTRbWsXpV9M0PXqgurePgslNT1H1y9M/dzcPkzDpL2tJYQQQmLJxpPZb4AqLK5Y+PyG3Uczl0JP7t/y0kPpS6Y5Gvr99V3kzXVJuK/hur2hpf+CWptr03lhYVX5cHmho7mq7PYnt+b6pLF6QWaHJe5d2bcZJw/u3vD8wpeqy6ekPiyp6buiELmunvVKuHPaJ6PU7zr5wQ1PpA90vz3WVl+d2fzEvSs37j+ZnnvjynvTpdr6ZFVdX5u4sLxq0f0r127Zn9mCo9teymxz1zPNYy5/sqPt7fSP2x+raxrU5ybZUl/zRvrnlvaRBIZkW11ZSe8h7FNQ0dS3WyIX5tMncbK1riqVpRLzlqzddrD3oB3dvSGzf7YOCGDjo7OxOh10Ztz//Mb92afL6nSF7Xp1wfLB+6m/ZHtrqmqGxJKNJ/u/mXBKQaZylBR6BwnAOBv9TQkYV2PrkpTVlWRQJ56+vglhXvZnvQu6+YneziY5uiTtX5tu8PbvvBQxTEeIg+sfGlSS3K3wvqn919vXW2nh+qM5FpG12sE9tHqXf3LjE4m+b4y4r9DoO+KkyjGenUP62sADipDjg6weUoklA47eyS1P9J4zAz/rJ2ujF204OnjiiPbE/tXZd17m9O911NOzf3X2jY2H1mftppxdkgb3ssq9a4foKpS1DYP2TU9PT1+gDonht7BvPfMGVr9cReg9iXP1uMuqzNnfyLEh+yN1JL2Y9EpuHrizAThX7jBwQepob0lfdQ+Lqgdedi8sq8o0G99ubuu7eFtQVpXqNL79mfLy2ub27kFdL5IdrQ1VFemruHNqKkoHd3Pobm9uqK7sGyJ77YJMF4nXOnLcuEh2p9c/JX+YLhMFZZXpBltXQ3PfFfDWlrr0NeUllWVT4l9PtjcM0UMrtLc2ZO4uPDFoh52rUe6TcZHsbG5qSv2YeKIk05mqvWVV+qebayoHHL38korKTMO0sbU9tuDutuamzBDhe0uKcuzyJ2/PGk6cGS88sHh9NxhCCGFrbWN276bs2wshDHuLobulJt7LauT6uvN0vXDXpYMGRl/xwJr0jF3D95HKz8/syrdbcgwlH6Ct9yR+49FrBw/JvuWxTGWOni/J7vbmuvLSzIl1b23V4LpZUJi6j1JY4AYDwDgTGLggdXZkmqT3lw5u000pKMxcjX01u/vRlLK6ptSF2q43npw/64pL8/K+nWmCvLbg23l5l157+6OrtoYQEvOe2NhcPaBPf7K9obLwilnzH31hzdtvvz+i5ltfu7Fo2G4SU8oq03cBup5pSD84J9nSlG5qJZ4oL4lGjmRbXXnpo692hRASD61+afA45M721kx5K8riyxm9MeyTsctuqV/67fnPbA0hhDkrm5ZnGo+dHb05oKxk8IiMgsKi9E9drf2b6FlPGrriltSODImHVtdXDButPtz69ponF9z+7ZKalux2c6ZXW5g3b14IIXQ9U9vXQ7+zqe6Zrr7PQuhqi7fQO5qryu5Kb+oTq58/h3eSdLS/OvYvD1BUXJr5cU1tTWMmMyS7uzs6BmWxrLNvDFI184pZ8x97Ld2n6aVtjZU5Dkzm8OqRBDDuBAYueDmav5lrjYPnLalp6di/YUlkoG4IIYR5D63e0t5SWzogh3Q0VsZHi8b0thvvLx6+EZNfWpEZ+rymqaU7hJBsbU7fGEhURtv53S21pbc89kaqZ/rKpobK4iFbuQXD3eoYhTHtk/F0w0PP11bm3DG5bsYUFIx8WPdDLzXXVxaOfFdtfeauyr6nfHZ3tqcvmpfULE/FwDfqGtP3jdoaa18LISSeWL68LD1/5BZDd3tjRcn8VVtDCGHGwvWNtWV/maZwwZThNjy/pLy3j9vWVQtuuSId46644toFa4b85pBuHvrkvOHeJ9bvbm+qKs59q62gaF4IYZ4bDADjTmDggpfjmS4dvTcgBj6Svbu1rqJ0/gtvD/5Or7dfffT24vL6/h0tki31mTHWiXlLVveNkR3yqZ8dbU3pdmNR4Ui6ARWXZjrNrKlv6sjKCzfn7B4VQgjhtZ8uSI/ynbOyqblm2NsHw/YfGbGx7ZNx9f6rj9317ZJcz/XJtZmdHb2vIxg2Nb3601uKSnM/MCirh//Jo9tWZ4Z4Zz8OqfcRSTcXFGRi4PYn65u7Q+huqntse0j1qpmS6dgz8I5H2jOPLsjc7Vjb0jB+PcmGG8VSP1Tnt5T80uVNK+eMes1PDD06om3gXb3+3n/jmQdmFZb2v5mTVaYpBSGEooJhCw/AKAkMXJAKCjNdM15r7RjUqMtqGJYWZV1uTLbWlt3+2GsfZj0kpv+g55P7Nz5//4wQwoev/fSWstqsd7z1jQFYWN9UV1lS2HcNNt4C72hpTCeTRaVF0bmy9T0s6Y2Glra+vFBZOty18TkrtwyRFvqeIBOah32q7EiNaZ+ci35jcU/uzzz4aGvv80/7+hyF1hyPwuroPS8Sxf27rWQ9aajvMU+Dntg6WP6U4srausy5uL29M7XhWTcYigpDcUVNao41yxva2hqWrwkhJBZVlxeGwqLMnbChBnskHlrb2jh856hhFRRkbqy91jz8uINh5ZfUtB7c+NKi++ekR9onbpg3b+GS5xcNek7tuZ19qZp5sPc5Tl1vP3NX7me/FhQWJ0KiUGAAGHcCAxekwqLSzKDLF+qaBlycbWusy9xguLcsqytQW33Vk5lu7811FcUFg5rX+YWl1U0t6ackbX2ypq/beTJkemEPuIDZ1tocKWOytb4uPbJ1YVnJCBsxheVV6aHPb9dVVj+TWum86vKh88KMhesba4ZaRX5xaeYRONtr6wfusDEawz4ZR/mFpZWV6fZ2V3NbquN8UWnvcPfeHkAZ3c0NmaG3icqSaIDLLyypqq5M/2f7yJ542ruKZGqVHW2Z8diFBVNCKCivTvXf2V5bXl67PYQwp6aqbEq/wTaxccaJeSubGsYhLYQQCovKMmtbU1s/Lm9bKCitqm9q7UhFrc72lpaGuurK0oFz5ReV9Gaq2toRvG1hsPyCorKa5tZMvN/65PJciymu6ezprBnD60QAGJrAwIUp64Vbr1VX1DSnbzMkO1vrK8sfy7yHoN+LC9qa0+8/W1JbPVTHncKK6upUw+qNxpZMqyQ/ZNpadXWN7em2Vnd7U01V7xNestt8yc6W2vLyZ1IfJZ4Y8vlG/U0pLU837bdvz7yurXLI17WNqLvKlLLKJekt6Fr1QHllfUtH5iFRye6O1sbaytE/fH+U+ySEEJJt9RVFBXl5hWW1kW4lI5bMfpxRxpTSikzX+u1PVlQ1tKU3sru9qaa8MvM2vuwOXt3N1WXVDS3tnb3PzEq2NzX0Bp7hevMnO5vre+Np5r5FZ0dbek3pG1z5pVW194YQQteHH3aFkFiUeUleQVGmdZ37FsPIepmNVElZTaYT0dYny8uqG/ruziU721saqmuav5xbQ73PJwuh69UFpeV1fY8oS3Z3tDXVjfDsK8wkr351My3Z3lA5TucWAAON9Pmr8CUZ23sYegY+yn6wxEN9PbWzO9X3e+h9jvcw9Huaf+aD7PcYxGSe/96/B392MYbeoLSBq8q1V/qeqD9o6ZEH+ff0HN2waMBbGvrvrlxvnRiyqKPZJynbVmZ9Ieu1EkMawYCI7LWc3Lhk6FLNWdn7Fo6ek1tW3jzErImc72GILjhTir7NzHqRwoZMk7lfaftm7T3Mvds7Z+WWgXto2Moy5HsYenpObhl63EHO1ySMUu4i9L7dJLKnB559kQ3pVzX7fZT1Zpbs92cAMB7cYeCCVVjZtO35eyOtkBkLV7fk7slxf3nJsA84LSlfNGC50TGeMxatXJJ543Btw6ArtHNG36Ekv6SsIuu/Cyujj8ZJ3Pt888iXPqWsvmXDknmxZlvfs1xHagz7JD9rU9a0R9+FMCqJeSvrq/q6oeSX1rVuWBRpFifmPbEx65J9W331k9tzz5nqDFQ34ltDiYfWNqZH7PbdYLi/b6j7lLKq9COwFmZuL4QwxC2GOYs2DN3LbEzyS2qa45UmhDdq6lvGo6vSYIUVja3rY4dlwGNnhzClpGzh8HMBMM4EBi5g+cXVzR0HN65esnDeDek20Iw59y96fu2Wgx0NlUWDenIkbnjo+S0NFcM/dXFKWV3zSwvn9LsgP3CM54w59y96aePB9vqausa1C29IhJCY0p3MNI4TN8y7f9FLGw+2jqFDSX5xWd9l1IXlA5/vmjFnZVNTdfGoll5YVtfSvn/D6iUL5/VtXGqs6ur122pH3nEqU9JR7ZMQiqub+hqN5/r4y8QN8+5f9Pz63e0tA/dxYVl969Ft65/vNx534ZLVG/YPeFxucWXDxrUvLVk4L2t3hBlzMvOO5NilDvSG/e19w5L73nfQ740AxZXLF4Zw8/PV5VklKCgs7hvF0NtiTjy0trG+bJxfr5c2pbi6uePglrUrFw7Y6PsXPbF6Q0tN7Glc566wvL716O4NLy26v7e6Zs6+l9ZuGWHynVJet21g1QwhhFBc1bh64Q2JEGbcu3Lj6E9lAIaS19PTc77LAPTXVlecfvvtko0n6768Jtz50NlY/u0Fr4WQWLmlsybyugwA4CvEHQb46kkmU0OFh3y984Wpo6XxtRBCuLe2QloAgAvCxee7AECWZHdHW1Nt9ZOp13VVl3+97i50NFVVLHgthMRDa+srv5weNwDAeBMY4Ksh01WnV+Kh+sqv00X4zsaKkgWvdoU5i9Y31o/fW4sBgC+ZwABfQYl5S+ob6srPbVTwV0xBRW1tY36orc8xHB0A+OoSGOArZMaceaUllRXV5WWFX8PHvBRWNjWc7zIAAKPlKUkAAECUpyQBAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECAwAAECUwAAAAUQIDAAAQJTAAAABRAgMAABAlMAAAAFECA3wN7H3l4XsefmVvCCGEA+se7f0ZAOBcCQzwNTD9uusObF39yrZTIex985VNB667bvr5LhIA8DUhMMDXwMSSp15/dk7bozfOnPng67Oeff2pkonnu0gAwNdEXk9Pz/kuA8DX1Km9r6zefU/VfVO/lKUffn3F69c9/uiN4iEAXyZ3GPjKOrzu0ZkzZ85csa13yoHfLL1v1syZj6473DdTa33VfXNmzZw5c2bxPQ8vXt3a91HYtmLmzP5zZy8z/WNu/b4UwoFXHpy1rPXUyIuXWnXEim3DFi73DLk2bHAxUmVZ9+isgdOiuyU1JTN77h2Tmv9cd2m/OYrvua9q2SutOTZwhI5ve2Xxg8WpRVWteH1vvwN0au/rKx6dM2vmzJmz5jy4bF2/Dw+3ru77Yv3oSnBq77plD2bOuOG+fGBd1X1PbT01ku8OVd54gU/te/p/3vfstv6nZvYXBx+SvtNi8Fnad2SH+mz81jLY0HOfy4EDYOwEBi4Yp1rrl/zz7tNZE7Y9e9+dP37uzd1HTocQwol9W3/99I9L7lkRbz6N0a7X69tOr2148/ioinf+nNq24tHHN30lijKUE/t2v7n2qR+X3DNEgzfu1LZnH/xfT/267URqUW82LLmv6vXeFuSBdVX3LWnYdOR0COH0kba1j/9N7zjwU9tWPPzjp/u++NyP71z29kgLcPj1qvseX9uWOePefO7HD9fvis2895Ulj286fed9c6YO+90hyjtUgafOue/OCftWPb46WoavkXM6cACcC4GBC8XxNxvWng4TFvyfXasfnBpCOLXt2SWrdp+ecOeK/7tt7969e/fuevsfFxVPCPsaloyo+TT1wdV7M/6pMoQQKv+pd0JqFSmnWl954ZMQwpurXz8w0uLd8lTvolqfvTOEcOezrb1TnrrlnHbEcA6sq3q4Yd85LyZrbwzcIzEj3qWpybtaf/PCgutC2LdqXeuo233H3169al8Id674za69e/fu+s2zd044vWlpfeq69vHXn3580+kJdz77m1179+7d9n+X3RlC24rVradCCLtWL2nYF66r/Mdte/fu3dv60oKrwum1L64b4tBmObx13abTIfztS9v27t277R8rrwph39bduS90H//NCyvawlVLlz44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\u003d",
+                "mime_type": "image/png"
+              }
+            ],
+            "line": 38,
+            "name": "пользователь нажимает кнопку \"Завершить обслуживание\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Завершить обслуживание",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          },
+          {
+            "line": 9,
+            "name": "@testcase_1227_161772"
+          }
+        ]
+      }
+    ],
+    "name": "Платежи наличными",
+    "description": "",
+    "id": "платежи-наличными",
+    "keyword": "Функционал",
+    "uri": "Touch/Платежи наличными/ПУ для платежей наличными/1227.Оплата сотовых операторов.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@TOUCH"
+      },
+      {
+        "line": 4,
+        "name": "@ПН"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: ru"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4626670051,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Подгготовка основного платежа",
+        "description": "",
+        "id": "платежи-наличными;подгготовка-основного-платежа",
+        "after": [
+          {
+            "result": {
+              "duration": 1182014114,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestManager.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 1763157721,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "страница \u0027Платежи наличными\u0027 открыта",
+            "match": {
+              "location": "OpenPageSteps.openedCashPayPage()"
+            },
+            "keyword": "Пусть "
+          },
+          {
+            "result": {
+              "duration": 876909468,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "пользователь нажимает кнопку \"Платежи наличными\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Платежи наличными",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 841541156,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "пользователь нажимает кнопку \"Нал люб\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Нал люб",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 666693691,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "элемент \"title\" с текстом \"Нал люб\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "title",
+                  "offset": 9
+                },
+                {
+                  "val": "Нал люб",
+                  "offset": 27
+                }
+              ],
+              "location": "CheckDisplaySteps.elementShouldBeDisplayed(String,String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 118982208,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "пользователь нажимает кнопку \"1.CashPay true puTypeSum\u003d0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1.CashPay true puTypeSum\u003d0",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 822309635,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "элемент \"title\" с текстом \"1.CashPay true puTypeSum\u003d0\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "title",
+                  "offset": 9
+                },
+                {
+                  "val": "1.CashPay true puTypeSum\u003d0",
+                  "offset": 27
+                }
+              ],
+              "location": "CheckDisplaySteps.elementShouldBeDisplayed(String,String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 1800362618,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "в логе ПН сервера присутствует строка \"private/payments/servicesPayments/edit.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "private/payments/servicesPayments/edit.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 36602630,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "в логе ПН сервера присутствует строка \"POST параметры: [billing \u003d \u0027Cashpay1.t0\u0027 , service \u003d \u00270001\u0027 , provider \u003d \u0027CashOnlyTruePTS0\u0027 , serviceGuid \u003d \u00279999_1t0\u0027 , operation \u003d \u0027init\u0027 ]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST параметры: [billing \u003d \u0027Cashpay1.t0\u0027 , service \u003d \u00270001\u0027 , provider \u003d \u0027CashOnlyTruePTS0\u0027 , serviceGuid \u003d \u00279999_1t0\u0027 , operation \u003d \u0027init\u0027 ]",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 142441844,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "пользователь нажимает кнопку \"Далее\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Далее",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 36221084,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "шаблон \"atm_total\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_total",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 710517903,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 22,
+                "value": "#   И элемент \"commission\" с текстом \"Комиссия\" отсутствует"
+              },
+              {
+                "line": 23,
+                "value": "#  И в логе ПН сервера присутствует строка \"POST параметры: [billing \u003d \u0027Cashpay1.f0\u0027 , service \u003d \u00270001\u0027 , provider \u003d \u0027CashOnlyFalsePTS0\u0027 , serviceGuid \u003d \u00279999_1f0\u0027 , field(RecIdentifier) \u003d \u00279871234567\u0027 , field(amount) \u003d \u0027500.00\u0027 , operation \u003d \u0027next\u0027 , transactionToken \u003d \u0027CashPay\u0027 , operationUID \u003d \u0027AA726b207aacdce35431c8fb83eb43c0\u0027 ]\""
+              }
+            ],
+            "line": 24,
+            "name": "пользователь нажимает кнопку \"Оплатить наличными\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Оплатить наличными",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 713069598,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "шаблон \"atm_input_phone\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_input_phone",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 199857441,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "пользователь вводит \"9054564545\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9054564545",
+                  "offset": 21
+                }
+              ],
+              "location": "UserActionSteps.userInsertsIntoFieldTouch(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 97625876,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "пользователь нажимает кнопку \"Далее\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Далее",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 1610866491,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "шаблон \"atm_ndc_input_cash\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_ndc_input_cash",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 110567011,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "пользователь нажимает кнопку \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 108104003,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "пользователь нажимает кнопку \"Оплатить\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Оплатить",
+                  "offset": 30
+                }
+              ],
+              "location": "PressButtonSteps.userPressesButton(String)"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 2035344487,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "шаблон \"atm_ok_self\" отображен",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atm_ok_self",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckDisplaySteps.templateShouldBeAn(String)"
+            },
+            "keyword": "То "
+          },
+          {
+            "result": {
+              "duration": 275436362,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "в логе ПН сервера присутствует строка \"ЕРИБ REQUEST: doConfirmCashPayment\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ЕРИБ REQUEST: doConfirmCashPayment",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 43183559,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "в логе ПН сервера присутствует строка \"PackOfPayments/confirm.do\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PackOfPayments/confirm.do",
+                  "offset": 39
+                }
+              ],
+              "location": "UserActionSteps.serverLogShouldContainStringPN(String)"
+            },
+            "keyword": "И "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          },
+          {
+            "line": 9,
+            "name": "@testcase_1104_161769"
+          },
+          {
+            "line": 10,
+            "name": "@testcase_1198_161770"
+          }
+        ]
+      }
+    ],
+    "name": "Платежи наличными",
+    "description": "",
+    "id": "платежи-наличными",
+    "keyword": "Функционал",
+    "uri": "Touch/Платежи наличными/Подготовка основного платежа/1104.Подготовка основного платежа.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@TOUCH"
+      },
+      {
+        "line": 4,
+        "name": "@ПН"
+      }
+    ]
+  }
+]

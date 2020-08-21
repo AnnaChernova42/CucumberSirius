@@ -1,0 +1,31 @@
+Дистрибуив лежит в \\10.116.92.128\Distrib\jet
+1. Установить последний хром из дистрибутива хрома
+2. Распаковать архив с Maven 
+	Задать переменную среды MAVEN_HOME = папку с maven-ом
+	Добавить в переменную среды Path = %MAVEN_HOME%/bin;
+3. Установить jdk 1.8
+   Прописать в Java_HOME версию 1.8 
+4. Установка idea+cucumber
+	Установить idea community version
+	Запустить, перейти в File > Settings > Plugins > Install plugin from disk
+	Установить Gherkin (\\10.116.92.128\Distrib\jet\idea), 
+	Установить Cucumber-java (\\10.116.92.128\Distrib\jet\idea)
+	Импортировать проект CucumberTest через idea (указать что проект maven)
+	Перейти в любой файл с кодом (src/.../*.java)
+	Кликнуть справа сверху "Setup SDK"
+	Выбрать jdk 1.8
+	Дождаться переиндексации проекта
+	
+	Теперь в файлах *.feature работает подсказка и подсветка синтаксиса
+	
+Загрузить проект с тестами
+1. Положить CucumberTest на рабочий стол (Скачать как zip   https://github.com/Kryzpoo/CucumberTest)
+2. Добавить туда папку "Drivers" с 2 драйверами ( Хром и IE)
+3. Папку repository положить в User/.m2/ (папка скрытая. Если папки нет, запустить из командной строки: mvn clean install -Dcucumber.options="--tags @all_steps_touch_example --tags ~@ignored"
+
+Запуск тестов
+1. Настройка тестов: В test.properties отредактировать url и пути
+2. Открыть CucumberTest, кликнуть правой кнопкой мыши по фону папки, "Открыть окно команд"
+3. Запустить mvn clean install -Dcucumber.options="--tags @all_steps_touch_example --tags ~@ignored"
+
+	
